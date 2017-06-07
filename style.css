@@ -14,7 +14,7 @@ body {
 
 body {
     background-color: white;
-    overflow:hidden;
+    overflow: hidden;
     color: white;
     margin: 0px;
     font-family: 'sofia_prolight';
@@ -133,11 +133,11 @@ body {
     perspective: 50px;
 }
 
-div img{
+div img {
     position: absolute;
-    left:1%;
-    top:5%;
-    width:10%;
+    left: 1%;
+    top: 5%;
+    width: 10%;
 }
 
 #about:before,
@@ -322,7 +322,7 @@ footer {
     right: 0%;
     bottom: 0%;
     width: 100%;
-    padding: 0% 0% 0% 0%;
+    padding: 0% 0% 0% -1%;
 }
 
 footer li {
@@ -330,10 +330,21 @@ footer li {
 }
 
 footer a {
-    padding-right: 20px;
+    padding-right: 50px;
     opacity: 1;
 }
 
 footer a:hover {
     opacity: 0.5;
+}
+
+footer img {
+    position: fixed;
+    width: 3%;
+    display: inline;
+ 
+}
+
+.small img{
+      width: 2%;
 }
