@@ -14,7 +14,7 @@ body {
 
 body {
     background-color: white;
-    overflow:hidden;
+    overflow: hidden;
     color: white;
     margin: 0px;
     font-family: 'sofia_prolight';
@@ -133,11 +133,11 @@ body {
     perspective: 50px;
 }
 
-div img{
+div img {
     position: absolute;
-    left:1%;
-    top:5%;
-    width:10%;
+    left: 1%;
+    top: 5%;
+    width: 150px;
 }
 
 #about:before,
@@ -298,11 +298,11 @@ div img{
 }
 
 .box-info h1 {
-    font-size: 2vw;
+    font-size: 20px;
 }
 
 .box-info h2 {
-    font-size: 1vw;
+    font-size: 10px;
 }
 
 .box-info:hover {
@@ -338,18 +338,60 @@ footer a:hover {
     opacity: 0.5;
 }
 
-footer img{
-    width:3%;
+footer img {
+    width: 30px;
 }
 
-.ig img{
-    width:2%;
+.ig img {
+    width: 20px;
 }
 
-.fb img{
-    width:1.8%;
+.fb img {
+    width: 20px;
 }
 
-.behance img{
-    width:2.8%;
+.behance img {
+    width: 28px;
+}
+
+@media screen and (max-width: 700px) {
+    .nav {
+        position: absolute;
+    }
+    div img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+    }
+    .contain {
+        top: 50%;
+    }
+    .box {
+        width: 100%;
+    }
+    footer {
+        position: fixed;
+        bottom: 0%;
+        left: 0%
+    }
+    footer a {
+        padding-right: 5px;
+    }
+    .nav ul {
+        visibility: hidden;
+    }
+    .nav {
+        padding-top: 135px;
+    }
+}
+
+@media  screen and (min-width: 700px) and (max-width: 1000px){
+   .box {
+        width: 50%;
+    }
 }
