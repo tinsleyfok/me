@@ -377,7 +377,7 @@
             font-weight: 200;
         }
         .contain {
-            top: 50%;
+            top: 60%;
         }
         .box {
             width: 100%;
@@ -435,13 +435,6 @@
             -ms-transition: all 0.4s ease 0s;
             -o-transition: all 0.4s ease 0s;
             transition: all 0.4s ease 0s;
-        }
-        .mobilemenu li:hover a {
-            text-decoration: underline;
-        }
-        
-        mobilemenu li:visited a {
-            text-decoration:none;
         }
         .mobilemenu .show-menu {
             text-decoration: none;
