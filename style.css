@@ -359,14 +359,18 @@ footer img {
         position: absolute;
     }
     div img {
-        position: absolute;
         top: 0;
         bottom: 0;
-        left: 0;
+        left: -30;
         right: 0;
         display: block;
         margin: 0 auto;
         width: 250px;
+    }
+    .fly-in-text li {
+        font-size: 20px;
+        margin-right: 3px;
+        font-weight: 200;
     }
     .contain {
         top: 50%;
@@ -390,8 +394,8 @@ footer img {
     }
 }
 
-@media  screen and (min-width: 768px) and (max-width: 1000px){
-   .box {
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .box {
         width: 50%;
     }
 }
