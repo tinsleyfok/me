@@ -33,10 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     setTimeout(function () {
-        $('.fly-in-text').delay(6000).fadeOut();
+        $('.fly-in-text').delay(5500).fadeOut();
         $('.nav').delay(6000).fadeIn();
         $('footer').delay(6000).fadeIn();
-        $('.mobilemenu').delay(6000).fadeIn();
+        $('.mobilemenu').delay(5500).fadeIn();
     });
 
     setTimeout(function () {

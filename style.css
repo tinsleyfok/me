@@ -102,7 +102,7 @@
         display: none;
         background-color: rgba(255, 255, 255, 1);
         text-align: right;
-        padding: 100px 0px 0px 0px;
+        padding: 105px 0px 0px 0px;
     }
     
     .nav li {
@@ -142,6 +142,15 @@
     
     .mobilemenu {
         display: none;
+        visibility: hidden;
+    }
+    
+    .mobilemenu a {
+        border: white;
+    }
+    
+    .mobilemenu label {
+        color: white;
     }
     
     #about:before,
@@ -398,6 +407,7 @@
         }
         .mobilemenu {
             display: none;
+            visibility: visible;
             width: 100%;
             background: rgba(255, 255, 255, 0.95);
             line-height: 1.6em;
@@ -416,7 +426,6 @@
             position: absolute;
             background: rgba(255, 255, 255, 0.95);
         }
-     
         .mobilemenu li {
             display: inline-block;
         }
@@ -481,12 +490,25 @@
         .box {
             width: 50%;
         }
+        .mobilemenu {
+            display: none;
+            visibility: hidden;
+        }
+        .mobilemenu a {
+            border: white;
+        }
+        .mobilemenu label {
+            color: white;
+        }
         .fly-in-text li {
             display: inline-block;
-            margin-right: 30px;
+            margin-right: 20px;
             font-weight: 300;
             font-size: 150%;
             opacity: 1;
             transition: all 2.5s ease;
+        }
+        .nav {
+            padding-top: 105px;
         }
     }
