@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         $('.fly-in-text').delay(6000).fadeOut();
         $('.nav').delay(6000).fadeIn();
         $('footer').delay(6000).fadeIn();
+        $('.mobilemenu').delay(6000).fadeIn();
     });
 
     setTimeout(function () {
