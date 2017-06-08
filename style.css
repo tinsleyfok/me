@@ -436,7 +436,13 @@
             -o-transition: all 0.4s ease 0s;
             transition: all 0.4s ease 0s;
         }
-     
+        .mobilemenu li:hover a {
+            text-decoration: underline;
+        }
+        
+        mobilemenu li:visited a {
+            text-decoration:none;
+        }
         .mobilemenu .show-menu {
             text-decoration: none;
             color: black;
