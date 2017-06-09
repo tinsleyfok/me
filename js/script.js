@@ -34,14 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(function () {
         $('.fly-in-text').delay(5500).fadeOut();
-        $('.nav').delay(6000).fadeIn();
-        $('footer').delay(6000).fadeIn();
+        $('.nav').delay(5500).fadeIn();
+        $('footer').delay(5500).fadeIn();
         $('.mobilemenu').delay(5500).fadeIn();
     });
 
     setTimeout(function () {
         $('.contain').css('visibility', 'visible').fadeIn();
-    }, 6500);
+    }, 5500);
     
       setTimeout(function () {
         $('body').css('overflow', 'scroll').fadeIn();
