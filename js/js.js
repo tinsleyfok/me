@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         $('.statement').delay(300).fadeIn();
         $('.experience').delay(4000).fadeIn();
          $('.me').delay(2500).fadeIn();
+          $('.contactway').delay(2000).fadeIn();
     });
 
     setTimeout(function () {

@@ -432,6 +432,17 @@
  .me {
      display: none;
  }
+ /*CONTACT*/
+ 
+ .contactway {
+     position: absolute;
+     top: 55%;
+     right: 0;
+     left: 0;
+     color: black;
+     font-size: 20px;
+     display: none;
+ }
  /*MOBIE*/
  
  @media screen and (max-width: 550px) {
@@ -462,7 +473,7 @@
          position: fixed;
          bottom: 0%;
          text-align: left;
-         z-index:400;
+         z-index: 400;
      }
      footer a {
          padding-right: 5px;
@@ -559,24 +570,30 @@
          font-size: 15px;
          width: 120%;
      }
-     .profile{
-         top:70%;
+     .profile {
+         top: 70%;
      }
      .profile img {
          width: 70%;
      }
      .title span {
          font-size: 25px;
-      
      }
-     
-     .content{
-         top:50%;
+     .content {
+         top: 50%;
      }
-     
-     .statement{
-         width:60%;
-         top:110%;
+     .statement {
+         width: 60%;
+         top: 110%;
+     }
+     .contactway {
+         position: absolute;
+         top: 75%;
+         right: 0;
+         left: 0;
+         color: black;
+         font-size: 17px;
+         display: none;
      }
  }
  
