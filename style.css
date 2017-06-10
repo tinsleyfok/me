@@ -8,6 +8,7 @@
  
  html,
  body {
+     overflow: scroll;
      width: 100%;
      height: auto;
  }
@@ -96,6 +97,7 @@
  
  .nav {
      position: fixed;
+     z-index: 100;
      width: 100%;
      margin: 0px;
      color: Black;
@@ -126,7 +128,7 @@
      position: absolute;
      float: right;
      width: 100%;
-     bottom:-1000px;
+     bottom: -1000px;
      text-align: center;
      padding: 0% 0% 0% 0%;
  }
@@ -367,8 +369,72 @@
      text-decoration: none;
      cursor: pointer;
  }
+ /*about page*/
  
- @media screen and (max-width: 480px) {
+ .title span {
+     display: inline-block;
+     margin-right: 20px;
+     font-size: 45px;
+     font-weight: bolder;
+     color: black;
+ }
+ 
+ .content {
+     position: absolute;
+     top: 40%;
+     z-index: -99;
+ }
+ 
+ .content p {
+     color: rgba(255, 255, 255, 0);
+ }
+ 
+ .statement {
+     width: 55%;
+     display: none;
+     position: absolute;
+     right: 0;
+     left: 0;
+     top: 120%;
+     margin: auto;
+ }
+ 
+ .statement h2 {
+     font-size: 10px;
+     color: black;
+     text-align: left;
+ }
+ 
+ .statement .sub {
+     color: black;
+     text-align: left;
+     font-size: 25px;
+ }
+ 
+ .statment p {
+     margin-bottom: 100px;
+ }
+ 
+ .statement a {
+     color: grey;
+     text-decoration: none;
+     cursor: pointer;
+ }
+ 
+ .profile {
+     position: absolute;
+     right: 0;
+     left: 0;
+     top: 60%;
+     margin: 0;
+ }
+ 
+ .me {
+     display: none;
+ }
+ /*MOBIE*/
+ 
+ @media screen and (max-width: 550px) {
      .nav {
          position: absolute;
      }
@@ -396,6 +462,7 @@
          position: fixed;
          bottom: 0%;
          text-align: left;
+         z-index:400;
      }
      footer a {
          padding-right: 5px;
@@ -417,6 +484,7 @@
          text-align: center;
          position: fixed;
          margin: 0 auto;
+         z-index: 300;
      }
      .mobilemenu ul {
          list-style-type: none;
@@ -485,10 +553,34 @@
      .mobilemenu .show-menu {
          display: block;
      }
- 
+     .statement .sub {
+         color: black;
+         text-align: left;
+         font-size: 15px;
+         width: 120%;
+     }
+     .profile{
+         top:70%;
+     }
+     .profile img {
+         width: 70%;
+     }
+     .title span {
+         font-size: 25px;
+      
+     }
+     
+     .content{
+         top:50%;
+     }
+     
+     .statement{
+         width:60%;
+         top:110%;
+     }
  }
  
- @media screen and (min-width: 480px) and (max-width: 1000px) {
+ @media screen and (min-width: 550px) and (max-width: 1000px) {
      .box {
          width: 50%;
      }
@@ -513,8 +605,12 @@
      .nav {
          padding-top: 105px;
      }
-     
-     footer{
-         bottom:-1700px;
+     footer {
+         bottom: -1700px;
+     }
+     .statement .sub {
+         color: black;
+         text-align: left;
+         font-size: 18px;
      }
  }

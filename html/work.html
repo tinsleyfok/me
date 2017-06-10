@@ -4,43 +4,44 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/gif" href="images/logox.png" />
+    <link rel="icon" type="image/gif" href="../images/logox.png" />
     <title>TINSLEY FOK</title>
-    <link href="style.css" rel="stylesheet" />
-    <script src='js/script.js' type="text/javascript"></script>
-    <script src='js/jquery-3.1.1.min.js' type="text/javascript"></script>
+    <link href="../style.css" rel="stylesheet" />
+    <script src='../js/jquery-3.1.1.min.js' type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
+<style>
+    boday{
+        overflow: scroll;
+    }
+    .nav{
+        display: block;
+    }
+    
+    footer{
+        display: block;
+    }
+    
+    .contain{
+        visibility: visible;
+    }
+    .mobilemenu{
+        display: block;
+    }
+    
+    </style>
 <body>
-
-    <div class="fly-in-text hidden">
-        <ul>
-            <li>T</li>
-            <li>I</li>
-            <li>N</li>
-            <li>S</li>
-            <li>L</li>
-            <li>E</li>
-            <li>Y</li>
-            <br>
-            <li>F</li>
-            <li>O</li>
-            <li>K</li>
-        </ul>
-    </div>
-
 
     <div class="nav">
         <div>
-            <img src="images/logo.gif" alter="logo">
+            <img src="../images/logo.gif" alter="logo">
         </div>
 
         <ul>
-            <li id="about"><a href="html/about.html">ABOUT</a></li>
+            <li id="about"><a href="about.html">ABOUT</a></li>
             <li id="active" id="work"><a href="#">WORK</a></li>
-            <li id="photo"><a href="html/photo.html">PHOTOGRAPH</a></li>
-            <li id="contact"><a href="html/contact.html">CONTACT</a></li>
+            <li id="photo"><a href="photo.html">PHOTOGRAPH</a></li>
+            <li id="contact"><a href="contact.html">CONTACT</a></li>
         </ul>
     </div>
 
@@ -50,9 +51,9 @@
         </label>
         <input type="checkbox" id="show-menu">
         <ul id="menu">
-            <li> <a href="html/about.html">ABOUT</a> </li>
-            <li class="current"> <a href="html/work.html">WORK</a> </li>
-            <li><a href="html/contact.html">CONTACT</a></li>
+            <li> <a href="about.html">ABOUT</a> </li>
+            <li > <a href="work.html">WORK</a> </li>
+            <li><a href="contac.html">CONTACT</a></li>
         </ul>
     </nav>
 
@@ -141,23 +142,42 @@
         <ul>
             <li>
                 <a href="mailto:tinsleyhuo@gmail.com">
-                    <img src="images/email.png" alt="email link"></a>
+                    <img src="../images/email.png" alt="email link"></a>
             </li>
             <li class="ig">
                 <a href="https://www.instagram.com/tinsleyfok/">
-                    <img src="images/ig.png" alt="ins"></a>
+                    <img src="../images/ig.png" alt="ins"></a>
             </li>
             <li class="fb">
                 <a href="https://www.facebook.com/tinsley.fok">
-                    <img src="images/facebook.png" alt="fb"></a>
+                    <img src="../images/facebook.png" alt="fb"></a>
             </li>
             <li class="behance">
                 <a href="https://www.behance.net/tinsleyhuo9851">
-                    <img src="images/behance.png" alt="behance"> </a>
+                    <img src="../images/behance.png" alt="behance"> </a>
             </li>
         </ul>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+                    console.log("DOM fully loaded and parsed");
+                    $(document).ready(function () {
+                        $('#about').each(function () {
+                            $(this).attr('data-buzz', $(this).text());
+                        });
+
+                        $('#work').each(function () {
+                            $(this).attr('data-buzz', $(this).text());
+                        });
+                        $('#photo').each(function () {
+                            $(this).attr('data-buzz', $(this).text());
+                        });
+                        $('#contact').each(function () {
+                            $(this).attr('data-buzz', $(this).text());
+                        });
+                    }); });
+    </script>
 </body>
 
 </html>
