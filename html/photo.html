@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/gif" href="../images/logox.png" />
+    <title>PHOTOGRAPH - TINSLEY FOK</title>
+    <link href="../style.css" rel="stylesheet" />
+    <script src='../js/jquery-3.1.1.min.js' type="text/javascript"></script>
+    <script src='../js/image.js' type="text/javascript"></script>
+
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+    boday {
+        overflow: scroll;
+    }
+    
+    .nav {
+        display: block;
+    }
+    
+    footer {
+        display: block;
+    }
+    
+    .contain {
+        visibility: visible;
+    }
+    
+    .mobilemenu {
+        display: block;
+    }
+    
+    img:hover {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+
+    <div class="nav">
+        <div>
+            <img src="../images/logo.gif" alter="logo">
+        </div>
+
+        <ul>
+            <li id="about"><a href="about.html">ABOUT</a></li>
+            <li id="work"><a href="work.html">WORK</a></li>
+            <li id="photo"><a href="photo.html">PHOTOGRAPH</a></li>
+            <li id="active" id="contact"><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <nav class="mobilemenu">
+        <label for="show-menu" class="show-menu"><span>Menu</span>
+            <div class="lines"></div>
+        </label>
+        <input type="checkbox" id="show-menu">
+        <ul id="menu">
+            <li> <a href="about.html">ABOUT</a> </li>
+            <li> <a href="work.html">WORK</a> </li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+
+ 
+    <footer>
+        <ul>
+            <li>
+                <a href="mailto:tinsleyhuo@gmail.com">
+                    <img src="../images/email.png" alt="email link"></a>
+            </li>
+            <li class="ig">
+                <a href="https://www.instagram.com/tinsleyfok/">
+                    <img src="../images/ig.png" alt="ins"></a>
+            </li>
+            <li class="fb">
+                <a href="https://www.facebook.com/tinsley.fok">
+                    <img src="../images/facebook.png" alt="fb"></a>
+            </li>
+            <li class="behance">
+                <a href="https://www.behance.net/tinsleyhuo9851">
+                    <img src="../images/behance.png" alt="behance"> </a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("DOM fully loaded and parsed");
+            $(document).ready(function () {
+                $('#about').each(function () {
+                    $(this).attr('data-buzz', $(this).text());
+                });
+
+                $('#work').each(function () {
+                    $(this).attr('data-buzz', $(this).text());
+                });
+                $('#photo').each(function () {
+                    $(this).attr('data-buzz', $(this).text());
+                });
+                $('#contact').each(function () {
+                    $(this).attr('data-buzz', $(this).text());
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

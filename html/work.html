@@ -11,25 +11,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <style>
-    boday{
+    boday {
         overflow: scroll;
     }
-    .nav{
+    
+    .nav {
         display: block;
     }
     
-    footer{
+    footer {
         display: block;
     }
     
-    .contain{
+    .contain {
         visibility: visible;
     }
-    .mobilemenu{
+    
+    .mobilemenu {
         display: block;
     }
-    
-    </style>
+</style>
+
 <body>
 
     <div class="nav">
@@ -52,20 +54,20 @@
         <input type="checkbox" id="show-menu">
         <ul id="menu">
             <li> <a href="about.html">ABOUT</a> </li>
-            <li > <a href="work.html">WORK</a> </li>
+            <li> <a href="work.html">WORK</a> </li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
 
 
     <div class="contain">
-        <a class="box" href="https://www.behance.net/gallery/53407317/1950s-old-PEPSI-commercial-radio">
+        <a class="box" href="https://vimeo.com/221218135">
             <li class="box-info">
                 <h1>1950s Pepsi Old Radio </h1>
                 <h2>- Motion Graphic -</h2>
             </li>
         </a>
-        <a class="box" href="x.html">
+        <a class="box" href="https://tinsleyfok.github.io/des157/final/">
             <li class="box-info">
                 <h1>Peace within Ocean Ecosystem</h1>
                 <h2>- 3D Web Design -</h2>
@@ -78,20 +80,20 @@
             </li>
         </a>
 
-        <a class="box" href="x.html">
+        <a class="box" href="https://www.behance.net/gallery/53407271/to-remind-people-how-to-reduce-and-recycle-trash">
             <li class="box-info">
                 <h1>Too Much Trash</h1>
                 <h2>- Motion Graphic -</h2>
             </li>
         </a>
-        <a class="box" href="x.html">
+        <a class="box" href="#">
             <li class="box-info">
                 <h1>Black Swan</h1>
                 <h2>- Fashion + technology -</h2>
             </li>
         </a>
 
-        <a class="box" href="x.html">
+        <a class="box" href="https://tinsleyfok.github.io/des157/studio4/index.html">
             <li class="box-info">
                 <h1>Chanel No.5</h1>
                 <h2>- Web Design -</h2>
@@ -104,10 +106,10 @@
             </li>
         </a>
 
-        <a class="box" href="x.html">
+        <a class="box" href="https://tinsleyfok.github.io/des157/studio5/index.html">
             <li class="box-info">
-                <h1>Vintage Chanel</h1>
-                <h2>- Graphic Design -</h2>
+                <h1>Music visualization</h1>
+                <h2>- Three.js + Web Audio API -</h2>
             </li>
         </a>
         <a class="box" href="x.html">
@@ -123,19 +125,19 @@
                 <h2>- Graphic Design -</h2>
             </li>
         </a>
-
-        <a class="box" href="x.html">
-            <li class="box-info">
-                <h1>Shanghai Skyline</h1>
-                <h2>- Web Design -</h2>
-            </li>
-        </a>
-        <a class="box" href="x.html">
+        <a class="box" href="https://vimeo.com/221218040">
             <li class="box-info">
                 <h1>Inner Ninja </h1>
                 <h2>- Motion Graphic -</h2>
             </li>
         </a>
+        <a class="box" href="https://tinsleyfok.github.io/des157/studio3/index.html">
+            <li class="box-info">
+                <h1>Shanghai Skyline</h1>
+                <h2>- Web Design -</h2>
+            </li>
+        </a>
+
     </div>
 
     <footer>
@@ -161,22 +163,23 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-                    console.log("DOM fully loaded and parsed");
-                    $(document).ready(function () {
-                        $('#about').each(function () {
-                            $(this).attr('data-buzz', $(this).text());
-                        });
+            console.log("DOM fully loaded and parsed");
+            $(document).ready(function () {
+                $('#about').each(function () {
+                    $(this).attr('data-buzz', $(this).text());
+                });
 
-                        $('#work').each(function () {
-                            $(this).attr('data-buzz', $(this).text());
-                        });
-                        $('#photo').each(function () {
-                            $(this).attr('data-buzz', $(this).text());
-                        });
-                        $('#contact').each(function () {
-                            $(this).attr('data-buzz', $(this).text());
-                        });
-                    }); });
+                $('#work').each(function () {
+                    $(this).attr('data-buzz', $(this).text());
+                });
+                $('#photo').each(function () {
+                    $(this).attr('data-buzz', $(this).text());
+                });
+                $('#contact').each(function () {
+                    $(this).attr('data-buzz', $(this).text());
+                });
+            });
+        });
     </script>
 </body>
 
