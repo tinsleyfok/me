@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         $('.fly-in-text').delay(5500).fadeOut();
         $('.nav').delay(5500).fadeIn();
-        $('footer').delay(5500).fadeIn();
         $('.mobilemenu').delay(5500).fadeIn();
     });
 
@@ -45,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
       setTimeout(function () {
         $('body').css('overflow', 'scroll').fadeIn();
-    }, 6000);
+    }, 5500);
 
     $(document).ready(function () {
         $('#about').each(function () {
