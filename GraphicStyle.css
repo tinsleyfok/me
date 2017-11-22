@@ -259,4 +259,191 @@
  }
  
 
-
+ /*MOBIE*/
+ 
+ @media screen and (max-width: 550px) {
+     .nav {
+         position: absolute;
+     }
+     div img {
+         top: 50px;
+         bottom: 0;
+         left: -30px;
+         right: 0;
+         display: block;
+         margin: 0 auto;
+         width: 250px;
+     }
+     .fly-in-text li {
+         font-size: 18px;
+         margin-right: 2px;
+         font-weight: 200;
+     }
+     .contain {
+         top: 55%;
+     }
+     .box {
+         width: 100%;
+     }
+     footer {
+         position: fixed;
+         bottom: 0%;
+         text-align: left;
+         z-index: 400;
+     }
+     footer a {
+         padding-right: 5px;
+     }
+     .nav ul {
+         visibility: hidden;
+     }
+     .nav {
+         padding-top: 135px;
+     }
+     .mobilemenu {
+         display: none;
+         visibility: visible;
+         width: 100%;
+         background: rgba(255, 255, 255, 0.95);
+         line-height: 1.6em;
+         font-weight: 400;
+         width: 100%;
+         text-align: center;
+         position: fixed;
+         margin: 0 auto;
+         z-index: 300;
+     }
+     .mobilemenu ul {
+         list-style-type: none;
+         margin: 0 auto;
+         padding-left: 0;
+         text-align: center;
+         width: 100%;
+         position: absolute;
+         background: rgba(255, 255, 255, 0.95);
+     }
+     .mobilemenu li {
+         display: inline-block;
+     }
+     .mobilemenu li a {
+         display: block;
+         min-width: 140px;
+         text-align: center;
+         color: black;
+         text-transform: uppercase;
+         background: rgba(255, 255, 255, 0.95);
+         text-decoration: none;
+         margin-left: -5px;
+         padding: 10px 0;
+         -webkit-transition: all 0.4s ease 0s;
+         -moz-transition: all 0.4s ease 0s;
+         -ms-transition: all 0.4s ease 0s;
+         -o-transition: all 0.4s ease 0s;
+         transition: all 0.4s ease 0s;
+     }
+     .mobilemenu .show-menu {
+         text-decoration: none;
+         color: black;
+         background: rgba(255, 255, 255, 0.95);
+         text-align: center;
+         padding: 10px 15px;
+         display: none;
+         cursor: pointer;
+         text-transform: uppercase;
+     }
+     .mobilemenu .show-menu span {
+         padding-left: 35px;
+     }
+     .mobilemenu input[type=checkbox] {
+         display: none;
+     }
+     .mobilemenu input[type=checkbox]:checked ~ #menu {
+         display: block;
+     }
+     .mobilemenu .lines {
+         border-bottom: 15px double #000;
+         border-top: 5px solid #000;
+         content: "";
+         height: 5px;
+         width: 20px;
+         padding-right: 15px;
+         float: right;
+     }
+     .mobilemenu ul {
+         position: fixed;
+         display: none;
+     }
+     .mobilemenu ul li,
+     .mobilemenu li a {
+         width: 100%;
+     }
+     .mobilemenu .show-menu {
+         display: block;
+     }
+     .statement .sub {
+         color: black;
+         text-align: left;
+         font-size: 15px;
+         width: 120%;
+     }
+     .profile {
+         top: 70%;
+     }
+     .profile img {
+         width: 70%;
+     }
+     .title span {
+         font-size: 25px;
+     }
+     .content {
+         top: 50%;
+     }
+     .statement {
+         width: 60%;
+         top: 110%;
+     }
+     .contactway {
+         position: absolute;
+         top: 80%;
+         right: 0;
+         left: 0;
+         color: black;
+         font-size: 17px;
+         display: none;
+     }
+ }
+ 
+ @media screen and (min-width: 550px) and (max-width: 1000px) {
+     .box {
+         width: 50%;
+     }
+     .mobilemenu {
+         display: none;
+         visibility: hidden;
+     }
+     .mobilemenu a {
+         border: white;
+     }
+     .mobilemenu label {
+         color: white;
+     }
+     .fly-in-text li {
+         display: inline-block;
+         margin-right: 20px;
+         font-weight: 300;
+         font-size: 150%;
+         opacity: 1;
+         transition: all 2.5s ease;
+     }
+     .nav {
+         padding-top: 105px;
+     }
+     footer {
+         bottom: -1700px;
+     }
+     .statement .sub {
+         color: black;
+         text-align: left;
+         font-size: 18px;
+     }
+ }

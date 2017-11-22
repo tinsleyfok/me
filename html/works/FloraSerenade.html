@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/gif" href="../images/logox.png" />
+    <title> Flora Serenade </title>
+    <link href="../../style.css" rel="stylesheet" />
+    <script src='../../js/jquery-3.1.1.min.js' type="text/javascript"></script>
+    <script src='../../js/image.js' type="text/javascript"></script>
+
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+body {
+        overflow: scroll;
+        height: auto;
+    }
+    
+    .nav {
+        display: block;
+    }
+    
+    footer {
+        display: block;
+        bottom: 0;
+    }
+    
+    .contain {
+        visibility: visible;
+    }
+    
+    .mobilemenu {
+        display: block;
+    }
+    
+    .HeartToHeart {
+        color: black;
+        top: 20%;
+        position: absolute;
+        right: 0;
+        left: 0;
+        height: auto;
+    }
+    
+    .HeartToHeart img {
+        width: 100%;
+    }
+    
+    #title {
+        font-size: 50px;
+        text-align: left;
+        display: inline-block;
+    }
+    
+    #subtitle {
+        font-size: 20px;
+        color: #A4A4A4;
+        text-align: left;
+        display: inline-block;
+    }
+    
+    .description {
+        width: 60%;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 120%;
+        margin: auto;
+    }
+    
+    .description h2 {
+        font-size: 15px;
+        color: black;
+        text-align: left;
+        display: inline-block
+    }
+    
+    .description .sub {
+        color: black;
+        text-align: left;
+        font-size: 20px;
+        display: inline-block;
+    }
+    
+    .description p {
+        margin-bottom: 100px;
+        display: inline-block;
+    }
+    
+    img {
+        display: block;
+        padding: 3px;
+    }
+    
+    #link {
+        color: #336C96;
+        text-decoration: none;
+    }
+    
+    #link a {
+        color: #336C96;
+        text-decoration: none;
+    }
+    
+    #link:hover,
+    #link a:hover {
+        color: black;
+    }
+    
+    blockquote {
+        font-size: 15px;
+        color: grey;
+        margin-top: -60px;
+    }
+    
+    blockquote p {
+        font-style: italic;
+        float: right;
+    }
+}
+</style>
+
+<body>
+
+
+    <div class="nav">
+        <div>
+            <img src="../../images/logo.gif" alter="logo">
+        </div>
+
+        <ul>
+            <li id="about"><a href="../../html/about.html">ABOUT</a></li>
+            <li id="work"><a href="../../html/interactivity.html">INTERACTIVITY</a></li>
+            <li id="work"><a href="../../html/work.html">GRAPHICS</a></li>
+            <li id="contact"><a href="../../html/contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <nav class="mobilemenu">
+        <label for="show-menu" class="show-menu"><span>Menu</span>
+            <div class="lines"></div>
+        </label>
+        <input type="checkbox" id="show-menu">
+        <ul id="menu">
+            <li> <a href="../about.html">ABOUT</a> </li>
+            <li> <a href="../work.html">WORK</a> </li>
+            <li><a href="../contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section class="HeartToHeart">
+        <img src="../../images/fs2.jpg">
+
+        <section class="description">
+            <h1 id="title">Flora Serenade</h1>
+            <p id="subtitle">An interactive plant that can talk with you. </p>
+            <br/>
+            <br/>
+            <blockquote>
+                &quot;One day, the Oak spoke to the Reed:“you have good reason to blame the nature: The slightest wind compels you to bow your head, while my brow, like Mount Caucasus, resists the effort of the tempest. All for you is north wind, all seems to me soft breeze.” “Your compassion”, replied the Reed, “Shows a noble character indeed;But do not worry: the winds for me are much less dangerous than for tree; I bend, but do not break&quot;
+                <br/>
+                <p>From Aesop's Fables</p>
+            </blockquote>
+            <br/>
+            <br/>
+            <h2>DESCRIPTION</h2>
+            <p class="sub">
+                This is a game-like interactive device that encourages communication between plants and people. By using the Arduino Uno board and the Parallax Sound Impact sensor, I made a sound reactive LED device inside the Flora Serenade device. When people speak to the plant, the LED inside will automatically light up.
+                <br/>
+                <br/> The purpose of this project to leave the audience with the imagination that plants may also have feelings. I also wanted to personify the plant and grant people’s childhood dreams of talking to plants.
+            </p>
+            <img src="../../images/fs.png">
+            <br/>
+            <br/>
+            <img src="../../images/ps2.png">
+            <h2>Prototype Making</h2>
+            <img src="../../images/material.png">
+            <img src="../../images/box.png">
+            <br/>
+            <img src="../../images/under.png">      
+            <br/>
+              <img src="../../images/final.png">
+            <br/>
+            <br/>
+              <img src="../../images/ps3.gif">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+               <center> <p>Let's talk with plant.</p></center>
+            <br/>
+        </section>
+            
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+    </section>
+
+</body>
+
+</html>
