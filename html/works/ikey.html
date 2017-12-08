@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/gif" href="../images/logox.png" />
+    <title> Ikey Inc. </title>
+    <link href="../../style.css" rel="stylesheet" />
+    <script src='../../js/jquery-3.1.1.min.js' type="text/javascript"></script>
+    <script src='../../js/image.js' type="text/javascript"></script>
+
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+body {
+        overflow: scroll;
+        height: auto;
+    }
+    
+    .nav {
+        display: block;
+    }
+    
+    footer {
+        display: block;
+        bottom: 0;
+    }
+    
+    .contain {
+        visibility: visible;
+    }
+    
+    .mobilemenu {
+        display: block;
+    }
+    
+    .HeartToHeart {
+        color: black;
+        top: 20%;
+        position: absolute;
+        right: 0;
+        left: 0;
+        height: auto;
+    }
+    
+    .HeartToHeart img {
+        width: 100%;
+    }
+    
+    #title {
+        font-size: 50px;
+        text-align: left;
+        display: inline-block;
+    }
+    
+    #subtitle {
+        font-size: 20px;
+        color: #A4A4A4;
+        text-align: left;
+        display: inline-block;
+    }
+    
+    .description {
+        width: 60%;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 120%;
+        margin: auto;
+    }
+    
+    .description h2 {
+        font-size: 15px;
+        color: black;
+        text-align: left;
+        display: inline-block
+    }
+    
+    .description .sub {
+        color: black;
+        text-align: left;
+        font-size: 20px;
+        display: inline-block;
+    }
+    
+    .description p {
+        margin-bottom: 100px;
+        display: inline-block;
+    }
+    
+    img {
+        display: block;
+        padding: 3px;
+    }
+    
+    #link {
+        color: #A4A4A4;
+        text-decoration: none;
+        transition: 1s;
+    }
+    
+    #link a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    #link:hover,
+    #link a:hover {
+        color: black;
+    }
+}
+</style>
+
+<body>
+
+
+    <div class="nav">
+        <div>
+            <img src="../../images/logo.gif" alter="logo">
+        </div>
+
+        <ul>
+            <li id="about"><a href="../../html/about.html">ABOUT</a></li>
+            <li id="work"><a href="../../html/interactivity.html">INTERACTIVITY</a></li>
+            <li id="work"><a href="../../html/graphic.html">GRAPHICS</a></li>
+            <li id="contact"><a href="../../html/contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <nav class="mobilemenu">
+        <label for="show-menu" class="show-menu"><span>Menu</span>
+            <div class="lines"></div>
+        </label>
+        <input type="checkbox" id="show-menu">
+        <ul id="menu">
+            <li> <a href="../about.html">ABOUT</a> </li>
+            <li> <a href="../work.html">WORK</a> </li>
+            <li><a href="../contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section class="HeartToHeart">
+
+
+        <section class="description">
+            <h1 id="title">Ikey Inc</h1>
+            <br/>
+            <p id="subtitle">Graphic Designer | May 2017 - June 2017 </p>
+            <br/>
+            <p class="sub">
+                Ikey Inc.,located in San Francisco Bay Area, is a provider of designer commercial furnishing. According to their needs, I designed the company's porfolio booklet. </p>
+            <img src="../../images/ikey2.jpg">
+               <img src="../../images/ikey1.png">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </section>
+
+    </section>
+</body>
+
+</html>
