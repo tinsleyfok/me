@@ -179,19 +179,19 @@
  }
  
  .box:nth-of-type(1) {
-     background-image: url(images/HH2.JPG);
+     background-image: url(images/H2.jpg);
  }
  
  .box:nth-of-type(2) {
-     background-image: url(images/UnderwaterPeace.jpg);
+     background-image: url(images/UP.jpg);
  }
  
  .box:nth-of-type(3) {
-     background-image: url(images/fs.jpg);
+     background-image: url(images/F.jpg);
  }
  
  .box:nth-of-type(4) {
-     background-image: url(images/blackswan.jpg);
+     background-image: url(images/B.jpg);
  }
  
  .box:nth-of-type(5) {
@@ -206,7 +206,7 @@
  }
  
  .box:nth-of-type(8) {
-     background-image: url(images/chanel.png);
+     background-image: url(images/C.jpg);
  }
  .box:nth-of-type(9) {
      background-image: url(images/library.png);
