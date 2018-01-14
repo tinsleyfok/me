@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/gif" href="../images/logox.png" />
+    <title> Maya </title>
+    <link href="../../style.css" rel="stylesheet" />
+    <script src='../../js/jquery-3.1.1.min.js' type="text/javascript"></script>
+    <script src='../../js/image.js' type="text/javascript"></script>
+
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+body {
+        overflow: scroll;
+        height: auto;
+    }
+    
+    .nav {
+        display: block;
+    }
+    
+    footer {
+        display: block;
+        bottom: 0;
+    }
+    
+    .contain {
+        visibility: visible;
+    }
+    
+    .mobilemenu {
+        display: block;
+    }
+    
+    .HeartToHeart {
+        color: black;
+        top: 20%;
+        position: absolute;
+        right: 0;
+        left: 0;
+        height: auto;
+    }
+    
+    .HeartToHeart img {
+        width: 100%;
+    }
+    
+    #title {
+        font-size: 50px;
+        text-align: left;
+        display: inline-block;
+    }
+    
+    #subtitle {
+        font-size: 20px;
+        color: #A4A4A4;
+        text-align: left;
+        display: inline-block;
+    }
+    
+    .description {
+        width: 60%;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 120%;
+        margin: auto;
+    }
+    
+    .description h2 {
+        font-size: 15px;
+        color: black;
+        text-align: left;
+        display: inline-block
+    }
+    
+    .description .sub {
+        color: black;
+        text-align: left;
+        font-size: 20px;
+        display: inline-block;
+    }
+    
+    .description p {
+        margin-bottom: 100px;
+        display: inline-block;
+    }
+    
+    .draft {
+        display: block;
+    }
+    
+    .pom {
+        font-size: 15px;
+    }
+    
+    .viz img {
+        width: 20%;
+    }
+    
+    .container {
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+    }
+    
+    .container-inner {
+        width: 1000px;
+        height: 300px;
+    }
+    
+    .column {
+        float: right;
+    }
+    
+    img {
+        display: block;
+        padding: 3px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+        transition: 2s;
+    }
+    
+    a:hover {
+        color: lightgray;
+    }
+}
+</style>
+
+<body>
+
+
+    <div class="nav">
+        <div>
+            <img src="../../images/logo.gif" alter="logo">
+        </div>
+
+        <ul>
+            <li id="about"><a href="../../html/about.html">ABOUT</a></li>
+            <li id="work"><a href="../../html/interactivity.html">INTERACTIVITY</a></li>
+            <li id="work"><a href="../../html/graphic.html">GRAPHICS</a></li>
+            <li id="contact"><a href="../../html/contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <nav class="mobilemenu">
+        <label for="show-menu" class="show-menu"><span>Menu</span>
+            <div class="lines"></div>
+        </label>
+        <input type="checkbox" id="show-menu">
+        <ul id="menu">
+            <li> <a href="../about.html">ABOUT</a> </li>
+            <li> <a href="../work.html">WORK</a> </li>
+            <li><a href="../contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section class="HeartToHeart">
+        <section class="description">
+            <h1 id="title">Maya</h1>
+            <br/>
+            <p id="subtitle">A fabric installation of the music visualization.
+                <br/>
+                <br/>2017 | Arduino + Processing </p>
+            <br/>
+            <br/>
+            <center><iframe src="https://player.vimeo.com/video/250913338" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+            <br/>
+            <br/>
+            <h2>CONCEPT</h2>
+            <p class="sub">
+                The idea came to me when I was at the National Museum of Anthropology in Mexico City. I was so intrigued by the colorful Mayan textile patterned costumes. Archeologists have found similarities in ancient Mayan and Chinese cultures that they believe to be due to early contact between the two civilizations. I wanted to combine certain elements from both cultures to see what kind of sparks I could create. </p>
+
+            <h2>MAYAN SYMBOLS DESIGN</h2>
+            <p class="sub">
+                <img src="../../images/maya.png">
+                <br/> This fabric installation used “running water” and “burdock” from the Mayan texture symbols to design graphical patterns using processing.
+            </p>
+
+            <h2>CHINESE MUSIC</h2>
+            <p class="sub">
+                Huoyuanjia is a Chinese song about the legendary Kung Fu grandmaster Huo Yuanjia. The song contains both rhythmic Chinese drumbeat and female role voice in Peking Opera.
+            </p>
+            <h2>DATA VISUALIZATION</h2>
+            <img src="../../images/dv.png">
+            <img src="../../images/dv2.png">
+            <br>
+            <br>
+            <h2>FABRIC PRINTING</h2>
+            <img src="../../images/fabric.png">
+            <br>
+            <br>
+            <h2>EXHIBITION</h2>
+            <br>
+            <br>
+            <img src="../../images/ex.png">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
+
+    </section>
+
+</body>
+
+</html>
