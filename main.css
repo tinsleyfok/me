@@ -179,29 +179,39 @@
  }
  
  .box:nth-of-type(1) {
-     background-image: url(images/TP.png);
+     background-image: url(images/tulum.png);
  }
  
  .box:nth-of-type(2) {
-     background-image: url(images/ikey.jpg);
+     background-image: url(images/yello.png);
  }
  
  .box:nth-of-type(3) {
-     background-image: url(images/pepsi.jpg);
+     background-image: url(images/la.png);
  }
  
  .box:nth-of-type(4) {
-     background-image: url(images/inner.png);
+     background-image: url(images/yunan.png);
  }
  
  .box:nth-of-type(5) {
-     background-image: url(images/toomuchtrash.png);
+     background-image: url(images/dia.png);
  }
   .box:nth-of-type(6) {
-     background-image: url(images/unif.jpg);
+     background-image: url(images/rv.jpg);
  }
  
-
+.box:nth-of-type(7) {
+     background-image: url(images/pepsi.jpg);
+ }
+ 
+ .box:nth-of-type(8) {
+     background-image: url(images/inner.png);
+ }
+  .box:nth-of-type(9) {
+     background-image: url(images/toomuchtrash.png);
+ }
+ 
  
 
  
