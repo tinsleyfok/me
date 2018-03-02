@@ -121,6 +121,21 @@ body {
         font-style: italic;
         float: right;
     }
+    @media screen and (max-width: 550px) {
+        #title {
+            font-size:30px;
+            margin-top:200px;
+        }
+        #subtitle{
+           font-size:10px; 
+        }
+        .description .sub {
+            font-size:15px; 
+        }
+            blockquote {
+                display: none;
+        
+}
 }
 </style>
 
@@ -147,13 +162,13 @@ body {
         <input type="checkbox" id="show-menu">
         <ul id="menu">
             <li> <a href="../about.html">ABOUT</a> </li>
-            <li> <a href="../work.html">WORK</a> </li>
+            <li> <a href="../interactivity.html">WORK</a> </li>
             <li><a href="../contact.html">CONTACT</a></li>
         </ul>
     </nav>
 
     <section class="HeartToHeart">
-        <img src="../../images/fs2.jpg">
+        <img class="topimage" src="../../images/fs2.jpg">
         <section class="description">
             <h1 id="title">Flora Serenade</h1>
             <br/>
@@ -168,7 +183,7 @@ body {
                 <p>From Aesop's Fables</p>
             </blockquote>
            <br/>
-            <center><iframe src="https://player.vimeo.com/video/250364252" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center> 
+            <center><iframe class="video" src="https://player.vimeo.com/video/250364252" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center> 
              <br/>
             <br/>
             <h2>DESCRIPTION</h2>

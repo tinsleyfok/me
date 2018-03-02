@@ -593,6 +593,20 @@
          font-size: 17px;
          display: none;
      }
+     .topimage {
+       display: none;
+    }
+    
+     .video{
+          width: 100%;
+         margin-top: -200px;
+     }
+    
+     .movie{
+          width: 100%;
+          margin-top: -100px;
+     }
+     
  }
  
  @media screen and (min-width: 550px) and (max-width: 1000px) {
@@ -628,4 +642,5 @@
          text-align: left;
          font-size: 18px;
      }
+   
  }
