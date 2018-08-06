@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     $(function () {
         setInterval(function () {
             $(".fly-in-text li").each(function () {
-                $(this).attr("style", "color: " + getRandomColor());
+                $(this).attr("style", "color: black" ());
             });
         }, 500)
     });
@@ -33,19 +33,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     setTimeout(function () {
-        $('.fly-in-text').delay(5500).fadeOut();
-        $('.nav').delay(5500).fadeIn();
-        $('.mobilemenu').delay(5500).fadeIn();
+        $('.fly-in-text').delay(5000).fadeOut();
+        $('.nav').delay(5200).fadeIn();
+        $('.mobilemenu').delay(5200).fadeIn();
     });
-
+     
     setTimeout(function () {
         $('.contain').css('visibility', 'visible').fadeIn();
     }, 5500);
+         
+    setTimeout(function () {
+        $('.play').css('visibility', 'visible').fadeIn();
+    }, 5500)
     
-      setTimeout(function () {
-        $('body').css('overflow', 'scroll').fadeIn();
-    }, 5500);
-
+     
     $(document).ready(function () {
         $('#about').each(function () {
             $(this).attr('data-buzz', $(this).text());
@@ -61,6 +62,8 @@ document.addEventListener("DOMContentLoaded", function () {
             $(this).attr('data-buzz', $(this).text());
         });
     });
+    
+    
 
     
 });
