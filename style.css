@@ -41,10 +41,12 @@ p a {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
+    
 }
 
 p a:hover {
     color: #FFC300  ;
+       -webkit-text-stroke: 5px #FFC300;
 }
 
 .fly-in-text {
