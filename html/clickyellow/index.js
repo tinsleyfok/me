@@ -66,7 +66,7 @@ $("#first").one('click', function () {
 
             $("#fouryellow").attr("id", "four");
             $("#four").one('click', function () {
-                alert("You have good eyes and great perception of color! Now try it from a colorblind person's perspective. Find the yellow block.");
+                alert("You have good eyes and a great perception of color! Now try it from a colorblind person's perspective. Find the yellow block.");
                 var filterVal = 'invert(100%)';
                 $(".block").each(function () {
                     var NewNewrandomColor = colorArray[Math.floor(Math.random() * colorArray.length)];
