@@ -111,17 +111,20 @@ font-family: 'submarine_beachregular';
   white-space: nowrap;
   overflow: hidden;
   width:50em;
-  animation: type 4s steps(60, end); 
+  animation: type 3s steps(60, end); 
 }
 
 #colorblind p:nth-child(2){
-  animation: type2 8s steps(60, end);
+  animation: type2 5s steps(60, end);
 }
 
 #colorblind p:nth-child(3){
-  animation: type2 16s steps(60, end);
+  animation: type2 10s steps(60, end);
 }
 
+#colorblind p:nth-child(4){
+  animation: type2 19s steps(60, end);
+}
 
 @keyframes type{ 
   from { width: 0; } 
@@ -146,7 +149,7 @@ font-family: 'submarine_beachregular';
 #home {
     padding: 20px 50px;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 45%;
     background: none;
     color: white;

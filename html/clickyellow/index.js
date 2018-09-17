@@ -95,7 +95,7 @@ $("#first").one('click', function () {
 
                         setTimeout(function () {
                             $('#home').css('display', 'block').fadeIn();
-                        }, 12000)
+                        }, 14000)
                     });
                 });
             });
