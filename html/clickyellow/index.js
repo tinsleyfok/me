@@ -24,14 +24,14 @@ document.getElementById('yellow').style.backgroundColor = yellow;
 
 $(".block").mouseover(function () {
     $(this).animate({
-        opacity: 0.7
-    }, 500);
+        opacity: 0.8
+    }, 200);
 });
 
 $(".block").mouseout(function () {
     $(this).animate({
         opacity: 1
-    }, 500);
+    }, 200);
 });
 
 
@@ -66,7 +66,7 @@ $("#first").one('click', function () {
 
             $("#fouryellow").attr("id", "four");
             $("#four").one('click', function () {
-                alert('You have good eyes and concept on color.Try the colorblind version. Find the yellow block.');
+                alert("You have good eyes and great perception of color! Now try it from a colorblind person's perspective. Find the yellow block.");
                 var filterVal = 'invert(100%)';
                 $(".block").each(function () {
                     var NewNewrandomColor = colorArray[Math.floor(Math.random() * colorArray.length)];
