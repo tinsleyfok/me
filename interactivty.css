@@ -191,22 +191,22 @@
  }
  
  .box:nth-of-type(4) {
-     background-image: url(images/B.jpg);
+     background-image: url(images/colorblind.png);
  }
  
  .box:nth-of-type(5) {
-     background-image: url(images/band.jpg);
+     background-image: url(images/fp.png);
  }
   .box:nth-of-type(6) {
      background-image: url(images/1.png);
  }
  
  .box:nth-of-type(7) {
-     background-image: url(images/shanghai.png);
+     background-image: url(images/B.jpg);
  }
  
  .box:nth-of-type(8) {
-     background-image: url(images/fingerprint.png);
+     background-image: url(images/band.jpg);
  }
  .box:nth-of-type(9) {
      background-image: url(images/angels.png);
