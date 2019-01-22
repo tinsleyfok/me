@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>FINGERPRINT</title>
+    <link rel="stylesheet" href="style/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.21/p5.js"></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js></script>
+    <script src='js/jquery-3.1.1.min.js' type="text/javascript"></script>
+
+</head>
+
+<body>
+    <div class="content">
+        <div class="title">
+            <center><span>You</span><span>Are</span><span> Unique.</span></center>
+        </div>
+    </div>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="about.html">About</a>
+            <a href="play.html">Play</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div>
+        <span class="nav" onclick="openNav()">&#9776;</span>
+    </div>
+
+
+    <div>
+        <a id='pulse-button' href='play.html'></a>
+        <h1 id="button-words">Generate your unique fingerprint!</h1>
+    </div>
+
+
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "30%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+        var e = document.getElementById('pulse-button');
+        e.onmouseover = function () {
+            document.getElementById('button-words').style.display = 'block';
+        }
+        e.onmouseout = function () {
+            document.getElementById('button-words').style.display = 'none';
+        }
+        
+    </script>
+
+    <script id="delay" src="js/main.js"></script>
+    <script src="js/js.js"></script>
+</body>
+
+</html>

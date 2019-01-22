@@ -1,17 +1,13 @@
 //June 9th 2017
 //Tinsley Huo 
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("DOM fully loaded and parsed");
+    console.log("Tinsley");
 
     $(document).ready(function () {
         $('#about').each(function () {
             $(this).attr('data-buzz', $(this).text());
         });
-
         $('#work').each(function () {
-            $(this).attr('data-buzz', $(this).text());
-        });
-        $('#photo').each(function () {
             $(this).attr('data-buzz', $(this).text());
         });
         $('#contact').each(function () {
@@ -31,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         $('body').css('overflow', 'scroll').fadeIn();
     }, 2200);
-
 
     TweenMax.staggerFrom(".content span", 2, {
         scale: 0.1,

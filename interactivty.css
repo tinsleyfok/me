@@ -179,11 +179,11 @@
  }
  
  .box:nth-of-type(1) {
-     background-image: url(images/H2.jpg);
+     background-image: url(images/MUNY2.png);
  }
  
  .box:nth-of-type(2) {
-     background-image: url(images/UP.jpg);
+     background-image: url(images/MUNYW.png);
  }
  
  .box:nth-of-type(3) {
@@ -191,11 +191,11 @@
  }
  
  .box:nth-of-type(4) {
-     background-image: url(images/colorblind.png);
+     background-image: url(images/UP.jpg);
  }
  
  .box:nth-of-type(5) {
-     background-image: url(images/fp.png);
+     background-image: url(images/H2.jpg);
  }
   .box:nth-of-type(6) {
      background-image: url(images/1.png);
