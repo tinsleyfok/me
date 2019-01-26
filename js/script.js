@@ -1,24 +1,20 @@
 //May 13 th 2017
 //Tinsley Huo 
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("DOM fully loaded and parsed");
+    console.log("Tinsley Huo");
 
 
     $(document).ready(function () {
         setTimeout(function () {
             $('.fly-in-text').removeClass('hidden');
         }, 500);
-
-
+        
     });
 
-    $(function () {
-        setInterval(function () {
-            $(".fly-in-text li").each(function () {
-                $(this).attr("style", "color: black" ());
-            });
-        }, 500)
+ $(".fly-in-text li").each(function () {
+        $(this).css("color", getRandomColor);
     });
+    
 
     function getRandomColor() {
         var letters = '0123456789ABCDEF'.split('');
@@ -43,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 5500);
          
     setTimeout(function () {
-        $('.play').css('visibility', 'visible').fadeIn();
+        $('body').css('overflow', 'scroll').fadeIn();
     }, 5500)
     
      
