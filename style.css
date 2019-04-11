@@ -250,15 +250,15 @@ div img {
  }
  
  .box:nth-of-type(1) {
-     background-image: url(images/MUNY2.png);
+     background-image: url(images/buskin.png);
  }
  
  .box:nth-of-type(2) {
-     background-image: url(images/MUNYW.png);
+     background-image: url(images/MUNY2.png);
  }
  
  .box:nth-of-type(3) {
-     background-image: url(images/F.jpg);
+     background-image: url(images/MUNYW.png);
  }
  
  .box:nth-of-type(4) {
