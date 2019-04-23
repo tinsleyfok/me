@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/gif" href="../../images/logox.png" />
+    <title> LinkedIn - Profile Page </title>
+    <link href="../../page.css" rel="stylesheet" />
+    <script src='../../js/script.js' type="text/javascript"></script>
+    <script src='../../js/jquery-3.1.1.min.js' type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <div>
+            <a href="../../index.html"><img src="../../images/logo.gif" alter="logo"></a>
+        </div>
+
+        <ul>
+            <li id="about"><a href="../../pages/about.html">ABOUT</a></li>
+            <li id="work"><a href="../../pages/interactivity.html">WORK</a></li>
+            <li id="contact"><a href="../../pages/contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <nav class="mobilemenu">
+        <label for="show-menu" class="show-menu"><span>Menu</span>
+            <div class="lines"></div>
+        </label>
+        <input type="checkbox" id="show-menu">
+        <ul id="menu">
+            <li> <a href="../../pages/about.html">ABOUT</a> </li>
+            <li> <a href="../../pages/interactivity.html">WORK</a> </li>
+            <li><a href="../../pages/contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+
+
+    <section class="contentbox">
+
+
+   <img src='../../images/linkedin/prototype.jpg'>
+        <section class="description">
+            <h1 id="title">Linkedln - Profile Page</h1>
+            <p id="subtitle">YEAR: 2019(Ongoing) | Company: Linkedln | ROLE: UI/UX Design | TOOL: Figma</p>
+            <br />
+            <br />
+            <br />
+            <h2>INTRODUCTION</h2>
+            <p class="sub">LinkedIn is a business and employment-oriented service that operates via website and mobile apps. The profile page I need to redesign is for job seekers posting their CVs, in order to build professional network and ultimately get the job they wanted, and for recruiters to find better employees.
+            </p><br /> <br />
+            <h2>IDEATION</h2>
+            <p class="sub">In order to be successful in this redesign, I spent two days doing thorough interviews of diverse users of LinkedIn, identifying what is not working as well as it could from a site that is already seamless. I also looked into the usability of various features and identified the features users want the most and the features users consider as meaningless or distracted.
+            </p>
+            <img src='../../images/linkedin/userinterview.png'>
+            <p class="sub">97% of users never notice the dashboard feature <br />
+                93% of users use LinkedIn becuase of job jeeking <br />
+                90% of users don’t use social media function <br />
+                67% of users want to check the common between their own profile and others <br />
+                60% of users think the profile page content is too long <br />
+                57% of users love to see who review their profile page recently </p>
+            <br /> <br />
+            <h2>TARGET AUDIENCE</h2>
+            <p class="sub">I started my research by categorize two types of users that would browse the profile page. The first group of audience is job seekers who share their profile to find job or look at others profile page to gain information. The second group of audience is people who want to look at others profile page to gain information. The third group of audience is recruiters who want to find good employees. Below are the persona that was created base on my in-depth research.
+            </p>
+            <img src='../../images/linkedin/persona.png'>
+
+            <br /> <br />
+            <h2>DESIGN GOALS</h2>
+            <p class="sub">Based on the insights from users, I came up with goals to add and modify some elements to improve its usability and look. </p>
+            <p class="sub">
+                • Create new UI design that is professional, clear and simple <br />
+                • Redesign the "career interest" function user flow <br />
+                • Add a side menu to create navigate various experience <br />
+                • Create simple data visualization of dashionbaord, skills and how to connected section <br />
+                • Downsize the social feed feature<br />
+                • Add "Similar Profile" section when visit others users profile<br />
+            </p><br /><br />
+
+            <h2>Career Interest</h2>
+            <p class="sub">
+                On the profile page, although many are unaware that today's users are able to selectively open the "career interest" function that lets recruiters know you're open. However, the profile page cannot accurately show that the user is looking for a job and does not show what job user is looking for. Through interviews with users, I found that users who are looking for a job are eager to make their career intentions clear on the profile page. Based on this point, I redesign the profile page. For users who have the “career interest” function enabled will see a blue circle around their profile picture to indicate that they are looking for a job. And by hovering the profile picture, the job position they are currently seeking will be displayed.
+            </p>
+            <img src='../../images/linkedin/careerinterest.gif'><br />
+            <img src='../../images/linkedin/careerinterest2.gif'>
+            <br /><br /><br />
+            <h2>Side Menu</h2>
+            <p class="sub">
+                Some users have long profile pages due to their rich experience. But when too long page and to much text would makes users who browser this profile fatigue. Hence, I design to create a side menu to make better use of space.
+            </p>
+            <img src='../../images/linkedin/sidemenu.gif'>
+            <br /><br /><br />
+            <h2>Similar Profile</h2>
+            <p class="sub">
+                I found out that users also love to check similar profile while browsing others profiles. Therefore, I decide to add a feature called "similar profile" on the left side.
+            </p>
+            <img src='../../images/linkedin/similarprofile.png'><br /><br /><br />
+            <h2>Simple Data Visualization</h2>
+            <p class="sub">
+                I asked various LinkedIn users: 97% of them did not notice there is a dashboard that inform them number of how my people look at their profile, how many people read their post and how many companies they search within a week. Although the dashboard is in an obvious section, it’s hard to be aware. Users don’t really care about these data as well, except few people say how many people visit the profile page is somewhat important. Hence, I design to put the dashboard on the side but not right under the description. Also, there is only a simple data visualization about the number of visitors. <br /><br />
+                Besides, the profile page is too much text and I think is a good idea to add some graphic elements. Hence, I also decide to make simple data viusalization on Skills, Common and Connection section.
+            </p>
+            <img src='../../images/linkedin/dataviz.png'>
+
+            <p class="sub"> <br /><br />
+                <h2>UI GUIDELINE</h2>
+                <p class="sub"> The profile picture and logo itself have many colors. In order to keep the page clean and tidy, I did not add any other colors except the original Linkedin blue. For the header and footer, I chose a little bit darker gray, which makes the whole feeling of the site more professional, clear and simple.</p>
+                <img src='../../images/linkedin/ui.png'>
+                <br /> <br />
+                <h2>UI/UX STAGE</h2>
+                <p class="sub"> There are slightly different bewteen users own profile page and others profile page. Users can edit their own profile page, see their private dashboard and can choose to open "career interest" feature, while browsing others profile page, users can find the common with the profile ower, see how to connect with the profile owner and check similar profile. </p>
+                <img src='../../images/linkedin/wireframe.png'>
+                <h2>PROTOTYPE</h2>
+                <img src='../../images/linkedin/prototype1.png'>
+                <iframe width="970" height="515" src="https://www.youtube.com/embed/NuDJRJ4QB6o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+                <br />
+                <br />
+                <br />
+                <br />
+        </section>
+    </section>
+    <br /> <br /> <br />
+
+    <br />
+    <br />
+    <br />
+
+</body>
+
+</html>
