@@ -340,7 +340,7 @@ function randomTickets() {
 
 $(".btn").click(function () {
     var spin = (Math.floor((Math.random() * 10) + 1)) * 36;
-    
+
     setTimeout(function () {
         $("#sugar").fadeOut();
     }, 3000);
@@ -403,9 +403,14 @@ $(function () {
 
 
 
+
 function showfinal() {
+    var imgArray = ["sugar1.png", "sugar2.png", "sugar3.png", "sugar4.png", "sugar5.png"];
+    var number = Math.floor(Math.random() * (imgArray.length));
+    console.log(imgArray);
     $("#tickets").fadeOut();
     wheel.style.display = "none";
+    document.candies.src = "images/" + imgArray[number];
     $("#final-page").fadeIn();
 
 }
