@@ -1,0 +1,44 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow: none;
+    background: #D3EAFA;
+    font-family: 'Sulphur Point';
+    font-size: 18px;
+}
+
+#result {
+    position: fixed;
+    bottom: 0%;
+    right: 2%;
+}
+
+#magicCanvas {
+    position: absolute;
+    right: 10%;
+    top:25%;
+}
+
+#normal{
+    width:40%;
+    visibility: visible;
+}
+
+#display{
+    visibility: hidden;
+    width:40%;
+}
+/*
+.right{
+    display:none;
+    width:40%;
+}
+.up{
+    display:none;
+    width:40%;
+}
+.down{
+    display:none;
+    width:40%;
+}*/

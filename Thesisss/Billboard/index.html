@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BILLBOARD HOT 100 REVOLUTION</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.slim.min.js" type="text/javascript"></script>
+    <script src="libraries/jquery.shorten.1.0.js" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="sketch.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="mainCanvas"></div>
+    <div id="logoLegend">
+        <h1>BILLBOARD HOT 100 REVOLUTION<br />(2008-2018)</h1>
+
+        <div id="year">
+            <li>2008</li>
+            <li>2009</li>
+            <li>2010</li>
+            <li>2011</li>
+            <li>2012</li>
+            <li>2013</li>
+            <li>2014</li>
+            <li>2015</li>
+            <li>2016</li>
+            <li>2017</li>
+            <li>2018</li>
+        </div>
+        
+        <div id="information">     
+        </div>
+        
+        <div id="title">
+        
+        </div>
+
+        <div id="key">
+            <div class="dropdown" >
+                <select id="selector">
+                    <option value="ethnicity">ETHNICITY</option>
+                    <option value="gender">GENDER </option>
+                    <option value="genre">GENRE </option>
+                </select>
+            </div>
+
+
+            <div class="output">
+                <div id="ethnicity" class="key">
+                    <ul class="legend">
+                        <li id="all">
+                            <div></div><span>All</span>
+                        </li>
+                        <li id="white">
+                            <div></div><span>White</span>
+                        </li>
+                        <li id="black">
+                            <div></div><span>Black</span>
+                        </li>
+                        <li id="asian">
+                            <div></div><span>Asian</span>
+                        </li>
+                        <li id="hispanic">
+                            <div></div><span>Hispanic</span>
+                        </li>
+                        <li id="middleeastern">
+                            <div></div><span>Middle Eastern</span>
+                        </li>
+                        <li id="multiracial">
+                            <div></div><span>Multiracial</span>
+                        </li>
+                        <li id="other">
+                            <div></div><span>Unknown</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="genre" class="key">
+                    <ul class="legend">
+                        <li id="all">
+                            <div></div><span>All</span>
+                        </li>
+                        <li id="pop">
+                            <div></div><span>Pop</span>
+                        </li>
+                        <li id="rap">
+                            <div></div><span>Rap</span>
+                        </li>
+                        <li id="rb">
+                            <div></div><span>R&B</span>
+                        </li>
+                        <li id="latin">
+                            <div></div><span>Latin</span>
+                        </li>
+                        <li id="dance">
+                            <div></div><span>Dance</span>
+                        </li>
+                        <li id="country">
+                            <div></div><span>Country</span>
+                        </li>
+                        <li id="rock">
+                            <div></div><span>Rock</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="gender" class="key">
+                    <ul class="legend">
+                        <li id="all">
+                            <div></div><span>All</span>
+                        </li>
+                        <li id="male">
+                            <div></div><span>Male</span>
+                        </li>
+                        <li id="female">
+                            <div></div><span>Female</span>
+                        </li>
+                        <li id="mix">
+                            <div></div><span>Mix</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+<!--
+    <div id="tooltipPanel"></div>
+        <div id="insideRing"></div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".comment").shorten({
+                "showChars": 116,
+                "moreText": "more",
+                "lessText": "Less",
+            });
+        });
+
+    </script>
+-->
