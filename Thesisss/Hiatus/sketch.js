@@ -19,7 +19,15 @@ var imgNum = 999;
 var score = 0;
 var isStart = false;
 var isChange = false;
+var isFirst = true;
 function displayImage() {
+    if (isFirst) {
+      setTimeout(function () {
+            isFirst = false;
+          isStart = false;
+          document.getElementById("normal").src = "assets/ending.gif";
+        }, 60000);
+    }
     isStart = true;
     imgNum = Math.floor(Math.random() * 4);
     console.log(imgNum);
