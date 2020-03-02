@@ -93,12 +93,13 @@ body {
 
 /*navigation*/
 .nav {
+    font-family: 'Comfortaa';
     position: fixed;
     z-index: 100;
     width: 100%;
     margin: 0px;
     text-align: right;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     padding: 45px 0px 0px 0px;
     display: block;
     font-weight: 500;

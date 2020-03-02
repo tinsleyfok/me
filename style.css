@@ -7,7 +7,7 @@ body {
     background-image: linear-gradient(to bottom right, #FFFCEC 20%, #FFF4FE, #EEF4FE, #F4F0FF);
     overflow: scroll;
     margin: 0px;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-weight: 300;
     letter-spacing: 1px;
 }
@@ -39,12 +39,13 @@ body {
 
 /*navigation*/
 .nav {
+    font-family: 'Comfortaa';
     position: fixed;
     z-index: 100;
     width: 100%;
     margin: 0px;
     text-align: right;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     padding: 45px 0px 0px 0px;
     display: none;
     font-weight: 400;
@@ -173,7 +174,7 @@ body {
     letter-spacing: 2px;
     font-size: 15px;
     width: 45%;
-    font-weight: 200;
+    font-weight: 300;
     display: none;
 }
 
@@ -308,19 +309,19 @@ body {
 }
 
 .box:nth-of-type(1) {
-    background-image: url(images/MOIC.svg);
+    background-image: url(images/shopstyle/shopstyle.svg);
 }
 
 .box:nth-of-type(2) {
-    background-image: url(images/travel.svg);
+    background-image: url(images/MOIC.svg);
 }
 
 .box:nth-of-type(3) {
-    background-image: url(images/buskin.svg);
+    background-image: url(images/travel.svg);
 }
 
 .box:nth-of-type(4) {
-    background-image: url(images/linkeldn.svg);
+    background-image: url(images/hiatus.svg);
 }
 
 .box:nth-of-type(5) {
@@ -338,7 +339,7 @@ body {
 .title {
     margin-top: 3%;
     font-weight: 300;
-    color: rgba(255, 255, 255, 0.5);
+    color: white;
     font-size: 0.7em;
     padding-left: 3%;
 }
