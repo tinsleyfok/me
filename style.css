@@ -31,6 +31,13 @@ body {
     margin-left: 12%;
 }
 
+.ui {
+    font-weight: 500;
+    height: 100vh;
+    margin-right: 12%;
+    margin-left: 12%;
+}
+
 #footer {
     height: 50vh;
 }
@@ -217,28 +224,35 @@ body {
     position: relative;
     top: 32%;
     transition: transform .2s;
-    background-color: white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+
 }
 
 .feature_img {
     width: 50%;
-    padding: 0px;
+    padding-right: 100px;
+    float:left;
 }
 
-#feature_right {
+#feature_box {
     float: right;
-    width: 38%;
-    padding-top: 130px;
-    padding-right: 60px;
+    width: 100%;
+    /* padding-top: 130px;
+    padding-right: 60px; */
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
 }
-
+#feature_content{
+ padding-top: 90px;
+    padding-right: 60px; 
+    width:95%;
+}
 
 #feature_subtitle {
     font-weight: 400;
     font-size: 24px;
     color: black;
+    padding-top:5%;
 }
 
 #feature_text {
@@ -347,12 +361,23 @@ body {
 .subtitle {
     font-size: 0.9em;
     color: black;
+    letter-spacing: 1px;
     font-weight: 400;
     padding-left: 3%;
     margin-top: -10px;
 }
 
 /*product*/
+
+
+/*ui*/
+
+#ui_title {
+    font-size: 30px;
+}
+
+
+/*ui*/
 
 /*footer*/
 #footer {
