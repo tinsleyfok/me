@@ -71,6 +71,11 @@ body {
     padding-right: 25%;
 }
 
+#main-big {
+    margin: 0;
+    padding-left: 15%;
+    padding-right: 15%;
+}
 #main p {
     float: left;
     font-size: 1.1em;
@@ -78,6 +83,11 @@ body {
 }
 
 #main img {
+    width: 100%;
+}
+
+
+#main-big img {
     width: 100%;
 }
 
@@ -104,6 +114,9 @@ span{
     color:white;
 }
 
+#survey{
+    position:relative; 
+}
 
 
 /*Main*/
