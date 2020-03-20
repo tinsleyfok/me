@@ -91,6 +91,10 @@ body {
     width: 100%;
 }
 
+#main-big iframe {
+    width: 100%;
+}
+
 span{
     font-weight: 500;
 }
@@ -116,6 +120,35 @@ span{
 
 #survey{
     position:relative; 
+}
+
+#feature1{
+    background-color:#FCF4E7;
+}
+
+#feature1 img{
+    width:70%;
+    padding-left:15%;
+    padding-right:15%;
+}
+
+#feature2{
+    background-color:#EEECFE;
+}
+#feature2 img{
+    width:70%;
+    padding-left:15%;
+    padding-right:15%;
+}
+
+
+#feature3{
+    background-color:#FCF4E7;
+}
+#feature3 img{
+    width:70%;
+    padding-left:15%;
+    padding-right:15%;
 }
 
 
