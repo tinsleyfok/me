@@ -14,8 +14,8 @@ let scoreSound, clockSound, backSound; //音效
 let alertPanel; //弹窗
 let clockP, scoreP, Countdown1, Countdown2; //计时和得分
 
-//warm-up
-let p1, p2, p3, h1, character1, character2;
+// //warm-up
+// let p1, p2, p3, h1, character1, character2;
 
 //初始位置
 var alertX, alertY, kettleX, kettleY;
@@ -143,9 +143,9 @@ function setup() {
    h1.hide();
 
    //游戏热身
-   warmUpButton = createButton('Warm-Up');
+   warmUpButton = createButton('Start');
    warmUpButton.position(width / 2 - 80, height / 2 + 200);
-   warmUpButton.style('background-color', '#E9C43E');
+   warmUpButton.style('background-color', '#F8CE89');
    warmUpButton.style('color', '#D35A2D');
    warmUpButton.style('font-size', '15px');
    warmUpButton.style('text-align', 'center');
@@ -158,7 +158,7 @@ function setup() {
    //游戏按钮
    gameButton = createButton('Start Game');
    gameButton.hide();
-   gameButton.style('background-color', '#E9C43E');
+   gameButton.style('background-color', '#F8CE89');
    gameButton.style('color', '#D35A2D');
    gameButton.style('font-size', '15px');
    gameButton.style('text-align', 'center');
@@ -171,7 +171,7 @@ function setup() {
    //视频按钮
    VideoButton = createButton('Video Hide/Show');
    VideoButton.position(80, 0);
-   VideoButton.style('background-color', '#E9C43E');
+   VideoButton.style('background-color', '#F8CE89');
    VideoButton.style('color', '#D35A2D');
    VideoButton.style('font-size', '15px');
    VideoButton.style('text-align', 'center');
@@ -251,69 +251,69 @@ function draw() {
    }
 
    //游戏热身阶段/////////////////
-   if (warmUp == 1) {
+   // if (warmUp == 1) {
 
-      kettleMove();
-      waterFlowers(flowerPosR, flowerPosL);
-      warmUpRight();
+   //    kettleMove();
+   //    waterFlowers(flowerPosR, flowerPosL);
+   //    warmUpRight();
 
-      //画面素材
-      p1.position(ploc.x, ploc.y);
-      p1.show();
-      character1.position(ploc.x - 50, ploc.y);
-      character1.show();
-      character1.style('width', '40px');
-      warmUpButton.hide();
-      kettle_left.hide();
+   //    //画面素材
+   //    p1.position(ploc.x, ploc.y);
+   //    p1.show();
+   //    character1.position(ploc.x - 50, ploc.y);
+   //    character1.show();
+   //    character1.style('width', '40px');
+   //    warmUpButton.hide();
+   //    kettle_left.hide();
 
-      let time1 = millis();
-      p1.html('Use your head to control the kettle');
-      if (time1 > 5000) {
-         p1.html('Great! Now water the flowers!');
-      }
+   //    let time1 = millis();
+   //    p1.html('Use your head to control the kettle');
+   //    if (time1 > 5000) {
+   //       p1.html('Great! Now water the flowers!');
+   //    }
 
-      if (waterBooleanR == 1 && distRight < 300 || waterBooleanL == 1 && distLeft < 600) {
-         p1.html('Awesome! Hold this position for 5 second!');
-         clockSound.play();
-      } else {
-         clockSound.stop();
-      }
+   //    if (waterBooleanR == 1 && distRight < 300 || waterBooleanL == 1 && distLeft < 600) {
+   //       p1.html('Awesome! Hold this position for 5 second!');
+   //       clockSound.play();
+   //    } else {
+   //       clockSound.stop();
+   //    }
 
-      if (timeCount1 >= 5 || timeCount2 >= 5) {
-         p1.html('You did a great job! Now, slowly return back straight ahead!');
-         p1.position(ploc.x - 100, ploc.y);
-         character1.position(ploc.x - 150, ploc.y);
-         startClock = 1;
-      }
+   //    if (timeCount1 >= 5 || timeCount2 >= 5) {
+   //       p1.html('You did a great job! Now, slowly return back straight ahead!');
+   //       p1.position(ploc.x - 100, ploc.y);
+   //       character1.position(ploc.x - 150, ploc.y);
+   //       startClock = 1;
+   //    }
 
-      if (startClock == 1) {
-         time2 = millis();
-         t3 = time2 - Ptime2;
-      } else {
-         Ptime2 = millis();
-      }
+   //    if (startClock == 1) {
+   //       time2 = millis();
+   //       t3 = time2 - Ptime2;
+   //    } else {
+   //       Ptime2 = millis();
+   //    }
 
-      if (t3 > 5000) {
-         p1.html('you are ready now! Click start and enjoy the game!');
-         gameButton.position(width / 2 - 80, height / 2 + 200);
-         gameButton.show();
-         gameButton.mouseClicked(start);
-      }
-      console.log(t3);
+   //    if (t3 > 5000) {
+   //       p1.html('you are ready now! Click start and enjoy the game!');
+   //       gameButton.position(width / 2 - 80, height / 2 + 200);
+   //       gameButton.show();
+   //       gameButton.mouseClicked(start);
+   //    }
+   //    console.log(t3);
 
-   } else if (warmUp == 0) {
-      kettle_left.show();
-   }
+   // } else if (warmUp == 0) {
+   //    kettle_left.show();
+   // }
 
    //进入游戏//////////////////////
-   if (startGames == 1) {
+   if (warmUp == 1) {
 
       //隐藏画面内容
-      warmUp = 0;
+      // warmUp = 0;
       clockSound.stop();
       kettle_left.hide();
       character1.hide();
-      gameButton.hide();
+      warmUpButton.hide();
       p1.hide();
 
       kettleMove(); //移动水壶
