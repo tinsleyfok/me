@@ -154,7 +154,12 @@ span{
 
 /*Main*/
 
-
+#demo{
+    padding-left: none;
+    padding-right: 30px;
+    list-style: none;
+       display: inline-block;
+}
 
 
 
