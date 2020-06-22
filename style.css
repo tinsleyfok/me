@@ -326,7 +326,7 @@ body {
     background-image: url(images/hiatus.svg);
 }
 .box:nth-of-type(2) {
-    background-image: url(images/shopstyle/shopstyle.svg);
+    background-image: url(Shopee/img/shopee.svg);
 }
 
 .box:nth-of-type(3) {
@@ -334,7 +334,7 @@ body {
 }
 
 .box:nth-of-type(4) {
-    background-image: url(Shopee/img/shopee.svg);
+    background-image: url(images/shopstyle/shopstyle.svg);
 }
 
 .box:nth-of-type(5) {
