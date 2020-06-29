@@ -16,7 +16,7 @@ body {
 
 /*Header*/
 #big_title {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 #section {
@@ -68,7 +68,7 @@ body {
 
 #problem p {
     float: left;
-    font-size: 1.3em;
+    font-size: 1.1em;
     line-height: 30px;
 }
 
@@ -78,7 +78,7 @@ body {
 
 
 #goal p {
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 300;
     line-height: 30px;
 }
@@ -89,6 +89,8 @@ body {
 
 #process img {
     padding-top: 5%;
+    width:60%;
+    text-align: center;
 }
 
 #user {
@@ -97,7 +99,7 @@ body {
 }
 
 #user p {
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 300;
     line-height: 30px;
 }
@@ -118,7 +120,7 @@ body {
 
 
 #hierarchy p {
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 300;
     line-height: 30px;
 }
@@ -130,7 +132,7 @@ body {
 
 
 #ideation p {
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 300;
     line-height: 30px;
 }
@@ -154,7 +156,7 @@ body {
 }
 
 #wireframe p {
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 300;
     line-height: 30px;
 }
@@ -206,7 +208,7 @@ body {
 }
 
 #transition p {
-    font-size: 1em;
+    font-size: 1.1em;
     color: white;
     text-align: center;
     padding-top: 10%;
