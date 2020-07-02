@@ -4,11 +4,10 @@ html {
 }
 
 body {
-    /*    background-image: linear-gradient(to bottom right, #FFFCEC 20%, #FFF4FE, #EEF4FE, #F4F0FF);*/
     background: white;
+    font-family: rubik;
     overflow: scroll;
     margin: 0px;
-    font-family: Roboto;
     font-weight: 300;
     letter-spacing: 1px;
 
@@ -16,39 +15,41 @@ body {
 
 /*Header*/
 #big_title {
-    font-size: 2.5em;
+    font-size: 2.2em;
+    font-family: Roboto;
 }
 
 #section {
-    height: 15vh;
-    padding-top: 2%;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-top: 15%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 #Header {
     background: white;
-    height: 120vh;
+    height: 80vh;
 }
 
 #Header img {
-    padding-top: 7%;
     width: 100%;
 }
 
 #title {
+    font-family: Roboto;
     font-size: 1em;
-    color: #553CEE;
+    color: #6C23FF;
+    padding-top: 5%;
 }
 
-#role {
+#image {
+    width: 38%;
     float: right;
-    padding-right: 10%;
 }
 
 #overview {
     float: left;
-    width: 65%;
+    width: 50%;
+    height:100%;
 }
 
 #Header p {
@@ -57,27 +58,51 @@ body {
 }
 
 #sub_title {
-    color: #C4C4C4;
-    font-size: 20px;
-    font-weight: 300;
+    padding-top:3%;
+    letter-spacing: 0;
+    color: #6C23FF;
+    font-size: 1.5em;
+    font-weight: 500;
 }
 
+#intro {
+    height: 20vh;
+    text-align: center;
+}
+
+
+
+
 /*Header*/
+
+
 
 /*Main*/
 #main {
     margin: 0;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
+/*
 #main-big {
     margin: 0;
     padding-left: 15%;
     padding-right: 15%;
 }
+
 #main p {
-    float: left;
+    font-size: 1.1em;
+    line-height: 30px;
+}
+
+#main h2 {
+    font-size: 1.1em;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+#main li {
     font-size: 1.1em;
     line-height: 30px;
 }
@@ -95,71 +120,59 @@ body {
     width: 100%;
 }
 
-span{
+span {
     font-weight: 500;
 }
 
-#inspiration img{
-    float:left;
-    width:30%;
-    padding-right:8%;
-  
-}
-#inspiration p{
-    float:right;
 
-}
-
-.button{
-    background:#F8CE89;
-    padding:1em 2em 1em 2em;
+.button {
+    background: #F8CE89;
+    padding: 1em 2em 1em 2em;
     border-radius: 50px;
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
-#survey{
-    position:relative; 
+#survey {
+    position: relative;
 }
 
-#feature1{
-    background-color:#FCF4E7;
-}
-
-#feature1 img{
-    width:70%;
-    padding-left:15%;
-    padding-right:15%;
-}
-
-#feature2{
-    background-color:#EEECFE;
-}
-#feature2 img{
-    width:70%;
-    padding-left:15%;
-    padding-right:15%;
+#feature1 {
+    background-color: #FBFBFB;
 }
 
 
-#feature3{
-    background-color:#FCF4E7;
+
+#feature2 {
+    background-color: #EEECFE;
 }
-#feature3 img{
-    width:70%;
-    padding-left:15%;
-    padding-right:15%;
+
+#feature2 img {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
+
+
+#feature3 {
+    background-color: #FCF4E7;
+}
+
+#feature3 img {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+a {
+    color: black;
+}
+*/
 
 
 /*Main*/
 
-#demo{
-    padding-left: none;
-    padding-right: 30px;
-    list-style: none;
-       display: inline-block;
-}
+
 
 
 
@@ -220,9 +233,11 @@ span{
 #about::before {
     color: #c998db;
 }
+
 #resume::before {
     color: #c998db;
 }
+
 #work::before {
     color: #f0c8a1;
 }
@@ -235,7 +250,7 @@ span{
 
 
 #active {
-    color:white;
+    color: white;
 }
 
 #active: hover {
@@ -343,8 +358,8 @@ span{
     color: white;
     cursor: pointer;
 }
+
 #footer a {
-    font-weight: 300;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
