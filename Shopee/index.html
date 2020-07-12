@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <title>Shopee Redesign</title>
     <link href="main.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
@@ -20,12 +22,35 @@
         </div>
         <ul>
             <li id="work"><a href="../index.html">Work</a></li>
-            <!-- <li id="about"><a href="images/resume_new.pdf">Daliy UI</a></li> -->
             <li id="about"><a href="../About/">About</a></li>
             <li id="resume"><a href="../images/Resume.pdf">Résumé </a></li>
         </ul>
     </div>
 
+    <!--    mobile nav-->
+
+    <div class="wrapper">
+        <div class="nav-bar">
+            <div class="logo">
+                <img class="logo" src="../images/logo.png">
+            </div>
+            <!--hamberger menu-->
+            <div class="hamberger">
+                <div class="line top"></div>
+                <div class="line center"></div>
+                <div class="line bottom"></div>
+            </div>
+
+            <!--drop down nav bar -->
+            <div class="menu">
+                <ul class="menu-item">
+                    <li class="work"><a href="../index.html">Work</a></li>
+                    <li class="about"><a href="../About/index.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--    mobile nav-->
 
     <div id="Header">
         <img src="img/Header.svg">
@@ -181,22 +206,22 @@
     </div>
 
     <br /><br /><br /><br /><br /><br />
-    
-        <div id="main">
+
+    <div id="main">
         <div id="prototype">
             <h1 id="title">LOW-FI WIREFRAME</h1><br /><br />
         </div>
     </div>
-    
-     <div id="main-big">
+
+    <div id="main-big">
         <div id="feature7">
             <img src="img/wireframe1.png">
             <br /><br /><br /><br /><br /><br />
         </div>
     </div>
-    
-    
-        <br /><br /><br /><br /><br /><br />
+
+
+    <br /><br /><br /><br /><br /><br />
 
     <div id="main">
         <div id="prototype">
@@ -222,7 +247,7 @@
             <h1 id="title">INTERACTIVE PROTOTYPE</h1><br /><br />
         </div>
     </div>
-    
+
     <div id="main-big">
 
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1200" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F1yusFsL4dplHssLoG4Jlq6%2FShopee%3Fnode-id%3D40%253A478%26viewport%3D-498%252C-347%252C0.7858380675315857%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe><br /><br /><br /><br /><br /><br />
@@ -233,9 +258,9 @@
         <div id="future">
             <h1 id="title">ITERATION</h1><br />
             <p>
-                This is my first research on e-commence platform. It was a very interesting experience. There are so many types of shoppers and I believe there are no same shoppers in this world. I hope I have more time to study the behavior of various online shoppers' types and more energy to interview more shoppers from different ages.  More interviews and research will allow me to have a more comprehensive understanding of their psychology and behaviors. So that I can better design a seamless, best-functional and delightful shopping platform. Although the three-day design challenge is over, this will not be the end of this project. There are still too many pages I want to redesign but I just ran out of time to finish. This project is not the end at this moment. I will keep updating! <br /><br />
+                This is my first research on e-commence platform. It was a very interesting experience. There are so many types of shoppers and I believe there are no same shoppers in this world. I hope I have more time to study the behavior of various online shoppers' types and more energy to interview more shoppers from different ages. More interviews and research will allow me to have a more comprehensive understanding of their psychology and behaviors. So that I can better design a seamless, best-functional and delightful shopping platform. Although the three-day design challenge is over, this will not be the end of this project. There are still too many pages I want to redesign but I just ran out of time to finish. This project is not the end at this moment. I will keep updating! <br /><br />
                 In the end, I got the job offer from Shopee Singapore through this designer challenge.
-            
+
             </p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div>
     </div>
@@ -278,9 +303,25 @@
                 <li><a href="https://www.behance.net/tinsleyhuo9851">Behance</a></li>
             </span>
         </div>
+        <div class="hide">
+            <h1 class="big_title_work">Let's Chat!</h1>
+            <p class="small_title">Have an opportunity for me or just want to chat? Send me an email: <br /><strong><a href="mailto:tinsleyhuo@gmail.com">tinsleyhuo@gmail.com </a></strong></p>
+            <p class="copyright">© 2020 Tinsley Aixin Huo. All rights reserved. </p>
+        </div>
     </footer>
 
     <script src="../script_sub.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".hamberger").click(function() {
+                $(".menu").toggleClass("menu-active");
+                $(".hamberger .top").toggleClass("hamberger-top");
+                $(".hamberger .center").toggleClass("hamberger-center");
+                $(".hamberger .bottom").toggleClass("hamberger-bottom");
+            });
+        });
+
+    </script>
 
 
 </body>

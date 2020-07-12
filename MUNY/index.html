@@ -2,7 +2,9 @@
 <html>
 
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 <title>Music Under New York</title>
 <link href="main.css" rel="stylesheet" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
@@ -22,7 +24,29 @@
             <li id="resume"><a href="../images/Resume.pdf">Résumé </a></li>
         </ul>
     </div>
+    <!--    mobile nav-->
+    <div class="wrapper">
+        <div class="nav-bar">
+            <div class="logo">
+                <img class="logo" src="../images/logo.png">
+            </div>
+            <!--hamberger menu-->
+            <div class="hamberger">
+                <div class="line top"></div>
+                <div class="line center"></div>
+                <div class="line bottom"></div>
+            </div>
 
+            <!--drop down nav bar -->
+            <div class="menu">
+                <ul class="menu-item">
+                    <li class="work"><a href="../index.html">Work</a></li>
+                    <li class="about"><a href="../About/index.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--    mobile nav-->
 
     <div id="Header">
         <img src="../images/MUNY/Header.svg">
@@ -88,7 +112,7 @@
             <p>Version 1 of Music Under New York only shows the symbol when the music is on while the Version 2 of Music Under New York shows the music visualizer after the phone decode the image above vinyl record, which make audiences more engaging to the installation and obtain more fun experience during enjoying the installation. </p><br /><br /><br />
         </div>
     </div>
-    
+
     <footer id="footer">
         <div id="footer_work">
             <h1 class="big_title_work">Work</h1>
@@ -104,7 +128,7 @@
             <p class="small_title">© 2020 Tinsley Aixin Huo. All rights reserved. </p>
         </div>
 
-       <div id="footer_About">
+        <div id="footer_About">
             <h1 class="big_title_about">About</h1>
             <span class="small_title">
                 <li><a href="../About/index.html">About Me</a></li>
@@ -120,9 +144,26 @@
                 <li><a href="https://www.behance.net/tinsleyhuo9851">Behance</a></li>
             </span>
         </div>
+
+        <div class="hide">
+            <h1 class="big_title_work">Let's Chat!</h1>
+            <p class="small_title">Have an opportunity for me or just want to chat? Send me an email: <br /><strong><a href="mailto:tinsleyhuo@gmail.com">tinsleyhuo@gmail.com </a></strong></p>
+            <p class="copyright">© 2020 Tinsley Aixin Huo. All rights reserved. </p>
+        </div>
     </footer>
 
     <script src="../script_sub.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".hamberger").click(function() {
+                $(".menu").toggleClass("menu-active");
+                $(".hamberger .top").toggleClass("hamberger-top");
+                $(".hamberger .center").toggleClass("hamberger-center");
+                $(".hamberger .bottom").toggleClass("hamberger-bottom");
+            });
+        });
+
+    </script>
 
 
 </body>

@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <title>Tinsley</title>
     <link href="main.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
@@ -28,12 +30,38 @@
         </ul>
     </div>
 
+    <!--    mobile nav-->
+
+    <div class="wrapper">
+        <div class="nav-bar">
+            <div class="logo">
+                <img class="logo" src="../images/logo.png">
+            </div>
+            <!--hamberger menu-->
+            <div class="hamberger">
+                <div class="line top"></div>
+                <div class="line center"></div>
+                <div class="line bottom"></div>
+            </div>
+
+            <!--drop down nav bar -->
+            <div class="menu">
+                <ul class="menu-item">
+                    <li class="work"><a href="../index.html">Work</a></li>
+                    <li class="about"><a href="../About/index.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--    mobile nav-->
+
 
     <div id="brief">
         <div id="brief_box">
             <img id="about_img" src="../images/Figure-logo2.svg">
-            <p id="about_text">Summer & Fall 2019, I interned at the Tech team in <a id="company_link" href="https://www.figure-8.co/">Figure8</a>.<br /><br />Figure8 is a experience first development company that builds spaces for people. They invite guests to take a moment to recognize, realize and reignite relationship with people and places around them. <br /><br /><a id="Moic_link" href="https://www.museumoficecream.com/">Museum of Ice Cream</a> opened its doors in the summer 2016, is the first project by Figure8. MOIC right now has two premenent locations in SF & NYC and plan to expand globally. My first project in this company was to redesign <a id="Moic_link" href="http://tinsleyfok.com/MOIC/index.html">MOIC's website</a>.
-                <br /><br /> I worked on designing an brand new intergrated interface for company internal use. This interface offers connected control functions to optimise visitor experience, control and maintain the building and rides, as well as centralize staffs and operations management.
+            <p id="about_text">Summer & Fall 2019, I interned at the Tech team in <a id="company_link" href="https://www.figure-8.co/">Figure8</a>.<br /><br />Figure8 is a experience first development company that builds spaces for people. <a id="Moic_link" href="https://www.museumoficecream.com/">Museum of Ice Cream</a> opened its doors in the summer 2016, is the first project by Figure8. MOIC right now has two premenent locations in SF & NYC and plan to expand globally. My first project in this company was to redesign <a id="Moic_link" href="http://tinsleyfok.com/MOIC/index.html">MOIC's website</a>.
+                <br /><br /> Also, I worked on a enterprise application for the company internal use. This interface offers connected control functions to optimise visitor experience, control and maintain the building and rides, as well as centralize staffs and operations management.
             </p>
             <h2 id="role"> ROLE: UI/UX Design & Prototyping</h2>
 
@@ -68,11 +96,12 @@
     <div id="end">
         <div id="end_box">
             <p id="end">I learned to become a better designer, communicator & optimist. <br />
-            And I am really grateful to meet all my colleagues for all the snacks, smiles and supports I received.
-       </p>
-        </div></div>
+                And I am really grateful to meet all my colleagues for all the snacks, smiles and supports I received.
+            </p>
+        </div>
+    </div>
 
-   
+
 
 
     <footer id="footer">
@@ -90,7 +119,7 @@
             <p class="small_title">© 2020 Tinsley Aixin Huo. All rights reserved. </p>
         </div>
 
-      <div id="footer_About">
+        <div id="footer_About">
             <h1 class="big_title_about">About</h1>
             <span class="small_title">
                 <li><a href="../About/index.html">About Me</a></li>
@@ -106,9 +135,29 @@
                 <li><a href="https://www.behance.net/tinsleyhuo9851">Behance</a></li>
             </span>
         </div>
+
+
+        <div class="hide">
+            <h1 class="big_title_work">Let's Chat!</h1>
+            <p class="small_title">Have an opportunity for me or just want to chat? Send me an email: <br /><strong><a href="mailto:tinsleyhuo@gmail.com">tinsleyhuo@gmail.com </a></strong></p>
+            <p class="copyright">© 2020 Tinsley Aixin Huo. All rights reserved. </p>
+        </div>
     </footer>
 
     <script src="../script_sub.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".hamberger").click(function() {
+                $(".menu").toggleClass("menu-active");
+                $(".hamberger .top").toggleClass("hamberger-top");
+                $(".hamberger .center").toggleClass("hamberger-center");
+                $(".hamberger .bottom").toggleClass("hamberger-bottom");
+            });
+        });
+
+    </script>
+
 </body>
 
 </html>

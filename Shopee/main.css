@@ -14,6 +14,105 @@ body {
 
 }
 
+
+/*moblie nav*/
+.wrapper {
+    display: none;
+    z-index: 99;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    height: 6%;
+    width: 100%;
+    background: transparent;
+    z-index: 99;
+}
+
+.logo {
+    display: inline-block;
+    max-width: 32%;
+    padding: 1%;
+}
+
+/*hamberger menu*/
+
+.hamberger {
+    position: fixed;
+    top: 2%;
+    right: 5%;
+    cursor: pointer;
+    z-index: 1002;
+    /*on top of all elements*/
+}
+
+.hamberger .line {
+    background: black;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 4px;
+    opacity: 1;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+
+/*nav bar down down thing*/
+
+.menu {
+    position: fixed;
+    top: -250%;
+    /*makes it move to the top of the web page (cant see it) */
+    left: 0px;
+    width: 100%;
+    height: 30%;
+    background: white;
+    opacity: 1;
+    z-index: 1001;
+    transition: all 0.5s ease;
+}
+
+.menu-item {
+    list-style: none;
+    text-align: center;
+    margin-top: 60px;
+    padding: 0px;
+}
+
+.menu-item li {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: black;
+}
+
+.menu-item li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.menu.menu-active {
+    top: 0;
+}
+
+/*Creating x close button*/
+.hamberger .top.hamberger-top {
+    transform: translateY(250%) rotate(135deg);
+}
+
+.hamberger .bottom.hamberger-bottom {
+    transform: translateY(-200%) rotate(-135deg);
+}
+
+.hamberger .center.hamberger-center {
+    opacity: 0;
+}
+
+
+/*mobile nav*/
+
 /*Header*/
 #big_title {
     font-size: 2.5em;
@@ -76,21 +175,22 @@ body {
     padding-left: 15%;
     padding-right: 15%;
 }
+
 #main p {
     float: left;
     font-size: 1.1em;
     line-height: 30px;
 }
 
-#main h2{
-     float: left;
+#main h2 {
+    float: left;
     font-size: 1.1em;
     line-height: 30px;
     font-weight: 300;
 }
 
-#main li{
-     float: left;
+#main li {
+    float: left;
     font-size: 1.1em;
     line-height: 30px;
 }
@@ -108,64 +208,72 @@ body {
     width: 100%;
 }
 
-span{
+span {
     font-weight: 500;
 }
 
-#inspiration img{
-    float:left;
-    width:30%;
-    padding-right:8%;
-  
-}
-#inspiration p{
-    float:right;
+#inspiration img {
+    float: left;
+    width: 30%;
+    padding-right: 8%;
 
 }
 
-#userresearch,#research, #analysis,#ideation,#design,#test{
-   padding-top: 20%;
+#inspiration p {
+    float: right;
+
 }
 
-.button{
-    background:#F8CE89;
-    padding:1em 2em 1em 2em;
+#userresearch,
+#research,
+#analysis,
+#ideation,
+#design,
+#test {
+    padding-top: 20%;
+}
+
+.button {
+    background: #F8CE89;
+    padding: 1em 2em 1em 2em;
     border-radius: 50px;
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
-#survey{
-    position:relative; 
+#survey {
+    position: relative;
 }
 
-#feature1{
-    background-color:#FBFBFB;
-}
-
-
-
-#feature2{
-    background-color:#EEECFE;
-}
-#feature2 img{
-    width:70%;
-    padding-left:15%;
-    padding-right:15%;
+#feature1 {
+    background-color: #FBFBFB;
 }
 
 
-#feature3{
-    background-color:#FCF4E7;
-}
-#feature3 img{
-    width:70%;
-    padding-left:15%;
-    padding-right:15%;
+
+#feature2 {
+    background-color: #EEECFE;
 }
 
-a{
-    color:black;
+#feature2 img {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+#feature3 {
+    background-color: #FCF4E7;
+}
+
+#feature3 img {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+a {
+    color: black;
 }
 
 
@@ -232,9 +340,11 @@ a{
 #about::before {
     color: #c998db;
 }
+
 #resume::before {
     color: #c998db;
 }
+
 #work::before {
     color: #f0c8a1;
 }
@@ -247,7 +357,7 @@ a{
 
 
 #active {
-    color:white;
+    color: white;
 }
 
 #active: hover {
@@ -355,6 +465,7 @@ a{
     color: white;
     cursor: pointer;
 }
+
 #footer a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
@@ -374,3 +485,225 @@ a{
 /*logo*/
 
 /*footer*/
+
+/*--------------------------------------moblie--------------------------------------*/
+
+
+
+@media screen and (max-width: 500px) {
+
+
+    /*    menu*/
+    .wrapper {
+        display: block;
+        z-index: 99;
+    }
+
+    .nav {
+        visibility: hidden;
+    }
+
+    /*    menu*/
+
+    /*Main*/
+
+    /*Header*/
+    #big_title {
+        font-size: 1em;
+    }
+
+    #section {
+        height: auto;
+        padding-top: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #Header {
+        background: white;
+        height: auto;
+    }
+
+    #Header img {
+        padding-top: 0%;
+        width: 100%;
+    }
+
+    #title {
+        font-size: 1em;
+    }
+
+    #role {
+        float: none;
+        padding-right: 0%;
+    }
+
+    #overview {
+        float: none;
+        width: 100%;
+    }
+
+    #Header p {
+        line-height: 30px;
+        font-size: 1em;
+    }
+
+    #sub_title {
+        color: #C4C4C4;
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+
+    /*Header*/
+
+    /*Main*/
+    #main {
+        margin: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #main-big {
+        margin: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #main p {
+        float: none;
+        font-size: 1em;
+        line-height: 30px;
+    }
+
+    #main h2 {
+        float: none;
+        font-size: 1em;
+        line-height: 30px;
+        font-weight: 300;
+    }
+
+    #main li {
+        float: none;
+        font-size: 1em;
+        line-height: 30px;
+    }
+
+    #main img {
+        width: 100%;
+    }
+
+
+    #main-big img {
+        width: 100%;
+    }
+
+    #main-big iframe {
+        width: 100%;
+    }
+
+    span {
+        font-weight: 500;
+    }
+
+    #inspiration img {
+        float: none;
+        width: 100%;
+        padding-right: 0%;
+
+    }
+
+    #inspiration p {
+        float: none;
+
+    }
+
+    #userresearch,
+    #research,
+    #analysis,
+    #ideation,
+    #design,
+    #test {
+        padding-top: 5%;
+    }
+
+    #survey {
+        position: relative;
+    }
+
+    #feature1 {
+        background-color: #FBFBFB;
+    }
+
+
+
+    #feature2 {
+        background-color: #EEECFE;
+    }
+
+    #feature2 img {
+        width: 70%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+
+    #feature3 {
+        background-color: #FCF4E7;
+    }
+
+    #feature3 img {
+        width: 70%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    a {
+        color: black;
+    }
+
+    /*Main*/
+
+    /*    footer*/
+
+    #footer_connect {
+        display: none;
+    }
+
+    #footer_work {
+        display: none;
+    }
+
+    #footer_About {
+        display: none;
+    }
+
+
+    .hide {
+        display: block;
+        padding: 10% 5% 5% 5%;
+    }
+
+    .small_title {
+        margin-bottom: 2%;
+        font-size: 0.9em;
+        padding-left: 3%;
+        color: white;
+        line-height: 25px;
+    }
+
+    .big_title_work {
+        font-size: 2em;
+    }
+
+    .copyright {
+        padding-top: 40%;
+        color: gainsboro;
+        font-size: 0.6em;
+        text-align: center;
+    }
+
+    #footer a {
+        color: white;
+    }
+}

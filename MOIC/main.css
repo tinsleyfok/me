@@ -11,8 +11,106 @@ body {
     font-family: Roboto;
     font-weight: 300;
     letter-spacing: 1px;
-
 }
+
+
+/*moblie nav*/
+.wrapper {
+    display: none;
+    z-index: 99;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    height: 6%;
+    width: 100%;
+    background: transparent;
+    z-index: 99;
+}
+
+.logo {
+    display: inline-block;
+    max-width: 32%;
+    padding: 1%;
+}
+
+/*hamberger menu*/
+
+.hamberger {
+    position: fixed;
+    top: 2%;
+    right: 5%;
+    cursor: pointer;
+    z-index: 1002;
+    /*on top of all elements*/
+}
+
+.hamberger .line {
+    background: black;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 4px;
+    opacity: 1;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+
+/*nav bar down down thing*/
+
+.menu {
+    position: fixed;
+    top: -250%;
+    /*makes it move to the top of the web page (cant see it) */
+    left: 0px;
+    width: 100%;
+    height: 30%;
+    background: white;
+    opacity: 1;
+    z-index: 1001;
+    transition: all 0.5s ease;
+}
+
+.menu-item {
+    list-style: none;
+    text-align: center;
+    margin-top: 60px;
+    padding: 0px;
+}
+
+.menu-item li {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: black;
+}
+
+.menu-item li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.menu.menu-active {
+    top: 0;
+}
+
+/*Creating x close button*/
+.hamberger .top.hamberger-top {
+    transform: translateY(250%) rotate(135deg);
+}
+
+.hamberger .bottom.hamberger-bottom {
+    transform: translateY(-200%) rotate(-135deg);
+}
+
+.hamberger .center.hamberger-center {
+    opacity: 0;
+}
+
+
+/*mobile nav*/
 
 /*Header*/
 #big_title {
@@ -89,7 +187,7 @@ body {
 
 #process img {
     padding-top: 5%;
-    width:60%;
+    width: 60%;
     text-align: center;
 }
 
@@ -183,15 +281,15 @@ body {
 #final li {
     list-style-type: none;
     display: inline;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.button{
-    background:#F89ABA;
-    padding:1em 2em 1em 2em;
+.button {
+    background: #F89ABA;
+    padding: 1em 2em 1em 2em;
     border-radius: 50px;
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 /*main*/
@@ -396,6 +494,7 @@ body {
     color: white;
     cursor: pointer;
 }
+
 #footer a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
@@ -415,3 +514,280 @@ body {
 /*logo*/
 
 /*footer*/
+
+
+/*--------------------------------------moblie--------------------------------------*/
+
+
+
+@media screen and (max-width: 500px) {
+
+
+    /*    menu*/
+    .wrapper {
+        display: block;
+        z-index: 99;
+    }
+
+    .nav {
+        visibility: hidden;
+    }
+
+    /*    menu*/
+
+    /*Main*/
+
+    /*Header*/
+    #big_title {
+        font-size: 1em;
+    }
+
+    #section {
+        height: auto;
+        padding-top: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #Header {
+        background: white;
+        height: auto;
+    }
+
+    #Header img {
+        padding-top: 0%;
+        width: 100%;
+    }
+
+    #title {
+        font-size: 1em;
+    }
+
+    #role {
+        float: none;
+        padding-right: 0%;
+    }
+
+    #overview {
+        float: none;
+        width: 100%;
+    }
+
+    #Header p {
+        line-height: 30px;
+        font-size: 1em;
+    }
+
+    #sub_title {
+        color: #C4C4C4;
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+
+    /*Header*/
+
+    /*Main*/
+    #main {
+        margin: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    /*    problem*/
+    #problem p {
+        float: none;
+        font-size: 1em;
+        line-height: 30px;
+    }
+
+    #problem {
+        padding-top: 5%;
+    }
+
+    /*    problem*/
+
+
+    /*    goal*/
+    #goal {
+        padding-top: 10%;
+    }
+
+
+    #goal p {
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+    /*    goal*/
+
+    /*    design process*/
+
+    #process {
+        padding-top: 10%;
+    }
+
+    #process img {
+        padding-top: 5%;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*    design process*/
+
+    /*    user*/
+
+    #user {
+        padding-top: 5%;
+        width: 100%;
+    }
+
+    #user p {
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 30px;
+    }
+    
+    #user img{
+        width:100%;
+    }
+
+    /*    user*/
+
+    #persona img {
+        width: 100%;
+    }
+
+    #user span {
+        font-weight: 400;
+    }
+
+
+    #hierarchy {
+        padding-top: 5%;
+        width: 100%;
+    }
+
+
+    #hierarchy p {
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+    #ideation {
+        padding-top: 5%;
+        width: 100%;
+    }
+
+
+    #ideation p {
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+    #ideation img {
+        padding-top: 5%;
+        width: 100%;
+    }
+
+    #ideation span {
+        font-weight: 400;
+        font-size: 1em;
+    }
+
+    #persona {
+        width: 100%;
+    }
+
+    #wireframe {
+        padding-top: 5%;
+    }
+
+    #wireframe p {
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+    #wireframe img {
+        width: 100%;
+    }
+
+
+    #system {
+        padding-top: 5%;
+    }
+
+    #system p {
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+    #final {
+        padding-top: 5%;
+    }
+
+    #final li {
+        list-style-type: none;
+        display: inline;
+        cursor: pointer;
+    }
+
+    .button {
+        background: #F89ABA;
+        padding: 1em 2em 1em 2em;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white;
+    }
+
+    /*main*/
+
+    /*    footer*/
+
+    #footer_connect {
+        display: none;
+    }
+
+    #footer_work {
+        display: none;
+    }
+
+    #footer_About {
+        display: none;
+    }
+
+
+    .hide {
+        display: block;
+        padding: 10% 5% 5% 5%;
+    }
+
+    .small_title {
+        margin-bottom: 2%;
+        font-size: 0.9em;
+        padding-left: 3%;
+        color: white;
+        line-height: 25px;
+    }
+
+    .big_title_work {
+        font-size: 2em;
+    }
+
+    .copyright {
+        padding-top: 40%;
+        color: gainsboro;
+        font-size: 0.6em;
+        text-align: center;
+    }
+
+    #footer a {
+        color: white;
+    }
+}

@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <title>My Disney Experience</title>
     <link href="main.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
@@ -24,6 +26,30 @@
             <li id="resume"><a href="../images/Resume.pdf">Résumé </a></li>
         </ul>
     </div>
+
+    <!--    mobile nav-->
+    <div class="wrapper">
+        <div class="nav-bar">
+            <div class="logo">
+                <img class="logo" src="../images/logo.png">
+            </div>
+            <!--hamberger menu-->
+            <div class="hamberger">
+                <div class="line top"></div>
+                <div class="line center"></div>
+                <div class="line bottom"></div>
+            </div>
+
+            <!--drop down nav bar -->
+            <div class="menu">
+                <ul class="menu-item">
+                    <li class="work"><a href="../index.html">Work</a></li>
+                    <li class="about"><a href="../About/index.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--    mobile nav-->
 
 
     <div id="Header">
@@ -93,7 +119,7 @@
             <img src="../images/Disney/work1.png">
             <img src="../images/Disney/work2.png">
             <iframe src="https://player.vimeo.com/video/374297491" width="820" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> <br /><br />
-            <a href="https://www.figma.com/proto/JayeuxZ9NjNdTfpXAB2Ad8/Disney-App?node-id=123%3A824&viewport=576%2C-1113%2C0.15147483348846436&scaling=scale-down" class="button">Figma Prototype</a>
+            <a href="https://www.figma.com/proto/JayeuxZ9NjNdTfpXAB2Ad8/Disney-App?node-id=123%3A824&viewport=576%2C-1113%2C0.15147483348846436&scaling=scale-down" class="button">Figma Prototype</a> <br /><br /> <br /><br />
 
         </div>
 
@@ -117,14 +143,14 @@
             <p class="small_title">© 2020 Tinsley Aixin Huo. All rights reserved. </p>
         </div>
 
-      <div id="footer_About">
+        <div id="footer_About">
             <h1 class="big_title_about">About</h1>
             <span class="small_title">
                 <li><a href="../About/index.html">About Me</a></li>
                 <li><a href="../Figure-8/index.html">My Internship</a></li>
             </span>
         </div>
-        
+
         <div id="footer_connect">
             <h1 class="big_title_connect">Connect</h1>
             <span class="small_title">
@@ -134,9 +160,27 @@
             </span>
         </div>
 
+        <div class="hide">
+            <h1 class="big_title_work">Let's Chat!</h1>
+            <p class="small_title">Have an opportunity for me or just want to chat? Send me an email: <br /><strong><a href="mailto:tinsleyhuo@gmail.com">tinsleyhuo@gmail.com </a></strong></p>
+            <p class="copyright">© 2020 Tinsley Aixin Huo. All rights reserved. </p>
+        </div>
+
     </footer>
 
     <script src="../script_sub.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".hamberger").click(function() {
+                $(".menu").toggleClass("menu-active");
+                $(".hamberger .top").toggleClass("hamberger-top");
+                $(".hamberger .center").toggleClass("hamberger-center");
+                $(".hamberger .bottom").toggleClass("hamberger-bottom");
+            });
+        });
+
+    </script>
 
 
 </body>
