@@ -542,7 +542,9 @@ a {
 }
 
 /*logo*/
-
+.hide {
+    display: none;
+}
 /*footer*/
 
 
