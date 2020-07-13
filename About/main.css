@@ -72,7 +72,7 @@ body {
 }
 
 #right {
-    padding-top: 22%;
+    padding-top: 18%;
     float: right;
     width: 35%;
     padding-right: 5%;
@@ -98,6 +98,7 @@ body {
 .button:hover {
     transform: scale(1.05);
 }
+
 
 /*main*/
 
@@ -445,7 +446,7 @@ body {
     }
 
     #right {
-        padding-top: 22%;
+        padding-top: 20%;
         float: none;
         width: 100%;
         padding:0px;

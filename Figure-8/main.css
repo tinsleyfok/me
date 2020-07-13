@@ -360,25 +360,29 @@ body {
 
 /*end*/
 #end {
-    height: 40vh;
+    height: auto;
 
 }
 
 #end_box {
     position: relative;
     top: 35%;
-    padding-right: 30%;
-    padding-left: 30%;
+    padding: 15% 20% 15% 20%;
     text-align: center;
 }
 
 #end {
+    padding-right: 8%;
+    padding-left: 8%;
     color: white;
     margin-top: 0%;
     font-size: 1.1em;
     line-height: 30px;
 }
 
+#end img{
+    width:100%;
+}
 /*end*/
 
 /*logo*/
