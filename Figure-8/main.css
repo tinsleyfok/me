@@ -238,6 +238,7 @@ body {
 #company_link {
     color: #183655;
     font-weight: 400;
+    text-decoration: none;
 }
 
 #company_link:hover {
@@ -247,6 +248,7 @@ body {
 #Moic_link {
     color: #183655;
     font-weight: 400;
+    text-decoration: none;
 }
 
 #Moic_link:hover {
@@ -318,7 +320,7 @@ body {
 
 /*process*/
 #process {
-    height: 260vh;
+    height: 380vh;
 }
 
 #process_box {
@@ -327,6 +329,7 @@ body {
     margin-right: 8%;
     margin-left: 8%;
     margin-top: 8%;
+    margin-bottom:8%;
 }
 
 #process img {
@@ -352,8 +355,20 @@ body {
 
 }
 
-#process img {
+#peek_box {
+    text-align: center;
+    background: #EBE8E8;
+    margin-right: 8%;
+    margin-left: 8%;
+}
+
+
+#process_box img {
     width: 65%;
+}
+
+#peek_box img {
+    width: 95%;
 }
 
 /*process*/
@@ -380,9 +395,10 @@ body {
     line-height: 30px;
 }
 
-#end img{
-    width:100%;
+#end img {
+    width: 100%;
 }
+
 /*end*/
 
 /*logo*/
@@ -500,6 +516,7 @@ body {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
+
 .hide {
     display: none;
 }
