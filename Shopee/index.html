@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>Shopee Redesign</title>
+    <link href="main.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/gif" href="../images/logo2.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:100,200,300,400,500,700" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.21/p5.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <div>
+            <a href="../index.html"><img id="logo" src='../images/logo.png' onmouseover="this.src='../images/logo2.png';" onmouseout="this.src='../images/logo.png';" /></a>
+        </div>
+        <ul>
+            <li id="work"><a href="../index.html">Work</a></li>
+            <li id="about"><a href="../About/">About</a></li>
+            <li id="resume"><a href="../images/Resume.pdf">Résumé </a></li>
+        </ul>
+    </div>
+
+    <!--    mobile nav-->
+
+    <div class="wrapper">
+        <div class="nav-bar">
+            <div class="logo">
+                <img class="logo" src="../images/logo.png">
+            </div>
+            <!--hamberger menu-->
+            <div class="hamberger">
+                <div class="line top"></div>
+                <div class="line center"></div>
+                <div class="line bottom"></div>
+            </div>
+
+            <!--drop down nav bar -->
+            <div class="menu">
+                <ul class="menu-item">
+                    <li class="work"><a href="../index.html">Work</a></li>
+                    <li class="about"><a href="../About/index.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--    mobile nav-->
+
+    <div id="Header">
+        <img src="img/Header.svg">
+        <div id="section">
+            <h1 id="big_title">Shopee Mobile Redesign<br />
+                <!--                <span id="sub_title">A UX Case Study </span>-->
+            </h1>
+            <div id="overview">
+                <h1 id="title">BRIEF</h1>
+                <p id="content"> This is a three-day design challenge from Shopee. The task is to find the most critical issue from the current Shopee App. Below explains the process of how I identify the issue and the solutions I provided to solve the issue. Through this Design Challenge, I got a job offer from Shopee Singapore.
+                </p>
+            </div>
+            <div id="role">
+                <h1 id="title">ROLE</h1>
+                <p>UX Research <br /> UX/UI Design<br /> </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="main">
+        <div id="inspiration">
+            <h1 id="title">OVERVIEW</h1> <br /><br />
+            <p> <img src="img/icon.png">Shopee is the leading e-commerce platform in Southeast Asia. It's a Southeast Asian version of Amazon & eBays. It offers a wide selection of products from groceries to electronics, home supplies & beauty,fashion and fitness equipment, etc. Since I am based in New York City, unfortunately, I don't have any experience with the App. Hence, the first thing I did is to set up a Singapore Apple ID, download the App, and have a quick browse. <br /><br /><br /></p>
+
+        </div>
+
+        <div id="process">
+            <h1 id="title">PROCESS</h1>
+            <p>Three-day time is very tight to redeisgn a product. So I made the plan immediately and assigned the work for each days to make myself more organized and efficient.</p>
+            <img src="img/process.png">
+            <br /><br /><br /><br /><br />
+        </div>
+
+        <div id="process">
+            <h1 id="title">INFORMATION ARCHITECTURE</h1>
+            <p>After quickly scanning the App, I drew the App map to understand its information architecture. This helps me gain a general concept of the application and effectively point out redundant and duplicate elements. </p>
+            <img src="img/map.png">
+            <h2>Seen from the App map, the main issue is in the home page:</h2>
+            <ul>
+                <li><span>Information overload:</span> a total of 16 sections on homepage.</li>
+                <li><span>Fuzzy classification:</span> There are 14 icons in the fourth section. This is divided into product categories, such as mom club and electronic zone, as well as Shopee ’s own functions, such as Shopee games and Shopee live, and many different types of discounts and rewards. </li>
+                <li><span>Long and vague title:</span> for new users, they cannot differentiate Shopee Mall & Shopee Mart; Millions Discounts & Flash Deal. </li>
+                <li><span>Uneseccery redundant:</span> At a distance of less than 5 pixels, the feature ‘Coins Reward’ appears twice. </li>
+
+            </ul>
+            <p>
+                I understand that putting all the information on the homepage is a way to attract more different types of users. However, more and more research shows that too many choices will eventually make users dissatisfied and disappointed. Good design is not when every possible feature is included; it’s when every possible feature is removed that can be. <br /> <br />
+
+                I cannot see the emphasis on Shopee's home. For new users, they have hard time to find a place to look at. Is there any element that is more important and appropriately emphasized more? Users become more and more lazy nowaday, it's actually better to help user make a decision and complete the most important action or it can be overwhelming.
+                <br /><br /><br /><br /><br />
+            </p>
+
+        </div>
+
+        <!--
+        <div id="evaluation">
+            <h1 id="title">HEURISTIC EVALUATION</h1>
+            <p>According to Jakob Nielsen's ten heuristics for user interface design, I inspected some obvious UI problems of the current Shopee SG App. Below shows the screenshots and my thoughts.
+            </p>
+            <br /><br /><br /><br /><br />
+        </div>
+-->
+
+
+
+        <div id="research">
+
+            <h1 id="title">ACADEMIC RESEARCH</h1><br />
+            <p>In order to further understand the behavior of online shoppers, I research on the <span>typology of the online shopper</span>; how to satisfy these types of online customers, and how eventually to turn them into loyal customers. <br /><br />
+                <a href="https://www.researchgate.net/figure/Media-matrix-of-McKinsey-2000-online-shopper-typology_fig4_338438680">Media Matrix and Mckinsey(Hamilton, 2000)</a> were one of the first to examine online shopper typology. This is the oldest article I found on the type of online shoppers, and I also found one <a href="https://search-proquest-com.libproxy.newschool.edu/docview/220132598?accountid=12261">research article(2003)</a> from the Journal of Consumer Marketing about six categories of online shoppers. All the researches are worth spending time on in the future. Thus, I keep them all in the record here. <br /><br />
+
+                However, due to limited time, I only chose to dive into <a href="https://blog.smile.io/5-types-online-shoppers/">the newest research</a> on five types of online shoppers which published by Kirsten Burkard, an event designer, in 2019. I generated the below diagram to better conclude her ideas of who these five types of online shoppers are and how to turn them into loyal customers. <br /><br />
+        </div>
+    </div>
+
+
+    <div id="main-big">
+        <img src="img/types.png">
+    </div>
+
+    <div id="main">
+        <p>*Note: To better understand the behavior of Shopee's users, I also applied these five types of online shoppers in the process of usability testing and persona.</p>
+
+        <div id="userresearch">
+            <h1 id="title">USER RESEARCH</h1><br />
+            <p> To have a general idea of shopee's users in Southeast Asia, I <span>spoke to shopee's in-house staff</span> via LinkedIn. He says most of Shopee's sales are in Indonesia and Taiwan. Singapore is relatively small. So I <span>interviewed four friends</span> of mine that live in Singapore and Taiwan. I found that there is a strong competitor in Singapore, Lazada. Two of my friends chose to use Lazada because they are pervious customers of Lazada's subsidiary companies: RedMart and Taobao. Interestingly, one of my friends said she likes to shop at Lazada because she could buy groceries there. However, Shopee's Shopee Mart also sells groceries. This is a thing I would love to learn more about later. <br /><br />
+                On the contrary, two of my friends from Taiwan mentioned they used Shopee a few times. They also mentioned Shopee is very famous in Taiwan region. </p>
+            <br /><br />
+
+
+            <p>Because I don’t live in Southeast Asia, it is difficult for me to interview Shopee users. Thus, aside from interviewing my friends, I looked up the <span>app store</span> to see what other <span>users' feedback</span>. To gain a clearer view, I concluded the low-scroce feedback and categoried them into 7 groups:
+            </p><br /><br />
+        </div>
+    </div>
+
+    <div id="main-big">
+        <img src="img/miro.png">
+    </div>
+    <br /><br /><br /><br />
+    <div id="main">
+        <div id="userbility testing">
+            <h1 id="title">USABILITY TESTING</h1><br />
+            <p>In addition to researching existing users, I <span>am also curious about</span> what is the impression and shopping experience of <span>new users</span> on this app. So I spent two hours in the community where I lived and <span>randomly interviewed 5 Asians</span>. I started with the questions "what do you want to buy recently?" and asked them to buy that product on Shopee App and Lazada App. I hope to conduct in-depth research from the perspective of how to attract new customers and how to turn one-time buyer into loyal users. I also want to analyze competitor(Lazada) to find out which app is more attractive to new customers and why. Below are the result:</p>
+        </div>
+    </div>
+
+    <div id="main-big">
+        <img src="img/result.png">
+    </div>
+
+    <div id="main">
+
+
+        <div id="analysis">
+            <h1 id="title">ANALYSIS</h1><br />
+            <p>Based on reviews from App store, feedbacks from interviews and results from user testing, I listed all the problems and divided them into two categories; One for new users and one for current users. I translate these issues to question, and try to find the answers of these questions. From these questions and answers, I hope to define the most critical and changable issue of the App; Here, I <span>highlight the main concerns, causes of the issues, design questions and design solutions</span>, which are the core reasons that led to the following design process. </p>
+        </div>
+        <img src="img/analysis.png">
+
+
+        <div id="ideation">
+            <h1 id="title">GOALS</h1><br />
+            <p>After listing all the problems and solutions, I think the most critical issue now is to rebuild the trust with the customer. However, due to the limited, it is impossible to achieve this goal without a big change of the App and its system. Therefore, I've summed up three goals that I was able to achieve through this redesign. </p>
+            <ul>
+
+                <li><span> Modify the layout:</span> to make the App look more reliable and shopping process become more seamless.</li>
+                <li><span>Highlight the rewards system:</span> to attract more users and potentially turn more one-time buyer into loyal customers.</li>
+                <li><span>Make the App more personalized to individual users:</span> to simplify and satisfied as many as possible existing users' shopping experiences. </li>
+            </ul>
+            <br /><br /><br /> <br /><br /><br /> <br /><br /><br /> <br /><br /><br /> <br /><br /><br />
+        </div>
+
+
+
+        <div id="design">
+            <h1 id="title">DESIGN</h1><br /><br />
+        </div>
+    </div>
+
+    <div id="main-big">
+        <img src="img/persona.png">
+    </div>
+
+    <div id="main">
+        <br /><br /><br /><br />
+        <p>New App Map</p>
+
+    </div>
+    <div id="main-big">
+        <img src="img/newmap.png">
+    </div>
+
+    <br /><br /><br /><br /><br /><br />
+
+    <div id="main">
+        <div id="prototype">
+            <h1 id="title">LOW-FI WIREFRAME</h1><br /><br />
+        </div>
+    </div>
+
+    <div id="main-big">
+        <div id="feature7">
+            <img src="img/wireframe1.png">
+            <br /><br /><br /><br /><br /><br />
+        </div>
+    </div>
+
+
+    <br /><br /><br /><br /><br /><br />
+
+    <div id="main">
+        <div id="prototype">
+            <h1 id="title">HI-FI WIREFRAME</h1><br /><br />
+        </div>
+    </div>
+
+    <div id="main-big">
+        <div id="feature1">
+            <img src="img/one.png">
+            <img src="img/one.gif">
+            <img src="img/two.png">
+            <img src="img/two.gif">
+            <img src="img/three.png">
+            <img src="img/three.gif">
+            <br /><br /><br /><br /><br /><br />
+        </div>
+    </div>
+
+
+    <div id="main">
+        <div id="test">
+            <h1 id="title">INTERACTIVE PROTOTYPE</h1><br /><br />
+        </div>
+    </div>
+
+    <div id="main-big">
+
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1200" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F1yusFsL4dplHssLoG4Jlq6%2FShopee%3Fnode-id%3D40%253A478%26viewport%3D-498%252C-347%252C0.7858380675315857%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe><br /><br /><br /><br /><br /><br />
+    </div>
+
+
+    <div id="main">
+        <div id="future">
+            <h1 id="title">ITERATION</h1><br />
+            <p>
+                This is my first research on e-commence platform. It was a very interesting experience. There are so many types of shoppers and I believe there are no same shoppers in this world. I hope I have more time to study the behavior of various online shoppers' types and more energy to interview more shoppers from different ages. More interviews and research will allow me to have a more comprehensive understanding of their psychology and behaviors. So that I can better design a seamless, best-functional and delightful shopping platform. Although the three-day design challenge is over, this will not be the end of this project. There are still too many pages I want to redesign but I just ran out of time to finish. This project is not the end at this moment. I will keep updating! <br /><br />
+                In the end, I got the job offer from Shopee Singapore through this designer challenge.
+
+            </p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <footer id="footer">
+        <div id="footer_work">
+            <h1 class="big_title_work">Work</h1>
+            <p class="small_title">
+                <li><a href="../Shopee/index.html">Shopee ReDesign</a></li>/
+                <li><a href="../Instagram/index.html">Instagram Ecommerce</a></li>/
+                <li><a href="../Hiatus/index.html">Hiatus</a></li>/<br />
+                <li><a href="../MUNY/index.html">MUNY(AR Installation)</a></li>/
+                <li><a href="../DisneyApp/index.html">My Disney Eperience</a></li>/<br />
+                <li><a href="../MOIC/index.html">MOIC Website</a></li>
+            </p>
+            <br />
+            <p class="small_title">© Designed & developed by Tinsley Aixin Huo 2020. All rights reserved.</p>
+        </div>
+
+        <div id="footer_About">
+            <h1 class="big_title_about">About</h1>
+            <span class="small_title">
+                <li><a href="../About/index.html">About Me</a></li>
+                <li><a href="../Figure-8/index.html">My Internship</a></li>
+            </span>
+        </div>
+
+        <div id="footer_connect">
+            <h1 class="big_title_connect">Connect</h1>
+            <span class="small_title">
+                <li><a href="https://www.linkedin.com/in/tinsleyhuo/">LinkedIn</a></li>
+                <li><a href="https://github.com/tinsleyfok">Github</a></li>
+                <li><a href="https://www.behance.net/tinsleyhuo9851">Behance</a></li>
+            </span>
+        </div>
+        <div class="hide">
+            <h1 class="big_title_work">Let's Chat!</h1>
+            <p class="small_title">Have an opportunity for me or just want to chat? Send me an email: <br /><strong><a href="mailto:tinsleyhuo@gmail.com">tinsleyhuo@gmail.com </a></strong></p>
+            <p class="copyright">© Designed & developed by Tinsley Aixin Huo 2020. All rights reserved. </p>
+        </div>
+    </footer>
+
+    <script src="../script_sub.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".hamberger").click(function() {
+                $(".menu").toggleClass("menu-active");
+                $(".hamberger .top").toggleClass("hamberger-top");
+                $(".hamberger .center").toggleClass("hamberger-center");
+                $(".hamberger .bottom").toggleClass("hamberger-bottom");
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>

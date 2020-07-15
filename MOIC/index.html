@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>MOIC Website</title>
+    <link href="main.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/gif" href="../images/logo2.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:100,200,300,400,500,700" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.21/p5.js"></script>
+
+</head>
+
+
+
+<body>
+    <div class="nav">
+        <div>
+            <a href="../index.html"><img id="logo" src='../images/logo.png' onmouseover="this.src='../images/logo2.png';" onmouseout="this.src='../images/logo.png';" /></a>
+        </div>
+        <ul>
+            <li id="work"><a href="../index.html">Work</a></li>
+            <li id="about"><a href="../About/index.html">About</a></li>
+            <li id="resume"><a href="../images/Resume.pdf">Résumé </a></li>
+        </ul>
+    </div>
+
+    <!--    mobile nav-->
+    <div class="wrapper">
+        <div class="nav-bar">
+            <div class="logo">
+                <img class="logo" src="../images/logo.png">
+            </div>
+            <!--hamberger menu-->
+            <div class="hamberger">
+                <div class="line top"></div>
+                <div class="line center"></div>
+                <div class="line bottom"></div>
+            </div>
+
+            <!--drop down nav bar -->
+            <div class="menu">
+                <ul class="menu-item">
+                    <li class="work"><a href="../index.html">Work</a></li>
+                    <li class="about"><a href="../About/index.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--    mobile nav-->
+
+
+
+    <div id="Header">
+        <img src="../images/MOIC/MOIC_Header.png">
+        <div id="section">
+            <h1 id="big_title">MOIC Website</h1>
+            <div id="overview">
+                <h1 id="title">BRIEF</h1>
+                <p id="content">This is the first project during my internship at Figure-8. I redesigned and helped relaunching the Museum of Ice Cream's website, restructuring and simplifying the site architecture, seamlessly migrating third-party vendors and prototyping interactions. </p>
+            </div>
+            <div id="role">
+                <h1 id="title">ROLE</h1>
+                <p>UI/UX Design <br /> Prototyping</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main">
+        <div id="problem">
+            <h1 id="title">PROBLEM</h1>
+            <p>Museum of Ice Cream, a Figure-8 brand, is an interactive art museum with ice cream and candy-themed installation. However, as the company has expanded nationally and more venues have been built, its website has started to confuse many guests for several reasons.
+                <br /><br /> 1. Redundant and Repeated Content <br />
+                2. Messy Site Architecture <br />
+                3. No Clear Distinction Between Venues (Guests complain about buying wrong tickets)
+            </p>
+        </div>
+
+        <div id="goal">
+            <h1 id="title">GOAL</h1>
+            <p> 1. To simplify the UX architecture <br />
+                2. To migrate vendor sites seamlessly <br />
+                3. To differentiate among venues clearly <br />
+                4. To insure mobile responsivity
+            </p>
+        </div>
+
+
+        <div id="process">
+            <h1 id="title">DESIGN PROCESS</h1>
+            <img src="../images/MOIC/MOIC_process.svg">
+        </div><br /><br />
+
+        <div id="user">
+            <h1 id="title">USER RESEARCH</h1>
+            <p><span>User</span>: young people aging from 20-40, especially females.</p>
+            <p><span>Survey</span>:In order to understand the reason of visiting the website, a survey was conducted to MOIC community through Instagram </p>
+            <img src="../images/MOIC/Q1.svg">
+            <p><span>Persona</span>: The following two personas are based on interviews and surveys.</p>
+            <div id="persona">
+                <img src="../images/MOIC/persona1.svg"><br /><br />
+                <img src="../images/MOIC/persona2.svg">
+            </div>
+        </div><br /><br />
+
+        <div id="hierarchy">
+            <h1 id="title">HIERARCHY OF NEED</h1>
+            <p>After the research and user interviews, brand team, marketing team and our team(Tech team) come up with the hierarchy of needs for the website.</p>
+            <p>1. Ticketing experience<br />
+                2. Our Brand<br />
+                3. E-commerce/Shop<br />
+                4. Ice cream line<br />
+                5. Others like MOIC partnership etc.
+            </p>
+        </div>
+
+
+        <div id="ideation">
+            <h1 id="title">IDEATION</h1>
+            <p>Three versions of landing page were created for design critic. All designs are based on the design principle(branding) and the hierarchy of need. The team finally pick the version three, that is, landing on a page with 10% of main navigation and 90% of location icons. </p><br /><br />
+            <span>Version 1: Location Only</span>
+            <p>Barry Schwartz, a professor and author from Swarthmore College showed that too many options can lead to stress, anxiety, and discontent. Since no one gets happier with the maximum freedom of choice in this information-overloaded world, I try to limit the freedom of choice in this scheme. Users only need to have action: choosing the location. </p>
+            <img src="../images/MOIC/MOIC_I1.png"><br /><br /><br /><br />
+            <span>Version 2: Small Location + Brand</span>
+            <p>In the second scheme, the location step becomes secondary. What is MOIC and What to expect in MOIC become the main content.Lots of information and buttons appear on the home page.</p>
+            <img src="../images/MOIC/MOIC_I2.svg"><br /><br /><br /><br />
+            <span>Version 3: Location + Menu</span>
+            <p>The last scheme is a neutral version of the first two. Only one step can guide the users to the about page of the company, to shop the merchandise as well as check the ice cream line, or to browse the specific information of different venues.</p>
+            <img src="../images/MOIC/MOIC_I3.svg"><br /><br /><br /><br />
+        </div>
+        <div id="wireframe">
+            <h1 id="title">SITE ARCHITECTURE</h1>
+            <p>After the team picked a design scheme, I updated the site architecture and created the second version of wireframe. </p>
+            <img src="../images/MOIC/sitearchotecture.svg">
+            <img src="../images/MOIC/inoffice.JPG">
+        </div>
+
+        <!--
+        <div id="system">
+            <h1 id="title">DESIGN SYSTEM</h1>
+            <p>The design system I built is based on the company's branding guide. </p>
+        </div>
+-->
+
+
+        <div id="final">
+            <h1 id="title">FINAL WEBSITE</h1>
+            <br /><br /><br /><br />
+            <li><a href="https://www.figma.com/proto/ZXrzhyAcg77CfwIVsPnZ0u/MOIC-RD_UI?node-id=43%3A0&viewport=177%2C545%2C0.3730374872684479&scaling=min-zoom" class="button">Figma Prototype</a></li>
+            <li><a href="https://www.museumoficecream.com/" class="button">Website</a></li>
+            <br /><br /><br /><br />
+        </div>
+
+
+
+    </div>
+
+    <footer id="footer">
+        <div id="footer_work">
+            <h1 class="big_title_work">Work</h1>
+            <p class="small_title">
+                <li><a href="../Shopee/index.html">Shopee ReDesign</a></li>/
+                <li><a href="../Instagram/index.html">Instagram Ecommerce</a></li>/
+                <li><a href="../Hiatus/index.html">Hiatus</a></li>/<br />
+                <li><a href="../MUNY/index.html">MUNY(AR Installation)</a></li>/
+                <li><a href="../DisneyApp/index.html">My Disney Eperience</a></li>/<br />
+                <li><a href="../MOIC/index.html">MOIC Website</a></li>
+            </p>
+            <br />
+            <p class="small_title">© Designed & developed by Tinsley Aixin Huo 2020. All rights reserved. </p>
+        </div>
+
+        <div id="footer_About">
+            <h1 class="big_title_about">About</h1>
+            <span class="small_title">
+                <li><a href="../About/index.html">About Me</a></li>
+                <li><a href="../Figure-8/index.html">My Internship</a></li>
+            </span>
+        </div>
+
+        <div id="footer_connect">
+            <h1 class="big_title_connect">Connect</h1>
+            <span class="small_title">
+                <li><a href="https://www.linkedin.com/in/tinsleyhuo/">LinkedIn</a></li>
+                <li><a href="https://github.com/tinsleyfok">Github</a></li>
+                <li><a href="https://www.behance.net/tinsleyhuo9851">Behance</a></li>
+            </span>
+        </div>
+        <div class="hide">
+            <h1 class="big_title_work">Let's Chat!</h1>
+            <p class="small_title">Have an opportunity for me or just want to chat? Send me an email: <br /><strong><a href="mailto:tinsleyhuo@gmail.com">tinsleyhuo@gmail.com </a></strong></p>
+            <p class="copyright">© Designed & developed by Tinsley Aixin Huo 2020. All rights reserved. </p>
+        </div>
+    </footer>
+
+    <script src="../script_sub.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".hamberger").click(function() {
+                $(".menu").toggleClass("menu-active");
+                $(".hamberger .top").toggleClass("hamberger-top");
+                $(".hamberger .center").toggleClass("hamberger-center");
+                $(".hamberger .bottom").toggleClass("hamberger-bottom");
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
