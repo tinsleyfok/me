@@ -482,6 +482,17 @@ contain a {
 
     }
 
+    .title {
+        font-family: 'rubik';
+        color: black;
+        font-size: 1em;
+        text-align: left;
+        font-weight: 300;
+        text-align: left;
+        padding-left: 10px;
+        opacity: 1;
+    }
+
     /*main*/
 
     /*    footer*/

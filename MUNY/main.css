@@ -79,7 +79,7 @@ body {
     /*makes it move to the top of the web page (cant see it) */
     left: 0px;
     width: 100%;
-    height: 30%;
+    height: 40%;
     background: white;
     opacity: 1;
     z-index: 1001;
