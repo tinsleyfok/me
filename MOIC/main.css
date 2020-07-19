@@ -8,9 +8,9 @@ body {
     background: white;
     overflow: scroll;
     margin: 0px;
-    font-family: Roboto;
+    font-family: Rubik;
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 
@@ -114,14 +114,16 @@ body {
 
 /*Header*/
 #big_title {
+    font-family: Roboto;
     font-size: 2.5em;
 }
 
 #section {
-    height: 15vh;
-    padding-top: 2%;
-    padding-left: 25%;
-    padding-right: 25%;
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 #Header {
@@ -135,23 +137,24 @@ body {
 }
 
 #title {
+    font-family: Roboto;
     font-size: 1em;
-    color: #F6C9D1;
+    color: #F89ABA;
 }
 
 #role {
     float: right;
-    padding-right: 10%;
+    padding-right: 30%;
 }
 
 #overview {
     float: left;
-    width: 65%;
+    width: 50%;
 }
 
 #Header p {
-    line-height: 20px;
-    font-size: 0.9em;
+    line-height: 25px;
+    font-size: 1em;
 }
 
 /*Header*/
@@ -159,61 +162,73 @@ body {
 /*Main*/
 #main {
     margin: 0;
-    padding-left: 25%;
-    padding-right: 25%;
+    height: auto;
 }
 
+/*problem*/
+#problem {
+    height: 50vh;
+    padding-top: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
 
-#problem p {
+#left {
     float: left;
     font-size: 1.1em;
     line-height: 30px;
+    width: 50%;
 }
+
+#img {
+    float: right;
+    width: 30%;
+    padding-right: 15%;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+/*problem*/
 
 #goal {
-    padding-top: 40%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 10%;
 }
 
 
-#goal p {
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 30px;
-}
-
-#process {
-    padding-top: 5%;
-}
-
-#process img {
-    padding-top: 5%;
-    width: 60%;
-    text-align: center;
-}
+/*user*/
 
 #user {
-    padding-top: 5%;
-    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #user p {
+    padding-left: 12%;
+    padding-right: 5%;
     font-size: 1.1em;
+    width: 45%;
     font-weight: 300;
     line-height: 30px;
 }
 
-#persona img {
-    width: 250%;
-}
-
-#user span {
-    font-weight: 400;
+#user h1 {
+    padding-left: 12%;
 }
 
 
+/*user*/
+
+/*hierarchy*/
 #hierarchy {
     padding-top: 5%;
-    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 
@@ -223,9 +238,13 @@ body {
     line-height: 30px;
 }
 
+/*hierarchy*/
+
+/*ideation*/
 #ideation {
     padding-top: 5%;
-    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
@@ -235,84 +254,143 @@ body {
     line-height: 30px;
 }
 
-#ideation img {
-    padding-top: 5%;
-    width: 100%;
+
+#ideation h1 {
+    padding-left: 12%;
 }
 
-#ideation span {
-    font-weight: 400;
-    font-size: 1.3em;
+#top {
+    width: 60%;
+    padding: 10% 20% 10% 20%;
 }
 
-#persona {
-    width: 40%;
-}
-
-#wireframe {
-    padding-top: 5%;
-}
-
-#wireframe p {
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 30px;
-}
-
-#wireframe img {
-    width: 100%;
-}
-
-
-#system {
-    padding-top: 5%;
-}
-
-#system p {
-    font-size: 1.3em;
-    font-weight: 300;
-    line-height: 30px;
-}
-
-#final {
-    padding-top: 5%;
-}
-
-#final li {
-    list-style-type: none;
-    display: inline;
-    cursor: pointer;
-}
-
-.button {
-    background: #F89ABA;
-    padding: 1em 2em 1em 2em;
-    border-radius: 50px;
-    text-decoration: none;
-    color: white;
-}
-
-/*main*/
-
-
-/*transition*/
-#transition {
+#version1 {
     height: 50vh;
-    background: #F89ABA;
 }
 
-#transition span {
-    font-size: 6em;
+#version1 #version {
+    width: 40%;
+    float: left;
 }
 
-#transition p {
-    font-size: 1.1em;
-    color: white;
-    text-align: center;
+#v1 {
+    width: 40%;
+    float: right;
+}
+
+#version2 {
+    height: 80vh;
+}
+
+#version2 #version {
+    width: 40%;
+    float: right;
     padding-top: 10%;
 }
 
-/*transition*/
+#v2 {
+    width: 40%;
+    float: left;
+}
+
+strong {
+    font-size: 1.5em;
+}
+
+/*ideation*/
+
+/*ticketing*/
+#ticket {
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#ticket img {
+    padding-bottom: 15%;
+}
+
+#ticket p {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+#ticket #v1 {
+    padding-right: 5%;
+    width: 50%;
+}
+
+#ticket #version1 {
+    height: 70vh;
+}
+
+#ticket #version {
+    padding-top: 10%;
+}
+
+#ticket h1 {
+    padding-left: 12%;
+}
+
+/*ticketing*/
+#final {
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#final h1 {
+    padding-left: 12%;
+}
+#iframe{
+    padding: 5% 0% 5% 0%;
+}
+
+/*ticketing*/
+
+
+
+/*visual*/
+
+#visual {
+    background-color: #F498B8;
+    height: 90vh;
+    margin-bottom: 10%;
+}
+
+#visual h1 {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    padding-top: 20%;
+    font-weight: 400;
+}
+
+#visual p {
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+}
+
+#visual a {
+    font-size: 1.3em;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#visual a:hover {
+    color: #EA0029;
+
+}
+
+/*visual*/
+/*main*/
+
+
 
 
 
@@ -499,6 +577,7 @@ body {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
+
 .hide {
     display: none;
 }
@@ -592,8 +671,6 @@ body {
     /*Main*/
     #main {
         margin: 0;
-        padding-left: 5%;
-        padding-right: 5%;
     }
 
 
@@ -604,8 +681,25 @@ body {
         line-height: 30px;
     }
 
+
     #problem {
+        height: auto;
         padding-top: 5%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    #left {
+        float: none;
+        font-size: 1em;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    #img {
+        float: none;
+        width: 100%;
+        padding-right: 0%;
     }
 
     /*    problem*/
@@ -616,60 +710,39 @@ body {
         padding-top: 10%;
     }
 
-
-    #goal p {
-        font-size: 1em;
-        font-weight: 300;
-        line-height: 30px;
-    }
-
     /*    goal*/
 
-    /*    design process*/
-
-    #process {
-        padding-top: 10%;
-    }
-
-    #process img {
-        padding-top: 5%;
-        width: 100%;
-        text-align: center;
-    }
-
-    /*    design process*/
 
     /*    user*/
 
+
+
     #user {
-        padding-top: 5%;
-        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     #user p {
+        padding-left: 0%;
+        padding-right: 0%;
         font-size: 1em;
+        width: 100%;
         font-weight: 300;
         line-height: 30px;
     }
-    
-    #user img{
-        width:100%;
-    }
 
-    /*    user*/
-
-    #persona img {
-        width: 100%;
-    }
-
-    #user span {
-        font-weight: 400;
+    #user h1 {
+        padding-left: 0%;
     }
 
 
+    /*user*/
+
+    /*hierarchy*/
     #hierarchy {
         padding-top: 5%;
-        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
 
@@ -679,9 +752,13 @@ body {
         line-height: 30px;
     }
 
+    /*hierarchy*/
+
+    /*ideation*/
     #ideation {
         padding-top: 5%;
-        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
 
@@ -691,61 +768,80 @@ body {
         line-height: 30px;
     }
 
-    #ideation img {
-        padding-top: 5%;
+
+    #ideation h1 {
+        padding-left: 0%;
+    }
+
+    #top {
         width: 100%;
+        padding: 2% 5% 2% 5%;
     }
 
-    #ideation span {
-        font-weight: 400;
-        font-size: 1em;
+    #version1 {
+        height: auto;
     }
 
-    #persona {
+    #version1 #version {
         width: 100%;
+        float: none;
     }
 
-    #wireframe {
-        padding-top: 5%;
+    #v1 {
+        width: 100%;
+        float: none;
     }
 
-    #wireframe p {
+    #version2 {
+        height: auto;
+    }
+
+    #version2 #version {
+        width: 100%;
+        float: none;
+        padding-top: 10%;
+    }
+
+    #v2 {
+        width: 100%;
+        float: none;
+    }
+
+    #ticket p {
         font-size: 1em;
         font-weight: 300;
         line-height: 30px;
     }
 
-    #wireframe img {
+
+    #ticket #v1 {
+        padding-right: 5%;
         width: 100%;
     }
 
 
-    #system {
-        padding-top: 5%;
+    #ticket #version1 {
+        height: auto;
     }
 
-    #system p {
-        font-size: 1em;
-        font-weight: 300;
-        line-height: 30px;
+    /*ticket*/
+
+    /*visual*/
+
+    #visual {
+        background-color: #F498B8;
+        height: 30vh;
+        margin-bottom: 10%;
     }
 
-    #final {
-        padding-top: 5%;
+    #visual h1 {
+        font-size: 2em;
     }
 
-    #final li {
-        list-style-type: none;
-        display: inline;
-        cursor: pointer;
-    }
-
-    .button {
-        background: #F89ABA;
-        padding: 1em 2em 1em 2em;
-        border-radius: 50px;
-        text-decoration: none;
-        color: white;
+    #visual p {
+        font-size: 0.8em;
+        width: 80%;
+        padding-left: 10%;
     }
 
     /*main*/
