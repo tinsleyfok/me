@@ -336,15 +336,15 @@ strong {
 /*ticketing*/
 #final {
     padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 
 #final h1 {
-    padding-left: 12%;
+    padding-left: 22%;
 }
-#iframe{
-    padding: 5% 0% 5% 0%;
+#prototype{
+    padding: 5% 10% 5% 10%;
 }
 
 /*ticketing*/
@@ -775,7 +775,7 @@ strong {
 
     #top {
         width: 100%;
-        padding: 2% 5% 2% 5%;
+        padding: 2% 0% 2% 0%;
     }
 
     #version1 {
@@ -807,6 +807,10 @@ strong {
         float: none;
     }
 
+    #ticket{
+         padding-left:5%;
+         padding-right:5%;
+    }
     #ticket p {
         font-size: 1em;
         font-weight: 300;
@@ -823,6 +827,7 @@ strong {
     #ticket #version1 {
         height: auto;
     }
+    
 
     /*ticket*/
 
@@ -844,6 +849,23 @@ strong {
         padding-left: 10%;
     }
 
+    iframe{
+        width:100%;
+        padding:0%;
+        height:50vh;
+    }
+    
+    #prototype{
+          padding:0%;
+    }
+    #final{
+        padding-left:0%;
+    }
+    
+    #final h1{
+        padding-left:5%;
+    }
+    
     /*main*/
 
     /*    footer*/
@@ -887,5 +909,9 @@ strong {
 
     #footer a {
         color: white;
+    }
+    
+    strong{
+        font-size: 1em;
     }
 }
