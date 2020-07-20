@@ -152,6 +152,16 @@ body {
     width: 50%;
 }
 
+#overview a {
+    color: #EA1C2D;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#overview a:hover {
+    color: #F89ABA;
+}
+
 #Header p {
     line-height: 25px;
     font-size: 1em;
@@ -343,7 +353,8 @@ strong {
 #final h1 {
     padding-left: 22%;
 }
-#prototype{
+
+#prototype {
     padding: 5% 10% 5% 10%;
 }
 
@@ -666,6 +677,7 @@ strong {
     }
 
 
+
     /*Header*/
 
     /*Main*/
@@ -807,10 +819,11 @@ strong {
         float: none;
     }
 
-    #ticket{
-         padding-left:5%;
-         padding-right:5%;
+    #ticket {
+        padding-left: 5%;
+        padding-right: 5%;
     }
+
     #ticket p {
         font-size: 1em;
         font-weight: 300;
@@ -827,7 +840,7 @@ strong {
     #ticket #version1 {
         height: auto;
     }
-    
+
 
     /*ticket*/
 
@@ -849,23 +862,24 @@ strong {
         padding-left: 10%;
     }
 
-    iframe{
-        width:100%;
-        padding:0%;
-        height:50vh;
+    iframe {
+        width: 100%;
+        padding: 0%;
+        height: 50vh;
     }
-    
-    #prototype{
-          padding:0%;
+
+    #prototype {
+        padding: 0%;
     }
-    #final{
-        padding-left:0%;
+
+    #final {
+        padding-left: 0%;
     }
-    
-    #final h1{
-        padding-left:5%;
+
+    #final h1 {
+        padding-left: 5%;
     }
-    
+
     /*main*/
 
     /*    footer*/
@@ -910,8 +924,8 @@ strong {
     #footer a {
         color: white;
     }
-    
-    strong{
+
+    strong {
         font-size: 1em;
     }
 }
