@@ -4,7 +4,6 @@ html {
 }
 
 body {
-    /*    background-image: linear-gradient(to bottom right, #FFFCEC 20%, #FFF4FE, #EEF4FE, #F4F0FF);*/
     background: white;
     overflow: scroll;
     margin: 0px;
@@ -181,7 +180,7 @@ body {
     transition: 2s;
 }
 
-#Header a{
+#Header a {
     text-decoration: none;
 }
 
@@ -190,115 +189,234 @@ body {
 /*Main*/
 #main {
     margin: 0;
-    height:90vh;
+    height: auto;
     padding-left: 15%;
     padding-right: 15%;
 }
 
-#main-big {
-    margin: 0;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-#main p {
-    float: left;
-    font-size: 1.1em;
-    line-height: 30px;
-}
-
-#main h2 {
-    float: left;
-    font-size: 1.1em;
-    line-height: 30px;
-    font-weight: 300;
-}
-
-#main li {
-    float: left;
-    font-size: 1.1em;
-    line-height: 30px;
-}
 
 #main img {
     width: 100%;
 }
 
+/*process*/
+#process li {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+}
 
-#main-big img {
+#center {
+    padding-right: 25%;
+    padding-left: 25%;
+}
+
+hr.solid {
+    border-top: 0.5px solid #bbb;
+}
+
+#process {
+    width: 100%;
+    padding-top: 10%;
+}
+
+#process #title {
+    text-align: center;
+}
+
+#DesignProcess h1 {
+    color: #19A58E;
+    font-size: 3em;
+}
+
+
+#subtitle {
+    font-size: 0.9em;
+    color: grey;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+
+/*research*/
+
+#research {
+    height: 150vh;
+    background-color: #F3F3F3;
+}
+
+#subtitle {
+    text-align: center;
+    padding-top: 10%;
+}
+
+#big-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+#research #content {
+    width: 60%;
+    padding-left: 22%;
+    padding-right: 18%;
+    color: #484646;
+}
+
+#research img {
     width: 100%;
 }
 
-#main-big iframe {
+/*sketch*/
+
+#sketch {
+    height: 160vh;
+    background-color: #F3F3F3;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#sketch #content {
+    width: 60%;
+    padding-left: 22%;
+    padding-right: 18%;
+    color: #484646;
+}
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+
+}
+
+#left {
+    text-align: left;
+    margin-top: -40%;
+}
+
+#right {
+    text-align: right;
+    margin-top: -2%;
+}
+
+#dot {
+    margin-top: 30%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
     width: 100%;
-}
-
-span {
-    font-weight: 500;
-}
-
-#inspiration img {
-    float: left;
-    width: 30%;
-    padding-right: 8%;
-
-}
-
-#inspiration p {
-    float: right;
-
-}
-
-#userresearch,
-#research,
-#analysis,
-#ideation,
-#design,
-#test {
-    padding-top: 20%;
-}
-
-.button {
-    background: #F8CE89;
-    padding: 1em 2em 1em 2em;
-    border-radius: 50px;
-    text-decoration: none;
-    color: white;
-}
-
-#survey {
-    position: relative;
-}
-
-#feature1 {
-    background-color: #FBFBFB;
-}
-
-
-
-#feature2 {
-    background-color: #EEECFE;
-}
-
-#feature2 img {
-    width: 70%;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-
-#feature3 {
-    background-color: #FCF4E7;
-}
-
-#feature3 img {
-    width: 70%;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-a {
+    padding: 5%;
     color: black;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 99;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Caption text */
+.text {
+    color: black;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    visibility: hidden;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#dot {}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/*prototype*/
+#prototype {
+    height: 220vh;
+    background-color: #F3F3F3;
+    margin: 0px;
+    padding: 0% 0% 0% 0%;
+
+}
+
+#prototype #content {
+    width: 60%;
+    padding-left: 22%;
+    padding-right: 18%;
+    color: #484646;
+}
+
+#prototype a {
+    color: #19A58E;
 }
 
 
@@ -538,29 +656,45 @@ a {
     /*Main*/
 
     /*Header*/
-    #big_title {
-        font-size: 1em;
-    }
-
-    #section {
-        height: auto;
-        padding-top: 2%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
     #Header {
         background: white;
         height: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 20%;
     }
 
     #Header img {
-        padding-top: 0%;
         width: 100%;
     }
 
-    #title {
+    #content {
+        line-height: 25px;
         font-size: 1em;
+        letter-spacing: 0px;
+    }
+
+    #Header #logo {
+        width: 50%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #title {
+        font-size: 0.9em;
+        color: grey;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+
+    #brief {
+        padding-top: 14%;
+    }
+
+    #overview {
+        float: none;
+        width: 100%;
+        padding-top: 50%;
     }
 
     #role {
@@ -568,20 +702,18 @@ a {
         padding-right: 0%;
     }
 
-    #overview {
-        float: none;
-        width: 100%;
-    }
-
-    #Header p {
+    #role #content {
         line-height: 30px;
-        font-size: 1em;
     }
 
-    #sub_title {
-        color: #C4C4C4;
-        font-size: 1em;
-        font-weight: 300;
+
+    #button {
+        display: none;
+    }
+
+
+    #Header a {
+        text-decoration: none;
     }
 
 
@@ -590,108 +722,107 @@ a {
     /*Main*/
     #main {
         margin: 0;
+        height: auto;
         padding-left: 5%;
         padding-right: 5%;
     }
 
-    #main-big {
-        margin: 0;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    #main p {
-        float: none;
-        font-size: 1em;
-        line-height: 30px;
-    }
-
-    #main h2 {
-        float: none;
-        font-size: 1em;
-        line-height: 30px;
-        font-weight: 300;
-    }
-
-    #main li {
-        float: none;
-        font-size: 1em;
-        line-height: 30px;
-    }
 
     #main img {
         width: 100%;
     }
 
 
-    #main-big img {
+    #side,
+    #center {
+        padding-left: 22%;
+        padding-right: 22%;
+
+    }
+
+
+
+    /*research*/
+
+    #research {
+        height: auto;
+        background-color: #F3F3F3;
+    }
+
+    #subtitle {
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    #big-title {
+        text-align: center;
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    #research #content {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 2%;
+        color: #484646;
+    }
+
+    #research img {
         width: 100%;
     }
 
-    #main-big iframe {
-        width: 100%;
-    }
-
-    span {
-        font-weight: 500;
-    }
-
-    #inspiration img {
-        float: none;
-        width: 100%;
-        padding-right: 0%;
-
-    }
-
-    #inspiration p {
-        float: none;
-
-    }
-
-    #userresearch,
-    #research,
-    #analysis,
-    #ideation,
-    #design,
-    #test {
-        padding-top: 5%;
-    }
-
-    #survey {
-        position: relative;
-    }
-
-    #feature1 {
-        background-color: #FBFBFB;
+    /*sketch*/
+    #sketch {
+        height: auto;
+        background-color: #F3F3F3;
     }
 
 
-
-    #feature2 {
-        background-color: #EEECFE;
+    #sketch #content {
+        width: 95%;
+        padding-left: 5%;
+        padding-right: 2%;
+        color: #484646;
     }
 
-    #feature2 img {
-        width: 70%;
-        padding-left: 15%;
-        padding-right: 15%;
+    .dot {
+        visibility: hidden;
     }
 
-
-    #feature3 {
-        background-color: #FCF4E7;
+    #left {
+        text-align: left;
+        margin-top: -40%;
     }
 
-    #feature3 img {
-        width: 70%;
-        padding-left: 15%;
-        padding-right: 15%;
+    #right {
+        text-align: right;
+        margin-top: -11%;
     }
 
-    a {
-        color: black;
-    }
+    
+    /*prototype*/
+#prototype {
+    height: auto;
+    background-color: #F3F3F3;
+    margin: 0px;
+    padding: 0% 0% 0% 0%;
 
+}
+
+#prototype #content {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5$;
+    color: #484646;
+}
+
+#prototype a {
+    color: #19A58E;
+}
+
+
+    
+    
     /*Main*/
 
     /*    footer*/
