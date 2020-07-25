@@ -31,15 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
         'slow');
 });
       
-//    $(window).bind('scroll', function () {
-//        if ($(window).scrollTop() > 200) {
-//            $('.hero').fadeOut();
-//        } else {
-//            $('.hero').fadeIn();
-//             console.log("ho");
-//        }
-//    });
-    
     
 //    navigation effect
     
@@ -58,7 +49,18 @@ document.addEventListener("DOMContentLoaded", function () {
         $('#work').each(function () {
             $(this).attr('data-buzz', $(this).text());
         });
+         $('#play').each(function () {
+            $(this).attr('data-buzz', $(this).text());
+        });
     });
 
+
+//    mobile
+       $(".hamberger").click(function() {
+                $(".menu").toggleClass("menu-active");
+                $(".hamberger .top").toggleClass("hamberger-top");
+                $(".hamberger .center").toggleClass("hamberger-center");
+                $(".hamberger .bottom").toggleClass("hamberger-bottom");
+            });
 
 });

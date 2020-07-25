@@ -299,7 +299,7 @@ span {
 
 #about,
 #work,
-#resume {
+#play {
     display: inline-block;
     position: relative;
     color: inherit;
@@ -312,7 +312,7 @@ span {
 
 #about::before,
 #work::before,
-#resume::before {
+#play::before {
     content: attr(data-buzz);
     position: absolute;
     opacity: 0.5;
@@ -324,17 +324,16 @@ span {
     color: #c998db;
 }
 
-#resume::before {
-    color: #c998db;
-}
-
 #work::before {
-    color: #f0c8a1;
+    color: #C48B54;
+}
+#play::before {
+    color: #4F7663;
 }
 
 #about:hover::before,
 #work:hover::before,
-#resume:hover::before {
+#play:hover::before {
     transform: rotatex(-15deg) rotatey(5deg) scale(1.15);
 }
 

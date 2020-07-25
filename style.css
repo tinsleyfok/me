@@ -71,7 +71,7 @@ body {
 }
 
 #about,
-#work {
+#work, #play {
     display: inline-block;
     position: relative;
     color: inherit;
@@ -83,7 +83,8 @@ body {
 
 
 #about::before,
-#work::before {
+#work::before, 
+#play::before {
     content: attr(data-buzz);
     position: absolute;
     opacity: 0.5;
@@ -99,8 +100,13 @@ body {
     color: #f0c8a1;
 }
 
+#play::before {
+    color: #C48B54;
+}
+
 #about:hover::before,
-#work:hover::before {
+#work:hover::before,
+#play:hover::before{
     transform: rotatex(-15deg) rotatey(5deg) scale(1.15);
 }
 
@@ -611,8 +617,8 @@ body {
 
     .feature {
         height: 100vh;
-        margin-right: 0px;
-        margin-left: 0px;
+        margin-right: 5%;
+        margin-left: 5%;
         z-index: 1;
     }
 
@@ -679,8 +685,8 @@ body {
     .product {
         font-weight: 500;
         height: auto;
-        margin-right: 8%;
-        margin-left: 8%;
+        margin-right: 5%;
+        margin-left: 5%;
     }
 
     .contain {

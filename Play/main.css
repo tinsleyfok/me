@@ -158,7 +158,8 @@ contain a {
 }
 
 #about,
-#work {
+#work,
+#play {
     display: inline-block;
     position: relative;
     color: inherit;
@@ -170,7 +171,8 @@ contain a {
 
 
 #about::before,
-#work::before {
+#work::before,
+#play:before {
     content: attr(data-buzz);
     position: absolute;
     opacity: 0.5;
@@ -186,8 +188,13 @@ contain a {
     color: #f0c8a1;
 }
 
+#play::before {
+    color: #C48B54;
+}
+
 #about:hover::before,
-#work:hover::before {
+#work:hover::before,
+#play:hover::before {
     transform: rotatex(-15deg) rotatey(5deg) scale(1.15);
 }
 
@@ -455,7 +462,7 @@ contain a {
     /*Main*/
     #main {
         margin: 0;
-        padding-top: 10%;
+        padding-top: 15%;
         padding-left: 5%;
         padding-right: 5%;
         height: auto;

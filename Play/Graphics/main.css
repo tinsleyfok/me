@@ -222,7 +222,8 @@ button {
 }
 
 #about,
-#work {
+#work,
+#play {
     display: inline-block;
     position: relative;
     color: inherit;
@@ -234,7 +235,8 @@ button {
 
 
 #about::before,
-#work::before {
+#work::before,
+#play::before {
     content: attr(data-buzz);
     position: absolute;
     opacity: 0.5;
@@ -247,14 +249,17 @@ button {
 }
 
 #work::before {
-    color: #f0c8a1;
+    color: #C48B54;
+}
+#play::before {
+    color: #4F7663;
 }
 
 #about:hover::before,
-#work:hover::before {
+#work:hover::before,
+#play:hover::before {
     transform: rotatex(-15deg) rotatey(5deg) scale(1.15);
 }
-
 
 #active a {
     color: black;
