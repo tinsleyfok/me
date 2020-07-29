@@ -132,15 +132,17 @@ body {
 }
 
 #section {
-    height: 15vh;
+    height: auto;
     padding-top: 2%;
     padding-left: 25%;
     padding-right: 25%;
+    padding-bottom: 10%;
 }
 
 #Header {
     background: white;
-    height: 120vh;
+    height: auto;
+    padding-bottom: 10%;
 }
 
 #Header img {
@@ -174,10 +176,11 @@ body {
 /*main*/
 
 #main {
-    height: 580vh;
+    height: auto;
     margin: 0;
     padding-left: 25%;
     padding-right: 25%;
+    padding-bottom: 20%;
 }
 
 #main p {
@@ -278,7 +281,9 @@ body {
 
 /*footer*/
 #footer {
-    height: 50vh;
+    font-family: roboto;
+    height: auto;
+    padding-bottom: 30%;
 }
 
 #footer {

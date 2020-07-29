@@ -20,22 +20,28 @@ body {
 }
 
 .feature {
+    padding-top:20%;
     font-weight: 500;
-    height: 100vh;
+    height: auto;
     margin-right: 12%;
     margin-left: 12%;
+    padding-bottom:20%;
 }
 
 .product {
+    padding-top:20%;
+    padding-bottom:20%;
     font-weight: 500;
-    height: 100vh;
+    height: auto;
     margin-right: 12%;
     margin-left: 12%;
 }
 
 
 #footer {
-    height: 50vh;
+    font-family: roboto;
+    height: auto;
+    padding-bottom: 30%;
 }
 
 

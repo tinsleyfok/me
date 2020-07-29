@@ -27,7 +27,8 @@ body {
 
 #Header {
     background: #FBFBFB;
-    height: 75vh;
+    height: auto;
+    padding-bottom: 35%;
 }
 
 #Header img {
@@ -426,7 +427,9 @@ a {
 
 /*footer*/
 #footer {
-    height: 50vh;
+    font-family: roboto;
+    height: auto;
+    padding-bottom: 30%;
 }
 
 #footer {

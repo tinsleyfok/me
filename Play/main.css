@@ -317,7 +317,9 @@ contain a {
 
 /*footer*/
 #footer {
-    height: 50vh;
+    font-family: roboto;
+    height: auto;
+    padding-bottom: 30%;
 }
 
 #footer {

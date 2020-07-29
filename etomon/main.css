@@ -116,10 +116,11 @@ body {
 
 #Header {
     background: white;
-    height: 60vh;
+    height: auto;
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 10%;
+    padding-bottom: 30%;
 }
 
 #Header img {
@@ -207,8 +208,8 @@ body {
 }
 
 #center {
-    padding-right: 25%;
-    padding-left: 25%;
+    padding-right: 22%;
+    padding-left: 22%;
 }
 
 hr.solid {
@@ -218,6 +219,7 @@ hr.solid {
 #process {
     width: 100%;
     padding-top: 10%;
+    height:auto;
 }
 
 #process #title {
@@ -241,7 +243,7 @@ hr.solid {
 /*research*/
 
 #research {
-    height: 150vh;
+    height: auto;
     background-color: #F3F3F3;
 }
 
@@ -270,7 +272,7 @@ hr.solid {
 /*sketch*/
 
 #sketch {
-    height: 160vh;
+    height: auto;
     background-color: #F3F3F3;
     margin: 0px;
     padding: 0px;
@@ -347,6 +349,7 @@ hr.solid {
     font-size: 15px;
     width: 100%;
     text-align: center;
+    padding-bottom: 5%;
 }
 
 
@@ -363,7 +366,6 @@ hr.solid {
     transition: background-color 0.6s ease;
 }
 
-#dot {}
 
 .active,
 .dot:hover {
@@ -401,7 +403,7 @@ hr.solid {
 
 /*prototype*/
 #prototype {
-    height: 220vh;
+    height: auto;
     background-color: #F3F3F3;
     margin: 0px;
     padding: 0% 0% 0% 0%;
@@ -510,9 +512,11 @@ hr.solid {
 
 /*footer*/
 #footer {
-    height: 50vh;
     font-family: roboto;
+    height: auto;
+    padding-bottom: 30%;
 }
+
 
 #footer {
     background: black;

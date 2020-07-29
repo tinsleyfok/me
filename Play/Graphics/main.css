@@ -81,9 +81,10 @@ button {
     background: #F9F8F5;
     height: auto;
     text-align: left;
-    height: 30vh;
+    height: auto;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 10%;
 }
 
 #Header p {
@@ -105,10 +106,11 @@ button {
 #music {
     background: white;
     padding-top: 10%;
-    height: 70vh;
+    height: auto;
     background: white;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 40%;
 
 }
 
@@ -124,10 +126,11 @@ button {
 #data {
     background: white;
     padding-top: 5%;
-    height: 80vh;
+    height: auto;
     background: white;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 50%;
 
 }
 
@@ -159,10 +162,11 @@ button {
 #food {
     background: white;
     padding-top: 5%;
-    height: 80vh;
+    height: auto;
     background: white;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 50%;
 
 }
 
@@ -379,7 +383,9 @@ button {
 
 /*footer*/
 #footer {
-    height: 50vh;
+    font-family: roboto;
+    height: auto;
+    padding-bottom: 30%;
 }
 
 #footer {

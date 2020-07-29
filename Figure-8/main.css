@@ -5,7 +5,7 @@ html {
 
 body {
     /*    background-image: linear-gradient(to bottom right, #FFFCEC 20%, #FFF4FE, #EEF4FE, #F4F0FF);*/
-    background: #183655;
+    background: #F9F8F5;
     overflow: scroll;
     margin: 0px;
     font-family: Roboto;
@@ -198,8 +198,10 @@ body {
 
 /*brief*/
 #brief {
+    font-family: Rubik;
     background: #A1CBDB;
     height: 100vh;
+    padding-top: 0%;
 }
 
 #brief_box {
@@ -217,12 +219,12 @@ body {
 }
 
 #about_text {
-    line-height: 25px;
+    line-height: 30px;
     float: right;
-    padding-right: 5%;
-    width: 55%;
+    padding-right: 0%;
+    width: 60%;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.1em;
     color: #183655;
 }
 
@@ -264,9 +266,11 @@ body {
 /*Hiatus*/
 
 #Hiatus {
-    background: #183655;
-    height: 40vh;
-    color: white;
+    background: #F9F8F5;
+    height:auto;
+    color: black;
+    padding-top:10%;
+    font-family: rubik;
 }
 
 #Hiatus_box {
@@ -278,52 +282,17 @@ body {
 }
 
 #transition {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 30px;
+    
 }
 
 /*Hiatus*/
 
-/*map*/
-#map {
-    height: 150vh;
-}
-
-#map_box {
-    text-align: center;
-    background: #D68268;
-    margin-right: 8%;
-    margin-left: 8%;
-}
-
-#map img {
-    width: 95%;
-    margin-top: 5%;
-    padding-bottom: 8%;
-}
-
-#map h1 {
-    color: white;
-    padding-top: 8%;
-    font-size: 2.5em;
-}
-
-#map_content {
-    margin-right: 20%;
-    margin-left: 20%;
-    margin-top: 5%;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.5em;
-    color: white;
-
-}
-
-/*map*/
 
 /*process*/
 #process {
-    height: 280vh;
+    height: auto;
 }
 
 #process_box {
@@ -348,24 +317,17 @@ body {
 }
 
 #process_content {
+    font-family: Rubik;
     margin-right: 20%;
     margin-left: 20%;
     margin-top: 5%;
     font-size: 1.1em;
     font-weight: 300;
-    line-height: 1.5em;
+    line-height: 30px;
     color: #183655;
+    text-align: left;
 
 }
-
-/*
-#peek_box {
-    text-align: center;
-    background: #EBE8E8;
-    margin-right: 8%;
-    margin-left: 8%;
-}
-*/
 
 
 #process_box img {
@@ -378,6 +340,111 @@ body {
 
 /*process*/
 
+/* projects */
+#project{
+    padding-top:5%;
+    padding-right:8%;
+    padding-left:8%;
+}
+#project h1{
+    color: black;
+    text-align: center;
+    font-size: 3em;
+}
+
+#MOIC {
+    padding-top: 10%;
+    height: auto;
+    background: #F4DBE0;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 40%;
+    margin-bottom: 10%;
+}
+#MOIC h1{
+    font-size:2em;
+    text-align:left;
+}
+#MOIC p {
+    line-height: 30px;
+    font-size: 1.1em;
+}
+
+#CCD{
+    padding-top: 10%;
+    height: auto;
+    background: #A9CAD8;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 40%;
+    margin-bottom: 10%;
+}
+#CCD h1{
+    font-size:2em;
+    text-align:left;
+}
+#CCD p {
+    line-height: 30px;
+    font-size: 1.1em;
+}
+
+#right {
+    float: right;
+    width: 60%;
+
+}
+
+#left {
+    float: left;
+    bottom: 0%;
+    width: 30%;
+    padding-top: 0%;
+}
+
+#left p{
+    font-size: 1.1em;
+    font-family: Rubik;
+    line-height:30px;
+    color: black;
+}
+
+img{
+    width:100%;
+}
+.button a {
+    text-decoration: none;
+}
+
+.button {
+    padding: 5% 20% 5% 20%;
+    background-color: #F4DBE0;
+    border: 1px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+    color: black;
+    font-size: 1em;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+
+
+#CCD .button {
+    padding: 5% 20% 5% 20%;
+    background-color: #A9CAD8;
+    border: 1px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+    color: black;
+    font-size: 1em;
+}
+
+
+
+
+
 /*end*/
 #end {
     height: auto;
@@ -387,14 +454,15 @@ body {
 #end_box {
     position: relative;
     top: 35%;
-    padding: 15% 20% 15% 20%;
+    padding: 10% 20% 15% 20%;
     text-align: center;
 }
 
 #end {
     padding-right: 8%;
     padding-left: 8%;
-    color: white;
+    padding-bottom: 10%;
+    color:black;;
     margin-top: 0%;
     font-size: 1.1em;
     line-height: 30px;
@@ -420,7 +488,9 @@ body {
 
 /*footer*/
 #footer {
-    height: 50vh;
+    height: auto;
+    font-family: Roboto;
+    padding-bottom: 30%;
 }
 
 #footer {
@@ -613,43 +683,6 @@ body {
 
     /*Hiatus*/
 
-    /*map*/
-    #map {
-        height: auto;
-    }
-
-    #map_box {
-        text-align: center;
-        background: #D68268;
-        margin-right: 5%;
-        margin-left: 5%;
-    }
-
-    #map img {
-        width: 95%;
-        margin-top: 5%;
-        padding-bottom: 8%;
-    }
-
-    #map h1 {
-        color: white;
-        padding-top: 8%;
-        font-size: 1.2em;
-    }
-
-    #map_content {
-        margin-right: 5%;
-        margin-left: 5%;
-        margin-top: 5%;
-        font-size: 0.9em;
-        font-weight: 300;
-        line-height: 1.5em;
-        color: white;
-        text-align: left;
-
-    }
-
-    /*map*/
 
     /*process*/
     #process {
@@ -692,6 +725,53 @@ body {
         width: 90%;
     }
 
+    #project{
+        padding-top:5%;
+        padding-right:5%;
+        padding-left:5%;
+        font-size: 1em;
+    }
+    #project h1{
+        color: black;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    #project img{
+        display: none;
+    }
+    #MOIC {
+        text-align: center;
+        padding-top: 5%;
+        height: auto;
+        background: #F4DBE0;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 30%;
+        margin-bottom: 10%;
+    }
+   #MOIC h1{
+    font-size: 1em;
+   }
+
+   #CCD{
+    text-align: center;
+    padding-bottom: 30%;
+   }
+    #right {
+        float: none;
+        width: 100%;
+    }
+    
+    #left {
+        float: none;
+        bottom: 0%;
+        width: 100%;
+        padding-top: 0%;
+    }
+
+    #left p{
+        font-size: 1em;
+    }
     /*process*/
 
     /*end*/
@@ -709,9 +789,9 @@ body {
     }
 
     #end {
-        color: white;
+        color:black;
         margin-top: 10%;
-        font-size: 1em;
+        font-size: 0.9em;
         line-height: 30px;
         margin-bottom: 10%;
     }
