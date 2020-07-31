@@ -207,8 +207,8 @@ body {
 #brief_box {
     position: relative;
     top: 30%;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
 
@@ -502,7 +502,7 @@ img{
     float: left;
     padding-top: 5%;
     padding-left: 10%;
-    width: 35%;
+    width: 45%;
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -840,3 +840,368 @@ img{
         color: white;
     }
 }
+
+@media screen and (min-width:500px) and (max-width:900px) {
+
+
+    /* menu */
+    #logo{
+        width:6%;
+        padding-top:3%;
+    }
+    .nav {
+        padding: 5% 0px 0px 0px;
+        font-size: 14px;
+    }
+
+    /* main */
+    #brief_box {
+        margin-right: 10%;
+        margin-left: 10%;
+        font-size: 0.8em;
+        top:20%;
+    }
+    #about_img {
+        padding-top: 10%;
+        width: 30%;
+        float: none;
+        padding-bottom: 10%;
+    }
+    
+    #about_text {
+        line-height: 25px;
+        float: none;
+        width: 100%;
+    }
+    
+    #role {
+        line-height: 25px;
+        float: none;
+        width: 100%;
+    }
+
+    #transition{
+        font-size: 0.8em;
+    }
+    #project{
+        padding-top:5%;
+        padding-right:5%;
+        padding-left:5%;
+        font-size: 1em;
+    }
+    #project h1{
+        text-align: center;
+    }
+    #project img{
+        display: none;
+    }
+    #MOIC {
+        text-align: center;
+        padding-top: 5%;
+        height: auto;
+        background: #F4DBE0;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 10%;
+    }
+   #MOIC h1{
+    font-size: 1em;
+   }
+
+   #CCD{
+    text-align: center;
+    padding-bottom: 10%;
+   }
+    #right {
+        float: none;
+        width: 100%;
+    }
+    
+    #left {
+        float: none;
+        bottom: 0%;
+        width: 100%;
+        padding-top: 0%;
+    }
+
+    #left p{
+        font-size: 1em;
+    }
+
+    #end{
+        font-size: 0.9em;
+        padding:5%;
+    }
+  
+    /* main */
+
+    /* footer */
+    .small_title {
+        margin-bottom: 5%;
+        padding-left: 3%;
+        line-height: 25px;
+    }
+    .big_title_work {
+        font-size: 2em;
+    }
+    
+    .big_title_about {
+        font-size: 2em;
+    }
+    
+    .big_title_connect {
+        font-size: 2em;
+    }
+    #footer_work {
+        line-height: 2em;
+        padding-left: 5%;
+        width: 55%;
+    }
+    #footer_About {
+        padding-right: 0%;
+        width: 35%;
+    }
+    
+    #footer_connect {
+        padding-right: 0%;
+        width: 35%;
+    }
+    #footer{
+        font-size: 0.6em;
+        padding-bottom: 40%;
+     }
+     #copyright{
+         padding-top:8%;
+         font-size: 0.5em;
+     }
+    /* footer */
+    
+    /* main */
+    #main{
+        padding-left:10%;
+        padding-right:10%;
+    }
+    #main p{
+        line-height: 25px;
+    }
+    #right{
+        float:none;
+        width:100%;
+        padding-right: 0%;
+        font-size: 0.8em;
+    }
+    #main img {
+        width: 80%;
+        padding:30% 10% 0% 10%;
+        float: none;
+    }
+    /* main */
+    }
+    @media screen and (min-width:900px) and (max-width:1100px) {
+    
+     /* main */
+     
+ 
+     #MOIC{
+        font-size: 0.8em;
+        padding-bottom: 55%;
+  
+    }
+
+    #MOIC p{
+        line-height: 25px;
+    }
+
+    #CCD{
+        font-size: 0.8em;
+        padding-bottom: 50%;
+    }
+    #CCD p{
+        line-height: 25px;
+    }
+    #end{
+        font-size: 16px; 
+    }
+
+    #transition{
+        font-size: 0.9em; 
+    }
+    #brief_box {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    #about_text{
+        width:60%;
+        padding-right: 0%;
+        font-size: 0.9em;
+    }
+
+    #process{
+        font-size: 0.8em;
+    }
+    #end{
+        font-size:1em;
+        padding-right:2%;
+        padding-left:2%;
+    }
+    /* main */
+    
+    /* footer */
+    .small_title {
+        margin-bottom: 5%;
+        padding-left: 3%;
+        line-height: 25px;
+    }
+    .big_title_work {
+        font-size: 2em;
+    }
+    
+    .big_title_about {
+        font-size: 2em;
+    }
+    
+    .big_title_connect {
+        font-size: 2em;
+    }
+    #footer_work {
+        line-height: 2em;
+        padding-left: 5%;
+        width: 55%;
+    }
+    #footer_About {
+        padding-right: 0%;
+        width: 35%;
+    }
+    
+    #footer_connect {
+        padding-right: 0%;
+        width: 35%;
+    }
+    #footer{
+        font-size: 0.9em;
+        padding-bottom: 40%;
+     }
+     #copyright{
+         padding-top:8%;
+         font-size: 0.5em;
+     }
+    /* footer */   
+    }
+    
+    
+    @media screen and (min-width:1100px) and (max-width:1300px) {
+
+        #brief_box {
+       
+            margin-right: 10%;
+            margin-left: 10%;
+        }
+
+        #MOIC{
+            font-size: 0.9em;
+            padding-bottom: 50%;
+        }
+    
+        #CCD{
+            font-size: 0.9em;
+            padding-bottom: 50%;
+        }
+    
+        #end{
+            font-size: 16px; 
+        }
+
+        #Hiatus{
+            font-size: 16px;  
+        }
+       
+    
+    /* footer */
+    
+    .big_title_work {
+        font-size: 3em;
+    }
+    
+    .big_title_about {
+        font-size: 3em;
+    }
+    
+    .big_title_connect {
+        font-size: 3em;
+    }
+    #footer_work {
+        padding-left: 5%;
+        width: 55%;
+    }
+    #footer_About {
+        padding-right: 0%;
+        width: 35%;
+    }
+    
+    #footer_connect {
+        padding-right: 0%;
+        width: 35%;
+    }
+    #footer{
+        font-size: 0.9em;
+        padding-bottom: 40%;
+     }
+     #copyright{
+         padding-top:12%;
+         font-size: 0.9em;
+     }
+    /* footer */   
+    }
+    
+    @media screen and (min-width:1300px) and (max-width:1600px) {
+ 
+    #MOIC{
+        font-size: 0.9em;
+    }
+
+    #CCD{
+        font-size: 0.9em;
+    }
+
+    #end{
+        font-size: 18px; 
+    }
+   
+    /* footer */
+    
+    .big_title_work {
+        font-size: 3em;
+    }
+    
+    .big_title_about {
+        font-size: 3em;
+    }
+    
+    .big_title_connect {
+        font-size: 3em;
+    }
+    #footer_work {
+        padding-left: 5%;
+        width: 55%;
+    }
+    #footer_About {
+        padding-right: 0%;
+        width: 35%;
+    }
+    
+    #footer_connect {
+        padding-right: 0%;
+        width: 35%;
+    }
+    #footer{
+        font-size: 1em;
+        padding-bottom: 40%;
+     }
+     #copyright{
+         padding-top:10%;
+         font-size: 1em;
+     }
+    /* footer */
+    }
+
+    
