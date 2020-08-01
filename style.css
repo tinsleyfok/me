@@ -584,13 +584,11 @@ body {
     display: none;
 }
 #copyright{
-    padding-top:13%;
+    padding-top:11%;
 }
 /*footer*/
-/*
 
------------------------------------------------------------------------------------
-*/
+/*-------------------------------------mobile----------------------------------------------*/
 
 @media screen and (max-width: 500px) {
 
@@ -770,8 +768,8 @@ body {
 }
 
 
-
-@media screen and (min-width:500px) and (max-width:900px) {
+/*-------------------------------------500~700----------------------------------------------*/
+@media screen and (min-width:500px) and (max-width:700px) {
 
     /*    brief*/
     .brief {
@@ -839,9 +837,7 @@ body {
     }
     /*    menu*/
 
-
-
-    /*    product*/
+    /* product*/
 
     .product {
         font-weight: 500;
@@ -910,22 +906,187 @@ body {
         opacity: 1;
     }
 
- /* footer */
+/* footer */
+#footer_connect {
+    display: none;
+}
+
+#footer_work {
+    display: none;
+}
+
+#footer_About {
+    display: none;
+}
+.hide {
+    display: block;
+    padding: 10% 5% 5% 5%;
+}
 .small_title {
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+    font-size: 0.9em;
     padding-left: 3%;
+    color: white;
     line-height: 25px;
 }
 .big_title_work {
     font-size: 2em;
 }
+.copyright {
+    padding-top: 40%;
+    color: gainsboro;
+    font-size: 0.6em;
+    text-align: center;
+}
+#footer a {
+    color: white;
+}
+/* footer */
+}
+
+/*-------------------------------------700~900----------------------------------------------*/
+@media screen and (min-width:700px) and (max-width:900px) {
+
+   /*    brief*/
+   .brief {
+    position: absolute;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.welcome span {
+    font-size: 50px;
+}
+
+.brief_description {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/*    brief*/
+
+/*feature*/
+
+.feature {
+    height: 50vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#feature_content {
+    float: right;
+    width: 35%;
+    padding: 5% 7% 4% 7%;
+}
+
+#feature_subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+
+}
+
+#feature_text {
+    font-family: 'rubik';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#feature_Link {
+    font-size: 12px;
+}
+
+#copyright{
+    padding-top:5%;
+
+}
+/*    featur*/
+
+
+/*    product*/
+
+.product {
+    font-weight: 500;
+    height: auto;
+    margin-right: 3%;
+    margin-left: 5%;
+}
+
+#product_title {
+    font-size: 24px;
+    padding-top: 20%;
+    font-family: roboto;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contain {
+    position: relative;
+    top: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 20%;
+}
+
+
+.box {
+    width: 40%;
+    margin: 0%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex-grow: 2;
+    cursor: pointer;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box-info {
+    position: absolute;
+    text-align: left;
+    display: inline-block;
+    padding-left: 2%;
+}
+
+.title {
+    font-family: 'rubik';
+    color: #312C2C;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 0px;
+    opacity: 1;
+}
+
+.subtitle {
+    font-family: 'rubik';
+    color: #312C2C;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 0px;
+    margin-top: -12px;
+    opacity: 1;
+}
+
+
+ /* footer */
+ .big_title_work {
+    font-size: 2.5em;
+}
 
 .big_title_about {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .big_title_connect {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 #footer_work {
     line-height: 2em;
@@ -942,7 +1103,7 @@ body {
     width: 35%;
 }
 #footer{
-    font-size: 0.6em;
+    font-size: 0.8em;
     padding-bottom: 40%;
  }
  #copyright{
@@ -951,6 +1112,8 @@ body {
  }
 /* footer */
 }
+
+/*-------------------------------------900~1100----------------------------------------------*/
 
 @media screen and (min-width:900px) and (max-width:1100px) {
 
@@ -1123,18 +1286,17 @@ body {
      font-size: 0.5em;
  }
 /* footer */  
-
-
 }
 
+/*-------------------------------------1100~1300----------------------------------------------*/
 
 @media screen and (min-width:1100px) and (max-width:1300px) {
 
     /*    brief*/
     .brief {
         position: absolute;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 30%;
+        margin-right: 30%;
     }
 
     .welcome span {
@@ -1153,7 +1315,7 @@ body {
     #feature_content {
         float: right;
         width: 35%;
-        padding: 6% 7% 6% 7%;
+        padding: 6% 7% 5% 7%;
     }
 
     #feature_subtitle {
@@ -1234,24 +1396,43 @@ body {
         opacity: 0;
     }
    
-    #footer a, .small_title{
-        font-size: 0.9em;
-    }
-    #footer {
-        padding-bottom: 35%;
-    }
-
-    #footer_work{
-        width:50%;
-
-    }
-    #copyright{
-        padding-top:13%;
-        font-size: 0.8em;
-
-    }
+/* footer */
+.big_title_work {
+    font-size: 3em;
 }
 
+.big_title_about {
+    font-size: 3em;
+}
+
+.big_title_connect {
+    font-size: 3em;
+}
+#footer_work {
+    padding-left: 5%;
+    width: 55%;
+}
+#footer_About {
+    padding-right: 0%;
+    width: 35%;
+}
+
+#footer_connect {
+    padding-right: 0%;
+    width: 35%;
+}
+#footer{
+    font-size: 0.9em;
+    padding-bottom: 40%;
+ }
+ #copyright{
+     padding-top:12%;
+     font-size: 0.9em;
+ }
+/* footer */ 
+}
+
+/*-------------------------------------1300~1600----------------------------------------------*/
 @media screen and (min-width:1300px) and (max-width:1600px) {
 
     .brief {
@@ -1260,7 +1441,6 @@ body {
         margin-right: 30%;
         margin-left: 30%;
     }
-
     /*    brief*/
 
     /*feature*/
@@ -1270,15 +1450,48 @@ body {
         width: 35%;
         padding: 7% 7% 7% 7%;
     }
-
     /*    featur*/
+
+    /* footer */
+.big_title_work {
+    font-size: 3em;
+}
+
+.big_title_about {
+    font-size: 3em;
+}
+
+.big_title_connect {
+    font-size: 3em;
+}
+#footer_work {
+    padding-left: 5%;
+    width: 55%;
+}
+#footer_About {
+    padding-right: 0%;
+    width: 35%;
+}
+
+#footer_connect {
+    padding-right: 0%;
+    width: 35%;
+}
+#footer{
+    font-size: 1em;
+    padding-bottom: 40%;
+ }
+ #copyright{
+     padding-top:10%;
+     font-size: 1em;
+ }
+/* footer */
 
 
 }
 
+/*-------------------------------------1600+----------------------------------------------*/
 @media screen and (min-width:1600px) {
-
-
     /*feature*/
 
     #feature_content {

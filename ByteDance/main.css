@@ -13,7 +13,73 @@ body {
 
 }
 
+/*Header*/
+#big_title {
+    font-size: 2.2em;
+    font-family: Roboto;
+}
 
+#section {
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#Header {
+    background: #FBFBFB;
+    height: auto;
+    padding-bottom: 35%;
+}
+
+#Header img {
+    width: 100%;
+}
+
+#title {
+    font-family: Roboto;
+    font-size: 1em;
+    color: #5B01C4;
+    padding-top: 5%;
+    letter-spacing: 0px;
+}
+
+#conclusion {
+    font-size: 1.5em;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#image {
+    width: 38%;
+    float: right;
+}
+
+#overview {
+    float: left;
+    width: 50%;
+    height: 100%;
+    letter-spacing: 1px;
+}
+
+#Header p {
+    line-height: 20px;
+    font-size: 0.9em;
+}
+
+#sub_title {
+    letter-spacing: 0;
+    color: #5B01C4;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+
+#research {
+    padding-top: 10%;
+}
+
+
+/*Header*/
 
 
 /*moblie nav*/
@@ -114,6 +180,169 @@ body {
 
 /*mobile nav*/
 
+/*Main*/
+#main {
+    margin: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+#main p {
+    font-size: 1.1em;
+    line-height: 30px;
+}
+
+#main li {
+    font-size: 1.1em;
+    line-height: 30px;
+}
+
+#main-big {
+    margin: 0;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+
+#main-big img {
+    width: 100%;
+    padding-top: 5%;
+}
+
+#main img {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#main-big iframe {
+    width: 100%;
+}
+
+#main #title {
+    color: black;
+}
+
+#main h2 {
+    font-weight: 400;
+    font-size: 1.1em;
+    font-family: roboto;
+}
+
+#feature {
+    padding-top: 3%;
+}
+
+#inappstore ul {
+    padding: 0;
+    font-size: 0;
+    list-style: none;
+}
+
+#inappstore li {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: -5%;
+}
+
+#medium {
+    margin: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.button {
+    background: #F8CE89;
+    padding: 1em 2em 1em 2em;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+#inappstore #left {
+    float: left;
+    width: 40%;
+    padding-top: 15%;
+}
+
+#inappstore {
+    height: 80vh;
+    margin: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+#inappstore p {
+    font-size: 1em;
+    line-height: 30px;
+}
+
+#shareability {
+    height: 100vh;
+    margin: 0;
+    padding-left: 0%;
+    padding-right: 0%;
+    background-color: #F1EFFA;
+}
+
+#top {
+    width: 100%;
+    margin: 0;
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#buttom {
+    margin: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#buttom img {
+    padding-top: 3%;
+    width: 100%;
+}
+
+#shareability p {
+    font-size: 1em;
+    line-height: 30px;
+    width: 50%;
+}
+
+#right img {
+    float: right;
+    width: 60%;
+    padding-top: 5%;
+}
+
+#type {
+    color: #A5A1A1;
+}
+
+#feature_title {
+    font-family: roboto;
+    font-weight: 400;
+    color: #5B01C4;
+    font-size: 1.4em;
+     !important !
+}
+
+
+a {
+    color: black;
+}
+
+
+/*Main*/
+
+
+
+
+
+
 /*navigation*/
 .nav {
     position: fixed;
@@ -195,34 +424,6 @@ body {
 }
 
 /*navigation*/
-
-
-
-
-/*Main*/
-
-
-
-#right{
-    width:50%;    
-    height:100vh;
-    float:right;
-    background-color:#90CBD8
-}
-
-
-#left{
-    width:50%;
-    height:100vh;
-    float:left;
-    background-color:#4E7FBC
-} 
-
-
-/*Main*/
-
-
-
 
 /*footer*/
 #footer {
@@ -330,7 +531,9 @@ body {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 300;
 }
-
+#copyright{
+    padding-top:14%;
+}
 
 /*logo*/
 #logo {
@@ -620,3 +823,228 @@ body {
         color: white;
     }
 }
+
+/*-------------------------------500~700---------------------------------------------*/
+@media screen and (min-width:500px) and (max-width:700px) {
+    /* menu */
+        #logo{
+            width:6%;
+            padding-top:3%;
+        }
+        .nav {
+            padding: 5% 0px 0px 0px;
+            font-size: 14px;
+        }
+        .title {
+            font-size: 1em;
+        }
+    /* footer */
+    #footer_connect {
+        display: none;
+    }
+    
+    #footer_work {
+        display: none;
+    }
+    
+    #footer_About {
+        display: none;
+    }
+    .hide {
+        display: block;
+        padding: 10% 5% 5% 5%;
+    }
+    .small_title {
+        margin-bottom: 2%;
+        font-size: 0.9em;
+        padding-left: 3%;
+        color: white;
+        line-height: 25px;
+    }
+    .big_title_work {
+        font-size: 2em;
+    }
+    .copyright {
+        padding-top: 40%;
+        color: gainsboro;
+        font-size: 0.6em;
+        text-align: center;
+    }
+    #footer a {
+        color: white;
+    }
+    /* footer */
+        }
+    
+    /*-------------------------------700~900---------------------------------------------*/
+        @media screen and (min-width:700px) and (max-width:900px) {
+         /* menu */
+            #logo{
+                width:6%;
+                padding-top:3%;
+            }
+            .nav {
+                padding: 5% 0px 0px 0px;
+                font-size: 14px;
+            }
+            .title {
+                font-size: 1.5em;
+            }  
+        /* footer */
+        .big_title_work {
+            font-size: 2.5em;
+        }
+        
+        .big_title_about {
+            font-size: 2.5em;
+        }
+        
+        .big_title_connect {
+            font-size: 2.5em;
+        }
+        #footer_work {
+            line-height: 2em;
+            padding-left: 5%;
+            width: 55%;
+        }
+        #footer_About {
+            padding-right: 0%;
+            width: 35%;
+        }
+        
+        #footer_connect {
+            padding-right: 0%;
+            width: 35%;
+        }
+        #footer{
+            font-size: 0.8em;
+            padding-bottom: 40%;
+         }
+         #copyright{
+             padding-top:8%;
+             font-size: 0.5em;
+         }
+        /* footer */
+            }
+    
+    /*-------------------------------900~1100---------------------------------------------*/
+    @media screen and (min-width:900px) and (max-width:1100px) {
+    /* footer */
+    .small_title {
+        margin-bottom: 5%;
+        padding-left: 3%;
+        line-height: 25px;
+    }
+    .big_title_work {
+        font-size: 3em;
+    }
+    
+    .big_title_about {
+        font-size: 3em;
+    }
+    
+    .big_title_connect {
+        font-size: 3em;
+    }
+    #footer_work {
+        line-height: 3em;
+        padding-left: 5%;
+        width: 55%;
+    }
+    #footer_About {
+        padding-right: 0%;
+        width: 35%;
+    }
+    
+    #footer_connect {
+        padding-right: 0%;
+        width: 35%;
+    }
+    #footer{
+        font-size: 0.9em;
+        padding-bottom: 40%;
+     }
+     #copyright{
+         padding-top:8%;
+         font-size: 0.7em;
+     }
+    /* footer */   
+    }
+        
+    /*-------------------------------1100~1300---------------------------------------------*/  
+    @media screen and (min-width:1100px) and (max-width:1300px) {
+    /* footer */
+    .big_title_work {
+        font-size: 3em;
+    }
+    
+    .big_title_about {
+        font-size: 3em;
+    }
+    
+    .big_title_connect {
+        font-size: 3em;
+    }
+    #footer_work {
+        padding-left: 5%;
+        width: 55%;
+    }
+    #footer_About {
+        padding-right: 0%;
+        width: 35%;
+    }
+    
+    #footer_connect {
+        padding-right: 0%;
+        width: 35%;
+    }
+    #footer{
+        font-size: 0.9em;
+        padding-bottom: 40%;
+     }
+     #copyright{
+         padding-top:12%;
+         font-size: 0.9em;
+     }
+    /* footer */   
+        }
+    
+    /*-------------------------------1300~1600---------------------------------------------*/ 
+    
+    @media screen and (min-width:1300px) and (max-width:1600px) {
+    
+    /* footer */
+    .big_title_work {
+        font-size: 3em;
+    }
+    
+    .big_title_about {
+        font-size: 3em;
+    }
+    
+    .big_title_connect {
+        font-size: 3em;
+    }
+    #footer_work {
+        padding-left: 5%;
+        width: 55%;
+    }
+    #footer_About {
+        padding-right: 0%;
+        width: 35%;
+    }
+    
+    #footer_connect {
+        padding-right: 0%;
+        width: 35%;
+    }
+    #footer{
+        font-size: 1em;
+        padding-bottom: 40%;
+     }
+     #copyright{
+         padding-top:10%;
+         font-size: 1em;
+     }
+    /* footer */
+        }

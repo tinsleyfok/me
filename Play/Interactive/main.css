@@ -462,7 +462,9 @@ button {
 .hide {
     display: none;
 }
-
+#copyright{
+    padding-top:14%;
+}
 /*logo*/
 #logo {
     float: left;
@@ -699,3 +701,428 @@ button {
     }
 
 }
+
+/*-------------------------------500~700---------------------------------------------*/
+@media screen and (min-width:500px) and (max-width:700px) {
+    /* menu */
+    #logo{
+        width:6%;
+        padding-top:3%;
+    }
+    .nav {
+        padding: 5% 0px 0px 0px;
+        font-size: 14px;
+    }
+    /* menu */
+    
+/*   main */
+#Header{
+    padding-top:5%;
+}
+#Header h1{
+    font-size: 2em; 
+}
+#Header p{
+font-size: 0.8em;
+}
+#music,
+#yellow,
+#water{
+padding-top: 5%;
+padding-bottom: 10%;
+}
+
+#music p,
+#yellow p,
+#water p {
+line-height: 20px;
+font-size: 0.8em;
+}
+#video{
+    height:300px;
+}
+
+.button {
+    padding: 3% 10% 3% 10%;
+}
+#right{
+    float:none;
+width:100%;
+padding-top:10%;
+}
+#music #left,
+#yellow #left,
+#water #left{
+float:none;
+padding-top:0px;
+width:100%;
+}
+#music h1,
+#yellow h1,
+#water h1{
+ font-size: 1.5em;
+    }
+    #data img{
+        padding-top:0%;
+    }
+    #data{
+        padding-bottom: 10%;
+    }
+    #food img{
+        padding-top:0%;
+    }
+    #food{
+        padding-bottom: 10%;
+    }
+    
+/* main */
+    
+/* footer */
+#footer_connect {
+    display: none;
+}
+
+#footer_work {
+    display: none;
+}
+
+#footer_About {
+    display: none;
+}
+.hide {
+    display: block;
+    padding: 10% 5% 5% 5%;
+}
+.small_title {
+    margin-bottom: 2%;
+    font-size: 0.9em;
+    padding-left: 3%;
+    color: white;
+    line-height: 25px;
+}
+.big_title_work {
+    font-size: 2em;
+}
+.copyright {
+    padding-top: 40%;
+    color: gainsboro;
+    font-size: 0.6em;
+    text-align: center;
+}
+#footer a {
+    color: white;
+}
+/* footer */
+    }
+
+    /*-------------------------------700~900---------------------------------------------*/
+    @media screen and (min-width:700px) and (max-width:900px) {
+     /* menu */
+        #logo{
+            width:5%;
+            padding-top:3%;
+        }
+        .nav {
+            padding: 5% 0px 0px 0px;
+            font-size: 14px;
+        }
+    /* menu */
+
+    /*   main */
+    #Header{
+        padding-top:5%;
+    }
+    #Header h1{
+        font-size: 2em; 
+    }
+#Header p{
+    font-size: 1em;
+  }
+#music,
+#yellow,
+#water {
+    padding-top: 5%;
+    padding-bottom: 45%;
+}
+
+#video{
+    height:200px;
+   }
+#music p,
+#yellow p,
+#water p {
+    line-height: 20px;
+    font-size: 0.7em;
+}
+
+#right{
+    width:45%;
+    padding-top:10%;
+}
+#music #left,
+#yellow #left,
+#water #left{
+    padding-top:0px;
+    width:50%;
+    }
+
+ .button {
+        padding: 3% 10% 3% 10%;
+    }
+
+#music h1,
+#yellow h1,
+#water h1{
+font-size: 1.5em;
+        }
+
+
+/* main */
+
+    /* footer */
+    .big_title_work {
+        font-size: 2.5em;
+    }
+    
+    .big_title_about {
+        font-size: 2.5em;
+    }
+    
+    .big_title_connect {
+        font-size: 2.5em;
+    }
+    #footer_work {
+        line-height: 2em;
+        padding-left: 5%;
+        width: 55%;
+    }
+    #footer_About {
+        padding-right: 0%;
+        width: 35%;
+    }
+    
+    #footer_connect {
+        padding-right: 0%;
+        width: 35%;
+    }
+    #footer{
+        font-size: 0.8em;
+        padding-bottom: 40%;
+     }
+     #copyright{
+         padding-top:8%;
+         font-size: 0.5em;
+     }
+    /* footer */
+        }
+
+/*-------------------------------900~1100---------------------------------------------*/
+@media screen and (min-width:900px) and (max-width:1100px) {
+/*   main */
+#Header p{
+    font-size: 1.3em;
+  }
+#music {
+    padding-top: 5%;
+    padding-bottom: 40%;
+}
+#water{
+    padding-top: 3%;
+    padding-bottom: 45%;
+}
+#music p,
+#yellow p,
+#water p {
+    line-height: 25px;
+    font-size: 0.9em;
+}
+
+#right{
+    width:45%;
+    padding-top:5%;
+}
+#music #left,
+#yellow #left,
+#water #left{
+    padding-top:0px;
+    width:50%;
+    }
+
+    .button {
+        padding: 3% 10% 3% 10%;
+    }
+
+#music h1,
+#yellow h1,
+#water h1{
+     font-size: 1.5em;
+        }
+
+#video{
+    height:200px;
+   }
+/* main */
+/* footer */
+.small_title {
+    margin-bottom: 5%;
+    padding-left: 3%;
+    line-height: 25px;
+}
+.big_title_work {
+    font-size: 3em;
+}
+
+.big_title_about {
+    font-size: 3em;
+}
+
+.big_title_connect {
+    font-size: 3em;
+}
+#footer_work {
+    line-height: 3em;
+    padding-left: 5%;
+    width: 55%;
+}
+#footer_About {
+    padding-right: 0%;
+    width: 35%;
+}
+
+#footer_connect {
+    padding-right: 0%;
+    width: 35%;
+}
+#footer{
+    font-size: 0.9em;
+    padding-bottom: 40%;
+ }
+ #copyright{
+     padding-top:8%;
+     font-size: 0.7em;
+ }
+/* footer */   
+}
+    
+/*-------------------------------1100~1300---------------------------------------------*/  
+@media screen and (min-width:1100px) and (max-width:1300px) {
+/*   main */
+
+
+#music {
+    padding-top: 5%;
+    padding-bottom: 45%;
+}
+
+#music p, 
+#yellow p,
+#water p {
+    line-height: 25px;
+    font-size: 0.9em;
+}
+#music #left,
+#yellow #left,
+#water #left{
+    padding-top:0px;
+    }
+#music h1,
+#yellow h1,
+#water h1{
+     font-size: 1.5em;
+        }
+#video{
+ height:400px;
+}
+/* main */
+
+/* footer */
+.big_title_work {
+    font-size: 3em;
+}
+
+.big_title_about {
+    font-size: 3em;
+}
+
+.big_title_connect {
+    font-size: 3em;
+}
+#footer_work {
+    padding-left: 5%;
+    width: 55%;
+}
+#footer_About {
+    padding-right: 0%;
+    width: 35%;
+}
+
+#footer_connect {
+    padding-right: 0%;
+    width: 35%;
+}
+#footer{
+    font-size: 0.9em;
+    padding-bottom: 40%;
+ }
+ #copyright{
+     padding-top:12%;
+     font-size: 0.9em;
+ }
+/* footer */   
+    }
+
+/*-------------------------------1300~1600---------------------------------------------*/ 
+
+@media screen and (min-width:1300px) and (max-width:1600px) {
+/*   main */
+#music {
+    padding-top: 5%;
+}
+
+#music p {
+    line-height: 30px;
+    font-size: 1em;
+}
+#music #left{
+padding-top:0px;
+}
+#video{
+    height:400px;
+}
+
+/* main */
+/* footer */
+.big_title_work {
+    font-size: 3em;
+}
+
+.big_title_about {
+    font-size: 3em;
+}
+
+.big_title_connect {
+    font-size: 3em;
+}
+#footer_work {
+    padding-left: 5%;
+    width: 55%;
+}
+#footer_About {
+    padding-right: 0%;
+    width: 35%;
+}
+
+#footer_connect {
+    padding-right: 0%;
+    width: 35%;
+}
+#footer{
+    font-size: 1em;
+    padding-bottom: 40%;
+ }
+ #copyright{
+     padding-top:10%;
+     font-size: 1em;    
+ }
+/* footer */
+    }
