@@ -5,82 +5,14 @@ html {
 
 body {
     background: #FBFBFB;
-    font-family: rubik;
+    font-family: roboto;
+    color:#F6F4F2;
     overflow: scroll;
     margin: 0px;
     font-weight: 300;
     letter-spacing: 0.5px;
 
 }
-
-/*Header*/
-#big_title {
-    font-size: 2.2em;
-    font-family: Roboto;
-}
-
-#section {
-    padding-top: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-#Header {
-    background: #FBFBFB;
-    height: auto;
-    padding-bottom: 35%;
-}
-
-#Header img {
-    width: 100%;
-}
-
-#title {
-    font-family: Roboto;
-    font-size: 1em;
-    color: #5B01C4;
-    padding-top: 5%;
-    letter-spacing: 0px;
-}
-
-#conclusion {
-    font-size: 1.5em;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-#image {
-    width: 38%;
-    float: right;
-}
-
-#overview {
-    float: left;
-    width: 50%;
-    height: 100%;
-    letter-spacing: 1px;
-}
-
-#Header p {
-    line-height: 20px;
-    font-size: 0.9em;
-}
-
-#sub_title {
-    letter-spacing: 0;
-    color: #5B01C4;
-    font-size: 1.5em;
-    font-weight: 500;
-}
-
-
-#research {
-    padding-top: 10%;
-}
-
-
-/*Header*/
-
 
 /*moblie nav*/
 .wrapper {
@@ -181,158 +113,46 @@ body {
 /*mobile nav*/
 
 /*Main*/
-#main {
-    margin: 0;
-    padding-left: 20%;
-    padding-right: 20%;
+#main p{
+    font-family: Rubik;
+    line-height:30px;
+    font-size: 1em;
 }
-
-
-#main p {
-    font-size: 1.1em;
-    line-height: 30px;
-}
-
-#main li {
-    font-size: 1.1em;
-    line-height: 30px;
-}
-
-#main-big {
-    margin: 0;
-    padding-left: 0%;
-    padding-right: 0%;
-}
-
-
-#main-big img {
-    width: 100%;
-    padding-top: 5%;
-}
-
-#main img {
-    width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-#main-big iframe {
-    width: 100%;
-}
-
-#main #title {
-    color: black;
-}
-
-#main h2 {
-    font-weight: 400;
-    font-size: 1.1em;
+strong{
     font-family: roboto;
 }
-
-#feature {
-    padding-top: 3%;
+#left{
+    float:left;
+    width:50%;
+    height:100vh;
+    background-color:#4E7FBC;
 }
 
-#inappstore ul {
-    padding: 0;
-    font-size: 0;
-    list-style: none;
+#right{
+    float:right;
+    width:50%;
+    background-color:#90C6D1;
+    height:100vh;
 }
 
-#inappstore li {
-    text-decoration: none;
-    display: inline-block;
-    margin-right: -5%;
+#box{
+    padding:30% 20% 50% 20%;
+}
+button{
+    padding:5% 40% 5% 40%;
+    background: transparent;
+    border: 1px solid #fdfdfd;
+    color: #fdfdfd;
+    border-radius: 3px;
+    cursor:pointer;
+}
+button:hover{
+    transition:2s;
+    background: rgba(255, 255, 255, 0.2)
 }
 
-#medium {
-    margin: 0;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.button {
-    background: #F8CE89;
-    padding: 1em 2em 1em 2em;
-    border-radius: 50px;
-    text-decoration: none;
-    color: white;
-}
-
-#inappstore #left {
-    float: left;
-    width: 40%;
-    padding-top: 15%;
-}
-
-#inappstore {
-    height: 80vh;
-    margin: 0;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-
-#inappstore p {
-    font-size: 1em;
-    line-height: 30px;
-}
-
-#shareability {
-    height: 100vh;
-    margin: 0;
-    padding-left: 0%;
-    padding-right: 0%;
-    background-color: #F1EFFA;
-}
-
-#top {
-    width: 100%;
-    margin: 0;
-    padding-top: 5%;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-#buttom {
-    margin: 0;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-#buttom img {
-    padding-top: 3%;
-    width: 100%;
-}
-
-#shareability p {
-    font-size: 1em;
-    line-height: 30px;
-    width: 50%;
-}
-
-#right img {
-    float: right;
-    width: 60%;
-    padding-top: 5%;
-}
-
-#type {
-    color: #A5A1A1;
-}
-
-#feature_title {
-    font-family: roboto;
-    font-weight: 400;
-    color: #5B01C4;
-    font-size: 1.4em;
-     !important !
-}
-
-
-a {
-    color: black;
+img{
+    width:50%;
 }
 
 
@@ -428,13 +248,11 @@ a {
 /*footer*/
 #footer {
     font-family: roboto;
-    height: auto;
+    height: 100vh;
     padding-bottom: 30%;
+    background-color: black;
 }
 
-#footer {
-    background: black;
-}
 
 #footer_work {
     line-height: 2em;
@@ -571,217 +389,28 @@ a {
 
     /*    menu*/
 
-    /*Main*/
 
-    /*Header*/
+/*Main*/
 
-    #big_title {
-        font-size: 1.2em;
-        font-family: Roboto;
-    }
+#left{
+    float:none;
+    width:100%;
+    height:auto;
+}
 
-    #section {
-        padding-top: 20%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+#right{
+    float:none;
+    width:100%;
+    height:auto;
+}
 
-    #Header {
-        background: #FBFBFB;
-        height: auto;
-    }
-
-    #Header img {
-        width: 100%;
-    }
-
-    #title {
-        font-family: Roboto;
-        font-size: 1em;
-        color: #5B01C4;
-        padding-top: 5%;
-        letter-spacing: 0px;
-    }
-
-    #conclusion {
-        font-size: 1em;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-
-    #image {
-        width: 100%;
-        float: none;
-    }
-
-    #overview {
-        float: none;
-        width: 100%;
-        height: auto;
-        letter-spacing: 1px;
-    }
-
-    #Header p {
-        line-height: 20px;
-        font-size: 0.9em;
-    }
-
-    #research {
-        padding-top: 10%;
-    }
-
-
-    /*Header*/
-
-    /*Main*/
-
-    #sub_title {
-        letter-spacing: 0;
-        color: #5B01C4;
-        font-size: 1em;
-        font-weight: 500;
-    }
-
-    #main {
-        margin: 0;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-
-    #main p {
-        font-size: 1em;
-        line-height: 30px;
-    }
-
-    #main li {
-        font-size: 1em;
-        line-height: 30px;
-    }
-
-    #main-big {
-        margin: 0;
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-
-
-    #main-big img {
-        width: 100%;
-        padding-top: 5%;
-    }
-
-    #main img {
-        width: 100%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-
-    #main-big iframe {
-        width: 100%;
-    }
-
-    #main #title {
-        color: black;
-    }
-
-    #main h2 {
-        font-weight: 400;
-        font-size: 1em;
-        font-family: roboto;
-    }
-
-    #feature {
-        padding-top: 3%;
-    }
-
-    #inappstore ul {
-        padding: 0;
-        font-size: 0;
-        list-style: none;
-    }
-
-    #inappstore li {
-        text-decoration: none;
-        display: inline-block;
-        margin-right: -5%;
-    }
-
-    #inappstore #left {
-        float: none;
-        width: 100%;
-        padding-top: 15%;
-    }
-
-    #inappstore {
-        height: auto;
-        margin: 0;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-
-    #inappstore p {
-        font-size: 1em;
-        line-height: 30px;
-    }
-
-    #shareability {
-        height: auto;
-        margin: 0;
-        padding-left: 5%;
-        padding-right: 5%;
-        background-color: #F1EFFA;
-/*        display:none;*/
-    }
-
-    #top {
-        width: 100%;
-        margin: 0;
-        padding-top: 5%;
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-
-    #buttom {
-        margin: 0;
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-
-    #buttom img {
-        padding-top: 3%;
-        width: 100%;
-    }
-
-    #shareability p {
-        font-size: 1em;
-        line-height: 30px;
-        width: 100%;
-    }
-
-    #right img {
-        float: none;
-        width: 100%;
-        padding-top: 5%;
-    }
-
-    #type {
-        color: #A5A1A1;
-    }
-
-    #feature_title {
-        font-family: roboto;
-        font-weight: 400;
-        color: #5B01C4;
-        font-size: 1em;
-    }
-
-
-    /*Main*/
 
     /*    footer*/
 
+    #footer{
+        padding-bottom: 20%;
+        height:auto;
+    }
     #footer_connect {
         display: none;
     }
@@ -799,7 +428,7 @@ a {
         display: block;
         padding: 10% 5% 5% 5%;
     }
-
+    
     .small_title {
         margin-bottom: 2%;
         font-size: 0.9em;
