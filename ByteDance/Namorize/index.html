@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>Namorize </title>
+    <link href="main.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/gif" href="../../images/logo2.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:100,200,300,400,500,700" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Rubik|Rubik:100,200,300,400,500,700' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.21/p5.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <div>
+            <a href="../index.html"><img id="logo" src='../../images/logo.png' onmouseover="this.src='../../images/logo2.png';" onmouseout="this.src='../../images/logo.png';" /></a>
+        </div>
+        <ul>
+            <li id="work"><a href="../index.html">Work</a></li>
+            <li  id="play"><a href="../Play/index.html">Play</a></li>
+            <li id="about"><a href="../About/index.html">About</a></li>
+
+        </ul>
+    </div>
+
+    <!--    mobile nav-->
+
+    <div class="wrapper">
+        <div class="nav-bar">
+            <div class="logo">
+                <img class="logo" src="../images/logo.png">
+            </div>
+            <!--hamberger menu-->
+            <div class="hamberger">
+                <div class="line top"></div>
+                <div class="line center"></div>
+                <div class="line bottom"></div>
+            </div>
+
+            <!--drop down nav bar -->
+            <div class="menu">
+                <ul class="menu-item">
+                    <li class="work"><a href="../">Work</a></li>
+                    <li class="play"><a href="../Play/">Play</a></li>
+                    <li class="about"><a href="../About/">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--    mobile nav-->
+    <div id="Header">
+        <div id="section">
+            <div id="overview">
+                <h1 id="big_title">Namorize<br />
+                </h1>
+                <h1 id="title">BRIEF</h1>
+                <p id="content"> This is a one-week design challenge for ByteDance. I ideated and designed an educational tool Namorize 
+                    to help college professors memorize large amounts of students' names faster with accuracy.
+
+                </p>
+                <h1 id="title">ROLE</h1>
+                <p>User research, user flows & stories <br /> wireframing, visual design, prototyping<br /> </p><br /><br />
+                <a href="images/Namorize.pdf" target="_blank">full case study 👉</a>
+
+            </div>
+            <div id="image">
+                <img src="images/hero.png">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="main">
+        <div id="intro">
+            <h1 id="sub_title">INTRO 👋 </h1>
+            <p>When I got the challenge, the first thing I did was to decode the prompt, defining the problem clearly, and identifying the goals</p>   
+        </div>
+       <p><strong>Problem</strong></p>
+        <img src="images/decode.png">
+     
+    <div id="problem">
+     <p>"How to help college professors associate their students' names and face effectively by using quick, digital experiences?”</p></div>
+
+     <div id="solution">
+     <p>College professors with <strong>busy schedules</strong> encounter <strong>lots of new students </strong>from different backgrounds every semester. 
+         The students have <strong>similar ages and fashion trends. </strong>
+         It's difficult for them to remember the names and faces in a short time. </p></div>
+    </div>
+    
+    <div id="main-big">
+        <img src="images/process.png">
+    </div>
+
+    <div id="main">
+        <p><strong>Users</strong></p>
+        <img src="images/users.png">
+
+        <div id="feature">
+            <h1 id="sub_title">FEATURES 💫  </h1>
+            <p>With a clear idea of who were the users and what their needs are, I embarked on a design process to develop a solution</p>   
+        </div>
+
+
+
+    <div id="profile">
+        <div id="left">
+            <p id="type">FOR THE COLLECTOR</p>
+            <h1 id="feature_title">Student Cards</h1>
+            <p> Satisfying the goal to <strong>easily browse student profiles</strong>, I designed the student cards feature and make it easily to swipe. 
+                This feature allows users to quickly skim students' pictures, names, basic info, facial traits and fun fact, remembering more important information in less time. </p>
+        </div>
+        <div id="right">
+            <img id="swipe" src="images/swipe.gif">
+            <img id="card" src="images/profile.gif"></div>
+    </div>
+</div>
+
+<div id="feature-big">
+    <div id="annotation"> 
+        <p id="type">FOR THE NOTE-TAKER</p>
+        <h1 id="feature_title">Annotation Mode</h1>
+        <p> The annotation mode allows users to <strong>customize</strong> the student cards, highlining the important contents, typing or drawing the notes that help memorize the names.
+        </p>
+        <img id="color" src="images/color.gif">
+        <img id="highline" src="images/highline.gif">
+        <img id="draw" src="images/draw.gif">
+</div>
+</div>
+
+<div id="main">
+<div id="quiz">
+    <div id="left">
+        <p id="type">FOR THE LEARNER</p>
+        <h1 id="feature_title">Quizzes</h1>
+        <p> Having a quiz can effectively empower the professor to remember the students more quickly and accurately. However, the professors are busy. Thus, only 10 questions are set in each quiz set, and each question is limited to 5 seconds, which a set of quizzes will not exceed 5 minutes. The professor can skim the quiz at hiatus.</p>
+    </div>
+    <div id="right">
+        <img id="swipe" src="images/lose.gif">
+        <img id="card" src="images/win.gif"></div>
+</div>
+
+
+<div id="feature">
+    <h1 id="sub_title">DESIGN PROCESS 💡  </h1>
+    <p>I researched on the users, conducted the use cases and user flows, organized the hierarchy, created a visual language, iterated through a multitude of designs, and prototyped interactions.
+        </p>   
+</div>
+
+<div id="designprocess">
+    <p>Information Architecture, Users Flows & Feature Flows:</p>
+    <div class="slideshow-container">
+      <div class="mySlides1">
+        <img src="images/sitemap.png" style="width:100%">
+      </div>
+    
+      <div class="mySlides1">
+        <img src="images/sitemap.png" style="width:100%">
+      </div>
+    
+      <div class="mySlides1">
+        <img src="images/sitemap.png" style="width:100%">
+      </div>
+    
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+
+    <p>Sketch & Wireframe</p>
+    <div class="slideshow-container">
+      <div class="mySlides2">
+        <img src="images/wireframe1.png" style="width:100%">
+      </div>
+    
+      <div class="mySlides2">
+        <img src="images/wireframe2.png" style="width:100%">
+      </div>
+    
+      <div class="mySlides2">
+        <img src="images/wireframe3.png" style="width:100%">
+      </div>
+
+      <div class="mySlides2">
+        <img src="images/sketch.png" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+    </div>
+    <p>UI Guideline</p>
+    <img src="images/ui.png">
+
+
+</div>
+</div>
+
+
+
+   
+    <div id="main">
+        <h1 id="sub_title">PROTOTYPE 📲 </h1>
+  
+
+    <div id="medium">
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="850" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOaxQxPYRcPjry94WIyDpXH%2FByteDance%3Fnode-id%3D33%253A1%26viewport%3D543%252C363%252C0.2818430960178375%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe>
+    </div>
+
+    <div id="feature">
+        <h1 id="sub_title">CONCLUSION 😄  </h1>
+        <p>Interested in a deeper look at how we got to our final product? 
+            Check out our process documentation to see everything from competitve analysis and user flows to our final product
+            </p>   
+            <a href="images/Namorize.pdf" target="_blank">full case study 👉</a>
+    </div>
+
+
+</div>
+
+    <footer id="footer">
+      <div id="footer_work">
+            <h1 class="big_title_work">Work</h1>
+            <p class="small_title">
+                <li><a href="../Shopee/">Shopee ReDesign</a></li>/
+                <li><a href="../Instagram/">Instagram Ecommerce</a></li>/
+                <li><a href="../Hiatus/">Hiatus</a></li>/<br />
+                <li><a href="../ByteDance/">ByteDance</a></li>/
+                <li><a href="../etomon/">Etomon</a></li>/
+                <li><a href="../MOIC/">MOIC Website</a></li>
+            </p>
+            <br />  <br />
+            <p id="copyright" class="small_title">© Designed & Developed by Tinsley Aixin Huo 2020. All rights reserved. </p>
+        </div>
+        <div id="footer_About">
+            <h1 class="big_title_about">About</h1>
+            <span class="small_title">
+                <li><a href="../About/">About Me</a></li>
+                <li><a href="../Figure-8/">My Internship</a></li>
+            </span>
+        </div>
+
+        <div id="footer_connect">
+            <h1 class="big_title_connect">Connect</h1>
+            <span class="small_title">
+                <li><a href="https://www.linkedin.com/in/tinsleyhuo/">LinkedIn</a></li>
+                <li><a href="https://github.com/tinsleyfok">Github</a></li>
+                <li><a href="https://www.behance.net/tinsleyhuo9851">Behance</a></li>
+            </span>
+        </div>
+        <div class="hide">
+            <h1 class="big_title_work">Let's Chat!</h1>
+            <p class="small_title">Have an opportunity for me or just want to chat? Send me an email: <br /><strong><a href="mailto:tinsleyhuo@gmail.com">tinsleyhuo@gmail.com </a></strong></p>
+            <p class="copyright">© Designed & Developed by Tinsley Huo 2020. All rights reserved. </p>
+        </div>
+    </footer>
+
+    <script src="../../scripts.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
