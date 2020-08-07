@@ -133,7 +133,6 @@ body {
     letter-spacing: 2px;
     font-weight: 400;
     text-decoration: none;
-    padding-top:20%;
 }
 #Header img {
     padding-top:10%;
@@ -321,6 +320,8 @@ strong{
 
 #feature a{
     text-decoration: none;
+    color: #566CF6;
+    font-weight: 400;
 }
 
 
@@ -607,210 +608,78 @@ img {
 
     /*Main*/
 
-    /*Header*/
-
-    #big_title {
-        font-size: 1.2em;
-        font-family: Roboto;
+    #section{
+        padding-right:10%;
+        padding-left:10%;
     }
-
-    #section {
-        padding-top: 20%;
-        padding-left: 5%;
-        padding-right: 5%;
+    #Header p{
+        font-size: 1em;
+        line-height: 25px;
     }
-
-    #Header {
-        background: #FBFBFB;
-        height: auto;
+    #overview{
+        padding-top:20%;
+        float:none;
+        width:100%; 
     }
-
+    #image{
+        float:none;
+        width:100%;
+    }
     #Header img {
-        width: 100%;
+        width:100%;
     }
-
-    #title {
-        font-family: Roboto;
+    #main{
+        padding-right:10%;
+        padding-left:10%;
+    }
+    #main p{
         font-size: 1em;
-        color: #5B01C4;
-        padding-top: 5%;
-        letter-spacing: 0px;
+        line-height: 25px;
     }
 
-    #conclusion {
-        font-size: 1em;
-        padding-top: 5%;
-        padding-bottom: 5%;
+    #feature-big p{
+        font-size: 0.9em;
+        line-height: 25px;
     }
-
-    #image {
-        width: 100%;
-        float: none;
+    #right img{
+        padding-top:20%
     }
-
-    #overview {
-        float: none;
-        width: 100%;
-        height: auto;
-        letter-spacing: 1px;
+    #profile, #quiz{
+        height:auto;
     }
-
-    #Header p {
-        line-height: 20px;
+    #problem, #solution{
+        float:none;
+        width:100%;   
+    }
+    #left{
+        float:none;
+        width:100%; 
+    }
+    #right{
+        float:none;
+        width:100%;
+        padding-bottom: 10%;
+    }
+    #intro{
+        padding-right:0%;
+        padding-left:0%;
+        width:100%;
+        padding-top:s0%;
         font-size: 0.9em;
     }
 
-    #research {
-        padding-top: 10%;
+    #feature{
+        padding-right:0%;
+        padding-left:0%;
+        width:100%;
+        font-size: 0.9em;
     }
 
-
-    /*Header*/
-
-    /*Main*/
-
-    #sub_title {
-        letter-spacing: 0;
-        color: #5B01C4;
-        font-size: 1em;
-        font-weight: 500;
+    #annotation{
+        padding-right:10%;
+        padding-left:10%;
     }
-
-    #main {
-        margin: 0;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-
-    #main p {
-        font-size: 1em;
-        line-height: 30px;
-    }
-
-    #main li {
-        font-size: 1em;
-        line-height: 30px;
-    }
-
-    #main-big {
-        margin: 0;
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-
-
-    #main-big img {
-        width: 100%;
-        padding-top: 5%;
-    }
-
-    #main img {
-        width: 100%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-
-    #main-big iframe {
-        width: 100%;
-    }
-
-    #main #title {
-        color: black;
-    }
-
-    #main h2 {
-        font-weight: 400;
-        font-size: 1em;
-        font-family: roboto;
-    }
-
-    #feature {
-        padding-top: 3%;
-    }
-
-    #inappstore ul {
-        padding: 0;
-        font-size: 0;
-        list-style: none;
-    }
-
-    #inappstore li {
-        text-decoration: none;
-        display: inline-block;
-        margin-right: -5%;
-    }
-
-    #inappstore #left {
-        float: none;
-        width: 100%;
-        padding-top: 15%;
-    }
-
-    #inappstore {
-        height: auto;
-        margin: 0;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-
-    #inappstore p {
-        font-size: 1em;
-        line-height: 30px;
-    }
-
-    #shareability {
-        height: auto;
-        margin: 0;
-        padding-left: 5%;
-        padding-right: 5%;
-        background-color: #F1EFFA;
-/*        display:none;*/
-    }
-
-    #top {
-        width: 100%;
-        margin: 0;
-        padding-top: 5%;
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-
-    #buttom {
-        margin: 0;
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-
-    #buttom img {
-        padding-top: 3%;
-        width: 100%;
-    }
-
-    #shareability p {
-        font-size: 1em;
-        line-height: 30px;
-        width: 100%;
-    }
-
-    #right img {
-        float: none;
-        width: 100%;
-        padding-top: 5%;
-    }
-
-    #type {
-        color: #A5A1A1;
-    }
-
-    #feature_title {
-        font-family: roboto;
-        font-weight: 400;
-        color: #5B01C4;
-        font-size: 1em;
-    }
-
+    /* main */
 
     /*Main*/
 
@@ -872,6 +741,76 @@ img {
         .title {
             font-size: 1em;
         }
+         /* main */
+        
+    #section{
+        padding-right:10%;
+        padding-left:10%;
+    }
+    #Header p{
+        font-size: 1em;
+        line-height: 25px;
+    }
+    #overview{
+        padding-top:20%;
+        float:none;
+        width:100%; 
+    }
+    #image{
+        float:none;
+        width:100%;
+    }
+    #Header img {
+        width:100%;
+    }
+    #main{
+        padding-right:10%;
+        padding-left:10%;
+    }
+    #main p{
+        font-size: 1em;
+        line-height: 25px;
+    }
+
+    #feature-big p{
+        font-size: 0.9em;
+        line-height: 25px;
+    }
+    #right img{
+        padding-top:20%
+    }
+    #profile, #quiz{
+        height:auto;
+    }
+    #left{
+        float:none;
+        width:100%; 
+    }
+    #right{
+        float:none;
+        width:100%;
+        padding-bottom: 10%;
+    }
+    #intro{
+        padding-right:0%;
+        padding-left:0%;
+        width:100%;
+        padding-top:s0%;
+        font-size: 0.9em;
+    }
+
+    #feature{
+        padding-right:0%;
+        padding-left:0%;
+        width:100%;
+        font-size: 0.9em;
+    }
+
+    #annotation{
+        padding-right:10%;
+        padding-left:10%;
+    }
+    /* main */
     /* footer */
     #footer_connect {
         display: none;
@@ -924,6 +863,56 @@ img {
             .title {
                 font-size: 1.5em;
             }  
+
+            /* main */
+    #section{
+        padding-right:15%;
+        padding-left:15%;
+    }
+    #Header p{
+        font-size: 0.8em;
+        line-height: 25px;
+    }
+    #Header img {
+        padding-top:80%;
+    }
+    #main{
+        padding-right:15%;
+        padding-left:15%;
+    }
+    #main p{
+        font-size: 0.9em;
+        line-height: 25px;
+    }
+
+    #feature-big p{
+        font-size: 0.9em;
+        line-height: 25px;
+    }
+    #right img{
+        padding-top:20%
+    }
+    #intro{
+        padding-right:10%;
+        padding-left:10%;
+        width:80%;
+        padding-top:60%;
+        font-size: 0.9em;
+    }
+
+    #feature{
+        padding-right:10%;
+        padding-left:10%;
+        width:80%;
+        font-size: 0.9em;
+    }
+
+    #annotation{
+        padding-right:15%;
+        padding-left:15%;
+    }
+    /* main */
+    
         /* footer */
         .big_title_work {
             font-size: 2.5em;
@@ -963,7 +952,38 @@ img {
     
     /*-------------------------------900~1100---------------------------------------------*/
     @media screen and (min-width:900px) and (max-width:1100px) {
-    /* footer */
+    /* main */
+    #section{
+        padding-right:15%;
+        padding-left:15%;
+    }
+    #Header img {
+        padding-top:35%;
+    }
+    #main{
+        padding-right:15%;
+        padding-left:15%;
+    }
+    #annotation{
+        padding-right:15%;
+        padding-left:15%;
+    }
+    #intro{
+        padding-top:30%;
+        font-size: 0.9em;
+        padding-right:15%;
+        padding-left:15%;
+        width:70%;
+    }
+
+    #feature{
+        font-size: 0.9em;
+        padding-right:15%;
+        padding-left:15%;
+        width:70%;
+    }
+    /* main */
+        /* footer */
     .small_title {
         margin-bottom: 5%;
         padding-left: 3%;
@@ -1007,6 +1027,31 @@ img {
         
     /*-------------------------------1100~1300---------------------------------------------*/  
     @media screen and (min-width:1100px) and (max-width:1300px) {
+    /* main */
+    #section{
+        padding-right:15%;
+        padding-left:15%;
+    }
+    #annotation{
+        padding-right:15%;
+        padding-left:15%;
+    }
+    #Header img {
+        padding-top:20%;
+    }
+    #main{
+        padding-right:15%;
+        padding-left:15%;
+    }
+    #intro{
+        padding-top:20%;
+        font-size: 0.9em;
+    }
+
+    #feature{
+        font-size: 0.9em;
+    }
+    /* main */
     /* footer */
     .big_title_work {
         font-size: 3em;
@@ -1046,7 +1091,9 @@ img {
     /*-------------------------------1300~1600---------------------------------------------*/ 
     
     @media screen and (min-width:1300px) and (max-width:1600px) {
-    
+        #intro{
+            padding-top:15%;
+        }
     /* footer */
     .big_title_work {
         font-size: 3em;
