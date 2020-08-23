@@ -125,6 +125,7 @@ strong{
     float:left;
     width:50%;
     height:100vh;
+    min-height: 900px;
     background-color:#4E7FBC;
 }
 
@@ -133,10 +134,11 @@ strong{
     width:50%;
     background-color:#90C6D1;
     height:100vh;
+    min-height: 900px;
 }
 
 #box{
-    padding:30% 20% 50% 20%;
+    padding:30% 20% 30% 20%;
 }
 button{
     padding:5% 40% 5% 40%;
@@ -248,7 +250,7 @@ img{
 /*footer*/
 #footer {
     font-family: roboto;
-    height: 100vh;
+    height:100vh;
     padding-bottom: 30%;
     background-color: black;
 }
@@ -468,6 +470,10 @@ img{
             font-size: 1em;
         }
     /* footer */
+
+    #footer{
+        padding-bottom: 50%;
+    }
     #footer_connect {
         display: none;
     }
