@@ -251,6 +251,7 @@ img{
 #footer {
     font-family: roboto;
     height:100vh;
+    min-height: 900px;
     padding-bottom: 30%;
     background-color: black;
 }
