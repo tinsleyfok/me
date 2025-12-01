@@ -4,11 +4,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi</title>
-    <link href="style.css?v=2" rel="stylesheet">
+    <link href="style.css?v=3" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Hi</h1>
+        <h1 id="greeting"></h1>
     </div>
+    <script>
+        (function() {
+            const hour = new Date().getHours();
+            let greeting = "";
+            
+            if (hour < 12) {
+                greeting = "morning";
+            } else if (hour < 18) {
+                greeting = "afternoon";
+            } else {
+                greeting = "evening";
+            }
+            
+            const fullText = "Good\n" + greeting;
+            const typingSpeed = 80;
+            let index = 0;
+            const element = document.getElementById("greeting");
+            
+            function type() {
+                if (index < fullText.length) {
+                    element.textContent = fullText.slice(0, index + 1);
+                    index++;
+                    setTimeout(type, typingSpeed);
+                }
+            }
+            
+            type();
+        })();
+    </script>
 </body>
 </html>
