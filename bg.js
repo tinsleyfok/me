@@ -4,10 +4,6 @@
     pixelBg.className = 'pixel-bg';
     document.body.insertBefore(pixelBg, document.body.firstChild);
     
-    // Create gradient circle in center
-    const gradientCircle = document.createElement('div');
-    gradientCircle.className = 'gradient-circle';
-    pixelBg.appendChild(gradientCircle);
     
     // Create pixel grid for edges
     const pixelGrid = document.createElement('div');
@@ -17,7 +13,7 @@
     // Responsive pixel size
     const isMobile = window.innerWidth < 768;
     const isTablet = window.innerWidth < 1024;
-    const pixelSize = isMobile ? 20 : (isTablet ? 24 : 28);
+    const pixelSize = isMobile ? 28 : (isTablet ? 36 : 44);
     const width = window.innerWidth;
     const height = window.innerHeight;
     const cols = Math.ceil(width / pixelSize);
@@ -26,6 +22,22 @@
     const centerX = width / 2;
     const centerY = height / 2;
     const gradientRadius = Math.min(width, height) * 0.65;
+    
+    // Button zone to avoid (bottom center area)
+    const buttonZone = {
+        left: centerX - 280,
+        right: centerX + 280,
+        top: centerY + 150,
+        bottom: height
+    };
+    
+    // Check if pixel is in button zone
+    function isInButtonZone(x, y) {
+        return x >= buttonZone.left - pixelSize && 
+               x <= buttonZone.right + pixelSize && 
+               y >= buttonZone.top - pixelSize && 
+               y <= buttonZone.bottom;
+    }
     
     // Color for position - pick from palette, no grey blending
     function getColorForPosition(col, row) {
@@ -68,13 +80,44 @@
     
     const pixels = [];
     
-    // Add a few pixels inside the center (less than 15)
-    const centerPixelCount = Math.floor(Math.random() * 8) + 5; // 5-12 pixels
+    // Add a few pixels inside the center (non-overlapping, same size as edge)
+    const centerPixelCount = Math.floor(Math.random() * 6) + 6; // 6-11 pixels
+    const placedPositions = [];
+    const minDistance = pixelSize * 1.2; // Minimum distance between pixels
+    
     for (let i = 0; i < centerPixelCount; i++) {
-        const angle = Math.random() * Math.PI * 2;
-        const distance = Math.random() * gradientRadius * 0.7;
-        const x = centerX + Math.cos(angle) * distance - pixelSize / 2;
-        const y = centerY + Math.sin(angle) * distance - pixelSize / 2;
+        let attempts = 0;
+        let x, y, valid;
+        
+        // Try to find non-overlapping position
+        do {
+            const angle = Math.random() * Math.PI * 2;
+            const distance = Math.random() * gradientRadius * 0.6 + pixelSize;
+            x = centerX + Math.cos(angle) * distance - pixelSize / 2;
+            y = centerY + Math.sin(angle) * distance - pixelSize / 2;
+            
+            valid = true;
+            
+            // Skip if in button zone
+            if (isInButtonZone(x, y)) {
+                valid = false;
+                attempts++;
+                continue;
+            }
+            
+            for (const pos of placedPositions) {
+                const dist = Math.sqrt(Math.pow(x - pos.x, 2) + Math.pow(y - pos.y, 2));
+                if (dist < minDistance) {
+                    valid = false;
+                    break;
+                }
+            }
+            attempts++;
+        } while (!valid && attempts < 50);
+        
+        if (!valid) continue;
+        
+        placedPositions.push({ x, y });
         
         const pixel = document.createElement('div');
         pixel.className = 'pixel';
@@ -86,7 +129,7 @@
             Math.floor(x / pixelSize), 
             Math.floor(y / pixelSize)
         );
-        pixel.style.opacity = '0.7';
+        pixel.style.opacity = '0.8';
         
         pixelGrid.appendChild(pixel);
         
@@ -118,6 +161,9 @@
             const fadeEnd = gradientRadius * 1.2;
             
             if (distFromCenter < fadeStart) continue; // Inside gradient, skip
+            
+            // Skip if in button zone
+            if (isInButtonZone(x, y)) continue;
             
             // More pixels on sides
             let showChance = 0.8;
@@ -154,9 +200,6 @@
     
     let mouseX = -1000;
     let mouseY = -1000;
-    let gradientOffsetX = 0;
-    let gradientOffsetY = 0;
-    let gradientScale = 1;
     
     document.addEventListener('mousemove', (e) => {
         mouseX = e.clientX;
@@ -164,25 +207,9 @@
     });
     
     function animate() {
-        // Gradient circle interaction
         const dxCenter = mouseX - centerX;
         const dyCenter = mouseY - centerY;
         const distToCenter = Math.sqrt(dxCenter * dxCenter + dyCenter * dyCenter);
-        
-        // Gradient follows cursor slightly and scales
-        const gradientMaxDist = gradientRadius * 1.5;
-        if (distToCenter < gradientMaxDist) {
-            const influence = (1 - distToCenter / gradientMaxDist) * 0.15;
-            gradientOffsetX += (dxCenter * influence - gradientOffsetX) * 0.05;
-            gradientOffsetY += (dyCenter * influence - gradientOffsetY) * 0.05;
-            gradientScale += ((1 + influence * 0.3) - gradientScale) * 0.05;
-        } else {
-            gradientOffsetX *= 0.95;
-            gradientOffsetY *= 0.95;
-            gradientScale += (1 - gradientScale) * 0.05;
-        }
-        
-        gradientCircle.style.transform = `translate(calc(-50% + ${gradientOffsetX}px), calc(-50% + ${gradientOffsetY}px)) scale(${gradientScale})`;
         
         // Pixel interaction
         pixels.forEach(p => {

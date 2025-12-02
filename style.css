@@ -92,3 +92,116 @@ h1 {
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
 }
+
+/* Action buttons - Game style */
+.actions {
+    display: flex;
+    gap: 40px;
+    margin-top: 60px;
+    position: relative;
+    z-index: 100;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-decoration: none;
+    color: black;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding: 16px 28px;
+    width: 280px;
+    background: white;
+    border: 3px solid black;
+    transition: all 0.1s ease;
+    position: relative;
+}
+
+/* Gradient shadow wrapper */
+.action-btn-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.action-btn-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ffdc64, #ff9a6c, #ff6688, #e096ff, #96c8ff, #64d4b4);
+    transition: all 0.1s ease;
+}
+
+.action-btn-wrapper:hover::before {
+    top: 5px;
+    left: 5px;
+}
+
+.action-btn-wrapper:active::before {
+    top: 0px;
+    left: 0px;
+}
+
+/* Speech bubble tooltip - below button, filled */
+.action-btn::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: calc(100% + 15px);
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    background: black;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+/* Speech bubble arrow - pointing up */
+.action-btn .tooltip-arrow {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid black;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.action-btn:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.action-btn:hover .tooltip-arrow {
+    opacity: 1;
+}
+
+.action-btn-wrapper:hover .action-btn {
+    transform: translate(3px, 3px);
+}
+
+.action-btn-wrapper:active .action-btn {
+    transform: translate(8px, 8px);
+}
+
+.action-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
