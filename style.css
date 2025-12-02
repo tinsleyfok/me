@@ -2,28 +2,93 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor:none !important;
 }
 
 html, body {
     width: 100%;
     height: 100%;
-    background-color: white;
 }
 
-.container {
+body {
+    overflow: hidden;
+}
+
+.greeting-container {
+    position: relative;
+    z-index: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    line-height: 1.2;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 h1 {
     font-family: "Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-size: 48px;
-    font-weight: 400;
+    font-weight: 200;
     color: black;
     text-align: center;
-    white-space: pre-line;
-    letter-spacing: -0.07em;
-    padding: 20px;
+    white-space: nowrap;
+    letter-spacing: -0.001em;
+    position: relative;
+    display: inline-block;
+}
+
+.tagline-line1,
+.tagline-line2 {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 108px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.tagline-line2 a {
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+.tagline-line2 a:hover {
+    transform: scale(1.05);
+}
+
+/* Text content - normal visible text */
+.text-content {
+    display: inline;
+}
+
+/* Gradient overlay - positioned exactly on top */
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #ffdc64, #ff9a6c, #ff6688, #e096ff, #96c8ff, #64d4b4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    pointer-events: none;
+    clip-path: circle(0px at 0px 0px);
+}
+
+/* For the link inside tagline-line2 */
+.tagline-line2 a .gradient-overlay {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }

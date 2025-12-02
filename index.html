@@ -3,41 +3,32 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi</title>
-    <link href="style.css?v=3" rel="stylesheet">
+    <title>Tinsley Huo</title>
+    <link rel="icon" type="image/png" href="img/header.png">
+    <link href="style.css" rel="stylesheet">
+    <link href="bg.css" rel="stylesheet">
+    <link href="cursor.css?v=3" rel="stylesheet">
+    <link href="theme.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1 id="greeting"></h1>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <div class="toggle-track">
+            <span class="toggle-icon sun">☀️</span>
+            <span class="toggle-icon moon">🌙</span>
+            <div class="toggle-thumb"></div>
+        </div>
     </div>
-    <script>
-        (function() {
-            const hour = new Date().getHours();
-            let greeting = "";
-            
-            if (hour < 12) {
-                greeting = "morning";
-            } else if (hour < 18) {
-                greeting = "afternoon";
-            } else {
-                greeting = "evening";
-            }
-            
-            const fullText = "Good\n" + greeting;
-            const typingSpeed = 80;
-            let index = 0;
-            const element = document.getElementById("greeting");
-            
-            function type() {
-                if (index < fullText.length) {
-                    element.textContent = fullText.slice(0, index + 1);
-                    index++;
-                    setTimeout(type, typingSpeed);
-                }
-            }
-            
-            type();
-        })();
-    </script>
+
+    <div class="greeting-container">
+        <h1 id="greeting"></h1>
+        <p class="tagline-line1">Tinsley is designing</p>
+        <p class="tagline-line2"><a href="https://tiktok.com" target="_blank" id="tiktok"></a>.</p>
+    </div>
+    
+    <script src="bg.js"></script>
+    <script src="cursor.js"></script>
+    <script src="greeting.js"></script>
+    <script src="theme.js"></script>
 </body>
 </html>
